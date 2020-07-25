@@ -24,19 +24,13 @@ public class MoveAnimation extends AbstractAnimation {
     double curXCoordinate = this.calculateState(startPosition.getX(), endPosition.getX(), curTime);
     double curYCoordinate = this.calculateState(startPosition.getY(), endPosition.getY(), curTime);
     Position2D curPosition = new Position2D(curXCoordinate, curYCoordinate);
-    AbstractShape result = null;
-    switch (shape.getType()) {
-      case OVAL:
-        result = new Oval(shape.getName(), shape.getType(), shape.getColor(),
-                curPosition,shape.getWidth(), shape.getHeight(),
-                shape.getAppearTime(), shape.getDisappearTime());
-        break;
-      case RECTANGLE:
-        result = new Rectangle(shape.getName(), shape.getType(), shape.getColor(),
-                curPosition, shape.getWidth(), shape.getHeight(),
-                shape.getAppearTime(), shape.getDisappearTime());
-        break;
-      default: throw new IllegalArgumentException("Invalid animation to run");
+    // Create an updated shape.
+    AbstractShape result = ShapeFactory.buildShape(
+            shape.getType(), shape.getName(), shape.getType(), shape.getColor(),
+            curPosition, shape.getWidth(), shape.getHeight(),
+            shape.getAppearTime(), shape.getDisappearTime());
+    if (result == null) {
+      throw new IllegalArgumentException("Invalid animation to run on this shape");
     }
     return result;
   }
