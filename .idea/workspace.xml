@@ -19,14 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ecaef312-16ff-4a36-a98b-a08b286a985a" name="Default Changelist" comment="Update abstract shape and add two shapes class: Rectangle and Oval.&#10;Update Position2D class.&#10;Change position x y from float to double.&#10;Add ShapeType and ColorType enum.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cs5004/animator/model/AbstractShape.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs5004/animator/model/AbstractShape.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cs5004/animator/model/ColorType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs5004/animator/model/ColorType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cs5004/animator/model/Oval.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs5004/animator/model/Oval.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cs5004/animator/model/Position2D.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs5004/animator/model/Position2D.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cs5004/animator/model/Rectangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs5004/animator/model/Rectangle.java" afterDir="false" />
-    </list>
+    <list default="true" id="ecaef312-16ff-4a36-a98b-a08b286a985a" name="Default Changelist" comment="Update toString method for ColorType and Position2D&#10;Add String representation method: textRender to Oval and Rectangle class;" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -82,7 +75,21 @@
       <option name="project" value="LOCAL" />
       <updated>1595710346692</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Update toString method for ColorType and Position2D&#10;Add String representation method: textRender to Oval and Rectangle class;">
+      <created>1595712653392</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1595712653393</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Update toString method for ColorType and Position2D&#10;Add String representation method: textRender to Oval and Rectangle class;">
+      <created>1595712701374</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1595712701374</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -98,7 +105,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Update abstract shape and add two shapes class: Rectangle and Oval.&#10;Update Position2D class.&#10;Change position x y from float to double.&#10;Add ShapeType and ColorType enum." />
-    <option name="LAST_COMMIT_MESSAGE" value="Update abstract shape and add two shapes class: Rectangle and Oval.&#10;Update Position2D class.&#10;Change position x y from float to double.&#10;Add ShapeType and ColorType enum." />
+    <MESSAGE value="Update toString method for ColorType and Position2D&#10;Add String representation method: textRender to Oval and Rectangle class;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update toString method for ColorType and Position2D&#10;Add String representation method: textRender to Oval and Rectangle class;" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2209" y="195" key="#com.intellij.ide.util.MemberChooser" timestamp="1595709499004">
@@ -107,10 +115,10 @@
     <state x="2209" y="195" key="#com.intellij.ide.util.MemberChooser/0.0.1280.800/1280.-78.1920.1080@1280.-78.1920.1080" timestamp="1595709499004" />
     <state x="2209" y="195" key="#com.intellij.ide.util.MemberChooser/0.23.1280.777/1280.-78.1920.1080@1280.-78.1920.1080" timestamp="1595707487418" />
     <state x="929" y="277" key="#com.intellij.ide.util.MemberChooser/0.23.1920.1006@0.23.1920.1006" timestamp="1595700503632" />
-    <state x="1840" y="202" key="Vcs.Push.Dialog.v2" timestamp="1595710415509">
+    <state x="1840" y="202" key="Vcs.Push.Dialog.v2" timestamp="1595712782946">
       <screen x="1280" y="-78" width="1920" height="1080" />
     </state>
-    <state x="1840" y="202" key="Vcs.Push.Dialog.v2/0.0.1280.800/1280.-78.1920.1080@1280.-78.1920.1080" timestamp="1595710415509" />
+    <state x="1840" y="202" key="Vcs.Push.Dialog.v2/0.0.1280.800/1280.-78.1920.1080@1280.-78.1920.1080" timestamp="1595712782946" />
     <state x="1949" y="245" key="refactoring.ChangeSignatureDialog" timestamp="1595709859154">
       <screen x="1280" y="-78" width="1920" height="1080" />
     </state>

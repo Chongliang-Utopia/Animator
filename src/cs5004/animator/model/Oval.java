@@ -44,7 +44,7 @@ public class Oval extends AbstractShape {
    */
   @Override
   public double getWidth() {
-    return 0;
+    return this.xRadius;
   }
 
   /**
@@ -54,7 +54,7 @@ public class Oval extends AbstractShape {
    */
   @Override
   public double getHeight() {
-    return 0;
+    return this.yRadius;
   }
 
   @Override
