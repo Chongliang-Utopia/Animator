@@ -17,7 +17,7 @@ public class ChangeColorAnimation extends AbstractAnimation {
      * @param endTime the end time of the animation
      * @param startColor the start color of the animation
      * @param endColor the end color of the animation
-     * @throws IllegalArgumentException
+     * @throws IllegalArgumentException if the given animation type is invalid
      */
     public ChangeColorAnimation(AnimationType animationType,
                                 String shapeName,
@@ -48,8 +48,8 @@ public class ChangeColorAnimation extends AbstractAnimation {
                 (float)this.calculateState(startColor.getRed(), endColor.getRed(), curTime),
                 (float)this.calculateState(startColor.getGreen(), endColor.getGreen(), curTime),
                 (float)this.calculateState(startColor.getBlue(), endColor.getBlue(), curTime));
-        AbstractShape result = ShapeFactory.buildShape(
-                shape.getType(), shape.getName(), shape.getType(), curColor,
+        // Create an updated shape.
+        AbstractShape result = ShapeFactory.buildShape(shape.getName(), shape.getType(), curColor,
                 shape.getPosition(), shape.getWidth(), shape.getHeight(),
                 shape.getAppearTime(), shape.getDisappearTime());
         if (result == null) {
