@@ -30,7 +30,7 @@ public abstract class AbstractAnimation {
 
     public abstract AbstractShape runAnimation(AbstractShape shape, int curTime);
 
-    protected float calculateState(float startState, float endState, int curTime){
+    protected double calculateState(double startState, double endState, int curTime){
         if (curTime <= startTime) {
             return startState;
         }

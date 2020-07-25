@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ecaef312-16ff-4a36-a98b-a08b286a985a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cs5004/animator/model/IModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cs5004/animator/model/modelImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cs5004/animator/model/AbstractShape.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs5004/animator/model/AbstractShape.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cs5004/animator/model/AbstractAnimation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs5004/animator/model/AbstractAnimation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cs5004/animator/model/ScaleAnimation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs5004/animator/model/ScaleAnimation.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,9 +50,9 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="929" y="277" key="#com.intellij.ide.util.MemberChooser" timestamp="1595700503632">
+    <state x="929" y="277" key="#com.intellij.ide.util.MemberChooser" timestamp="1595704482327">
       <screen x="0" y="23" width="1920" height="1006" />
     </state>
-    <state x="929" y="277" key="#com.intellij.ide.util.MemberChooser/0.23.1920.1006@0.23.1920.1006" timestamp="1595700503632" />
+    <state x="929" y="277" key="#com.intellij.ide.util.MemberChooser/0.23.1920.1006@0.23.1920.1006" timestamp="1595704482327" />
   </component>
 </project>
