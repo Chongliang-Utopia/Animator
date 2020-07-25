@@ -19,11 +19,19 @@ public class modelImpl implements IModel {
 
     /**
      * Construct a modelImpl class with the shapes and animations.
+     */
+    public modelImpl() {
+        this.allShapes = new HashMap<>();
+        this.allAnimations = new HashMap<>();
+    }
+
+    /**
+     * Construct a modelImpl class with the shapes and animations.
      * @param allShapes shapes to include in the model
      * @param allAnimations animations to include in the model
      * @throws IllegalArgumentException if the parameter is null
      */
-    private modelImpl(Map<String, AbstractShape> allShapes,
+    public modelImpl(Map<String, AbstractShape> allShapes,
                       Map<Integer, List<AbstractAnimation>> allAnimations) throws
             IllegalArgumentException{
         if (allAnimations == null || allShapes == null) {
