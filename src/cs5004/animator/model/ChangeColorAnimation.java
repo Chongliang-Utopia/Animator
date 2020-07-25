@@ -1,15 +1,15 @@
 package cs5004.animator.model;
 
 public class ChangeColorAnimation extends AbstractAnimation {
-    ColorInfo startColor;
-    ColorInfo endColor;
+    ColorType startColor;
+    ColorType endColor;
 
     public ChangeColorAnimation(AnimationType animationType,
                                 String shapeName,
                                 int startTime,
                                 int endTime,
-                                ColorInfo startColor,
-                                ColorInfo endColor) throws IllegalArgumentException {
+                                ColorType startColor,
+                                ColorType endColor) throws IllegalArgumentException {
         super(animationType, shapeName, startTime, endTime);
         if (animationType != AnimationType.CHANGECOLOR) {
             throw new IllegalArgumentException("Trying to initiate with wrong animation type.");
@@ -21,7 +21,7 @@ public class ChangeColorAnimation extends AbstractAnimation {
 
     @Override
     public AbstractShape runAnimation(AbstractShape shape, int curTime) {
-        ColorInfo curColor = new ColorInfo(this.calculateState(startColor.getRed(), endColor.getRed(), curTime),
+        ColorType curColor = new ColorType(this.calculateState(startColor.getRed(), endColor.getRed(), curTime),
                                             this.calculateState(startColor.getGreen(), endColor.getGreen(), curTime),
                                             this.calculateState(startColor.getBlue(), endColor.getBlue(), curTime));
         return shape.updateWithNewState(curColor);
