@@ -136,4 +136,12 @@ public abstract class AbstractShape {
    */
   public abstract double getHeight();
 
+  /**
+   * Return String representation of the shape details.
+   *
+   */
+  public String textRender() {
+    return "";
+  }
+
 }

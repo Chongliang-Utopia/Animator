@@ -91,4 +91,27 @@ public class Oval extends AbstractShape {
     return Objects.hash(name, type, color.getRed(), color.getGreen(), color.getBlue(),
             position.getX(), position.getY(), appearTime, disappearTime, display, xRadius, yRadius);
   }
+
+
+  /**
+   * Return String representation of the oval details. e.g.
+   * Name: C
+   * Type: oval
+   * Center: (500.0,100.0), X radius: 60.0, Y radius: 30.0, Color: (0.0,0.0,1.0)
+   * Appears at t=6
+   * Disappears at t=100
+   *
+   * @return string representation of the oval information
+   */
+  @Override
+  public String textRender() {
+    String text = "";
+    text += "Name: " + this.name + "\n" + "Type: " + this.type.toString() + "\n"
+            + "Center: " + this.position.toString()
+            + String.format(", X radius: %.1f, Y radius: %.1f, ", this.xRadius, this.yRadius)
+            + "Color: " + this.color.toString() + "\n"
+            + "Appears at t=" + this.appearTime + "\n" + "Disappears at t=" + this.disappearTime
+            + "\n";
+    return text;
+  }
 }

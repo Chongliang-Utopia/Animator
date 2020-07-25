@@ -14,15 +14,15 @@ public class Rectangle extends AbstractShape {
    * Construct a Rectangle object which contains details of the shape, such as name, type, color,
    * position, width/height, and appear/disappear time.
    *
-   * @param name       the name of the shape
-   * @param type       the type of the shape
-   * @param color      the color of this shape
-   * @param position   the position of this shape
-   * @param width      the width of this shape
-   * @param height     the height of this shape
-   * @param appears    the appears time of the shape
-   * @param disappears the disappears time of the shape
-   * @throws IllegalArgumentException if the given parameters are invalid for the shape
+   * @param name       the name of the rectangle
+   * @param type       the type of the rectangle
+   * @param color      the color of this rectangle
+   * @param position   the position of this rectangle, represented by its left bottom corner
+   * @param width      the width of this rectangle
+   * @param height     the height of this rectangle
+   * @param appears    the appears time of the rectangle
+   * @param disappears the disappears time of the rectangle
+   * @throws IllegalArgumentException if the given parameters are invalid for the rectangle
    */
   public Rectangle(String name, ShapeType type, ColorType color, Position2D position, double width,
                    double height, int appears, int disappears) throws IllegalArgumentException {
@@ -85,6 +85,29 @@ public class Rectangle extends AbstractShape {
   public int hashCode() {
     return Objects.hash(name, type, color.getRed(), color.getGreen(), color.getBlue(),
             position.getX(), position.getY(), appearTime, disappearTime, display, width, height);
+  }
+
+
+  /**
+   * Return String representation of the rectangle details. e.g.
+   * Name: R
+   * Type: rectangle
+   * Min corner: (200.0,200.0), Width: 50.0, Height: 100.0, Color: (1.0,0.0,0.0)
+   * Appears at t=1
+   * Disappears at t=100
+   *
+   * @return string representation of the rectangle information
+   */
+  @Override
+  public String textRender() {
+    String text = "";
+    text += "Name: " + this.name + "\n" + "Type: " + this.type.toString() + "\n"
+            + "Min corner: " + this.position.toString()
+            + String.format(", Width: %.1f, Height: %.1f, ", this.width, this.height)
+            + "Color: " + this.color.toString() + "\n"
+            + "Appears at t=" + this.appearTime + "\n" + "Disappears at t=" + this.disappearTime
+            + "\n";
+    return text;
   }
 
 
