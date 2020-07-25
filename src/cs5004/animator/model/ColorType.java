@@ -11,7 +11,7 @@ public class ColorType {
    * @param green the green value of the color
    * @param blue  the blue value of the color
    */
-  public ColorType(double red, double green, double blue) {
+  public ColorType(float red, float green, float blue) {
     this.red = red;
     this.green = green;
     this.blue = blue;
@@ -51,7 +51,7 @@ public class ColorType {
    */
   @Override
   public String toString() {
-    return "(" + String.format("%s", red) + ","
-            + String.format("%s", green) + "," + String.format("%s", blue) + ")";
+    return "(" + String.format("%.1f", red) + ","
+            + String.format("%.1f", green) + "," + String.format("%.1f", blue) + ")";
   }
 }
