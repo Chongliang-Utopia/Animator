@@ -1,4 +1,139 @@
 package cs5004.animator.model;
 
+/**
+ * Represent an abstract class of shapes in the model, which contains all common attributes
+ * of all shapes and methods to manipulate shapes. It can provide some useful details of shape
+ * for others to retrieve.
+ */
 public abstract class AbstractShape {
+  protected String name;
+  protected ShapeType type;
+  protected ColorType color;
+  protected Position2D position;
+  protected boolean display;
+  protected int appearTime;
+  protected int disappearTime;
+
+  /**
+   * Construct an AbstractShape object which contains details of the shape, such as name, type,
+   * color, position, and appear/disappear time.
+   *
+   * @param name       the name of the shape
+   * @param type       the type of the shape
+   * @param color      the color of this shape
+   * @param position   the position of this shape
+   * @param appears    the appears time of the shape
+   * @param disappears the disappears time of the shape
+   * @throws IllegalArgumentException if the given parameters are invalid for the shape
+   */
+  public AbstractShape(String name, ShapeType type, ColorType color, Position2D position,
+                       int appears, int disappears) throws IllegalArgumentException {
+    if (appears < 0 || disappears < appears) {
+      throw new IllegalArgumentException("Not valid appear or disappear time");
+    }
+    if (name == null || type == null || position == null || color == null) {
+      throw new IllegalArgumentException("Invalid given name, type, color or position of shape");
+    }
+    this.name = name;
+    this.type = type;
+    this.color = color;
+    this.position = position;
+    this.appearTime = appears;
+    this.disappearTime = disappears;
+    this.display = true;
+  }
+
+  /**
+   * Get the name of the Shape.
+   *
+   * @return the name of the shape object
+   */
+  public String getName() {
+    return name;
+  }
+
+  /**
+   * Set the shape's color to the given color.
+   *
+   * @param color
+   */
+  public void setColor(ColorType color) {
+    this.color = color;
+  }
+
+  /**
+   * Get the color of the shape.
+   *
+   * @return the color of the shape
+   */
+  public ColorType getColor() {
+    return color;
+  }
+
+  /**
+   * Get the current position of the shape.
+   *
+   * @return the position of the shape
+   */
+  public Position2D getPosition() {
+    return position;
+  }
+
+  /**
+   * Get the appear time of the shape.
+   *
+   * @return the appear time of the shape
+   */
+  public int getAppearTime() {
+    return appearTime;
+  }
+
+  /**
+   * Get the disappear time of the shape.
+   *
+   * @return the disappear time of the shape
+   */
+  public int getDisappearTime() {
+    return disappearTime;
+  }
+
+  /**
+   * Get the type of the shape.
+   *
+   * @return the type of the shape
+   */
+  public ShapeType getType() {
+    return type;
+  }
+
+  /**
+   * Set whether to display the shape.
+   *
+   * @param display the display mode of the shape object, if it is true, display the object
+   */
+  public void setDisplay(boolean display) {
+    this.display = display;
+  }
+
+  /**
+   * Get whether to display the shape.
+   *
+   * @return true to display the object, otherwise false
+   */
+  public boolean getDisplay() {
+    return this.display;
+  }
+
+  /**
+   * Abstract method to get the horizontal length of the shape, such as width or xRadius.
+   * @return the horizontal length of the shape
+   */
+  public abstract double getWidth();
+
+  /**
+   * Abstract method to get the vertical length of the shape, such as height or yRadius.
+   * @return the vertical length of the shape
+   */
+  public abstract double getHeight();
+
 }

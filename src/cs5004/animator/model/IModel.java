@@ -6,7 +6,7 @@ import java.util.Map;
 public interface IModel {
     Map<String, AbstractShape> getAllShape();
 
-    Map<Integer, AbstractAnimation> getAllAnimation();
+    Map<Integer, List<AbstractAnimation>> getAllAnimation();
 
     void addShape(AbstractShape shape);
 

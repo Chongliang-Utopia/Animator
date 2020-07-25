@@ -1,6 +1,9 @@
 package cs5004.animator.model;
 
-
+/**
+ * Represent an abstract class of animation in the model. It contains the common attributes of
+ * common an
+ */
 public abstract class AbstractAnimation {
     protected AnimationType animationType;
     protected String shapeName;
@@ -26,6 +29,10 @@ public abstract class AbstractAnimation {
 
     public int getEndTime() {
         return this.endTime;
+    }
+
+    public AnimationType getAnimationType() {
+        return this.animationType;
     }
 
     public abstract AbstractShape runAnimation(AbstractShape shape, int curTime);

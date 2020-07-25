@@ -28,9 +28,23 @@ public class ScaleAnimation extends AbstractAnimation{
 
     @Override
     public AbstractShape runAnimation(AbstractShape shape, int curTime) {
-        double curDimensionX = this.calculateState(fromDimension.get(0), toDimension.get(0), curTime);
-        double curDimensionY = this.calculateState(fromDimension.get(1), toDimension.get(1), curTime);
-        return shape.updateWithNewState(curDimensionX, curDimensionY);
+        double curWidth = this.calculateState(fromDimension.get(0), toDimension.get(0), curTime);
+        double curHeight = this.calculateState(fromDimension.get(1), toDimension.get(1), curTime);
+        AbstractShape result = null;
+        switch (shape.getType()) {
+            case OVAL:
+                result = new Oval(shape.getName(), shape.getType(), shape.getColor(),
+                        shape.getPosition(),curWidth, curHeight,
+                        shape.getAppearTime(), shape.getDisappearTime());
+                break;
+            case RECTANGLE:
+                result = new Rectangle(shape.getName(), shape.getType(), shape.getColor(),
+                        shape.getPosition(), curWidth, curHeight,
+                        shape.getAppearTime(), shape.getDisappearTime());
+                break;
+            default: throw new IllegalArgumentException("Invalid animation to run");
+        }
+        return result;
     }
 
     @Override

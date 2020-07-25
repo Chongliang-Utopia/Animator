@@ -9,10 +9,11 @@ public class modelImpl implements IModel {
     // Use shape name as the key for the map.
     private Map<String, AbstractShape> allShapes;
     // Use start time of the animation as the key for the map.
-    private Map<Integer, AbstractAnimation> allAnimations;
+    // It stores a list of animation under the specific time.
+    private Map<Integer, List<AbstractAnimation>> allAnimations;
 
     private modelImpl(Map<String, AbstractShape> allShapes,
-                      Map<Integer, AbstractAnimation> allAnimations) {
+                      Map<Integer, List<AbstractAnimation>> allAnimations) {
         this.allShapes = allShapes;
         this.allAnimations = allAnimations;
     }
@@ -23,7 +24,7 @@ public class modelImpl implements IModel {
     }
 
     @Override
-    public Map<Integer, AbstractAnimation> getAllAnimation() {
+    public Map<Integer, List<AbstractAnimation>> getAllAnimation() {
         return new HashMap<>(allAnimations);
     }
 
@@ -44,8 +45,10 @@ public class modelImpl implements IModel {
         // Remove shape.
         allShapes.remove(shapeName);
         // Remove corresponding animations.
-        for (Map.Entry<Integer, AbstractAnimation> entry : allAnimations.entrySet()) {
-            if (entry.getValue().getShapeName().equals(shapeName)) {
+        for (Map.Entry<Integer, List<AbstractAnimation>> entry : allAnimations.entrySet()) {
+            List<AbstractAnimation> curAnimations = entry.getValue();
+            curAnimations.removeIf(animation -> animation.getShapeName().equals(shapeName));
+            if (curAnimations.size() == 0) {
                 allAnimations.remove(entry.getKey());
             }
         }
@@ -56,10 +59,30 @@ public class modelImpl implements IModel {
         if (animation == null) {
             throw new IllegalArgumentException("Invalid animation to add");
         }
-
+        if (!validAnimation(animation)) {
+            throw new IllegalArgumentException("Invalid animation to add");
+        }
+        if (!allAnimations.containsKey(animation.getStartTime())) {
+            allAnimations.put(animation.getStartTime(), new ArrayList<>());
+        }
+        allAnimations.get(animation.getStartTime()).add(animation);
     }
 
     private boolean validAnimation(AbstractAnimation animation) {
-
+        if (!allShapes.containsKey(animation.getShapeName())) {
+            return false;
+        }
+        for (List<AbstractAnimation> animations : allAnimations.values()) {
+            for (AbstractAnimation existingAnimation : animations) {
+                if (existingAnimation.getShapeName().equals(animation.getShapeName())
+                && existingAnimation.getAnimationType() == animation.getAnimationType()) {
+                    if (!(existingAnimation.getStartTime() >= animation.getEndTime())
+                        || (existingAnimation.getEndTime() <= animation.getStartTime())) {
+                        return false;
+                    }
+                }
+            }
+        }
+        return true;
     }
 }
