@@ -1,5 +1,7 @@
 package cs5004.animator.model;
 
+import java.util.Objects;
+
 /**
  * A class represents an animation to move the shape, it extends the AbstractAnimation
  * class. It stores the start position and end position of the animation.
@@ -65,5 +67,40 @@ public class MoveAnimation extends AbstractAnimation {
     return "Shape " + this.getShapeName() + " move from " + startPosition.toString()
             + " to " + endPosition.toString()
             + " from t=" + this.getStartTime() + " to t=" + this.getEndTime();
+  }
+
+  /**
+   * Return if two animations are equal.
+   * @param o another object
+   * @return if two animations are equal
+   */
+  @Override
+  public boolean equals(Object o) {
+    if (this == o) {
+      return true;
+    }
+
+    if (!(o instanceof MoveAnimation)) {
+      return false;
+    }
+
+    MoveAnimation that = (MoveAnimation) o;
+
+    return this.animationType == that.animationType
+            && this.shapeName.equals(that.shapeName)
+            && this.startTime == that.startTime
+            && this.endTime == that.endTime
+            && this.startPosition.equals(that.startPosition)
+            && this.endPosition.equals(that.endPosition);
+  }
+
+  /**
+   * Return the hashcode.
+   * @return the hashcode
+   */
+  @Override
+  public int hashCode() {
+    return Objects.hash(animationType, shapeName, startTime, endTime,
+            startPosition, endPosition);
   }
 }

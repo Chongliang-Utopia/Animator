@@ -1,6 +1,8 @@
 package cs5004.animator.model;
 
 import java.util.List;
+import java.util.Objects;
+import java.util.Scanner;
 
 /**
  * A class represents an animation to scale the shape in width or height, it extends
@@ -74,5 +76,40 @@ public class ScaleAnimation extends AbstractAnimation{
                 + " to Width: " + toDimension.get(0)
                 + " Height: " + toDimension.get(1)
                 + " from t=" + this.getStartTime() + " to t=" + this.getEndTime();
+    }
+
+    /**
+     * Return if two animations are equal.
+     * @param o another object
+     * @return if two animations are equal
+     */
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) {
+            return true;
+        }
+
+        if (!(o instanceof ScaleAnimation)) {
+            return false;
+        }
+
+        ScaleAnimation that = (ScaleAnimation) o;
+
+        return this.animationType == that.animationType
+                && this.shapeName.equals(that.shapeName)
+                && this.startTime == that.startTime
+                && this.endTime == that.endTime
+                && this.fromDimension.equals(that.fromDimension)
+                && this.toDimension.equals(that.toDimension);
+    }
+
+    /**
+     * Return the hashcode.
+     * @return the hashcode
+     */
+    @Override
+    public int hashCode() {
+        return Objects.hash(animationType, shapeName, startTime, endTime,
+                fromDimension, toDimension);
     }
 }

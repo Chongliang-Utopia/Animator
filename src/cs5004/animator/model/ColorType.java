@@ -1,5 +1,7 @@
 package cs5004.animator.model;
 
+import java.util.Objects;
+
 public class ColorType {
   private float red;
   private float green;
@@ -54,4 +56,5 @@ public class ColorType {
     return "(" + String.format("%.1f", red) + ","
             + String.format("%.1f", green) + "," + String.format("%.1f", blue) + ")";
   }
+
 }

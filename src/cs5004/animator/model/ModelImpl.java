@@ -12,7 +12,7 @@ import java.util.TreeMap;
  * the animator.  It includes all the methods that the model are supposed to
  * return to the outside world.
  */
-public class modelImpl implements IModel {
+public class ModelImpl implements IModel {
     // Use shape name as the key for the map.
     private Map<String, AbstractShape> allShapes;
     // Use start time of the animation as the key for the map.
@@ -22,7 +22,7 @@ public class modelImpl implements IModel {
     /**
      * Construct a modelImpl class with the shapes and animations.
      */
-    public modelImpl() {
+    public ModelImpl() {
         this.allShapes = new HashMap<>();
         this.allAnimations = new HashMap<>();
     }
@@ -33,8 +33,8 @@ public class modelImpl implements IModel {
      * @param allAnimations animations to include in the model
      * @throws IllegalArgumentException if the parameter is null
      */
-    public modelImpl(Map<String, AbstractShape> allShapes,
-                      Map<Integer, List<AbstractAnimation>> allAnimations) throws
+    public ModelImpl(Map<String, AbstractShape> allShapes,
+                     Map<Integer, List<AbstractAnimation>> allAnimations) throws
             IllegalArgumentException{
         if (allAnimations == null || allShapes == null) {
             throw new IllegalArgumentException("Invalid parameters");
@@ -62,7 +62,7 @@ public class modelImpl implements IModel {
         Map<Integer, List<AbstractAnimation>> sortedAnimations = new TreeMap<>(
                 Comparator.comparingInt(a -> a));
         for (int key: allAnimations.keySet()) {
-            sortedAnimations.put(key, allAnimations.get(key));
+            sortedAnimations.put(key, new ArrayList<>(allAnimations.get(key)));
         }
         return sortedAnimations;
     }
@@ -96,14 +96,19 @@ public class modelImpl implements IModel {
         }
         // Remove shape.
         allShapes.remove(shapeName);
-        // Remove corresponding animations.
+        // Remove corresponding animations with this removed shape.
+        Map<Integer, List<AbstractAnimation>> updatedAnimations = new HashMap<>();
         for (Map.Entry<Integer, List<AbstractAnimation>> entry : allAnimations.entrySet()) {
             List<AbstractAnimation> curAnimations = entry.getValue();
-            curAnimations.removeIf(animation -> animation.getShapeName().equals(shapeName));
-            if (curAnimations.size() == 0) {
-                allAnimations.remove(entry.getKey());
+            List<AbstractAnimation> updatedAnimationList = new ArrayList<>();
+            for (AbstractAnimation ani : curAnimations) {
+                if (!ani.getShapeName().equals(shapeName)) {
+                    updatedAnimationList.add(ani);
+                }
             }
+            updatedAnimations.put(entry.getKey(), updatedAnimationList);
         }
+        this.allAnimations = updatedAnimations;
     }
 
     /**
