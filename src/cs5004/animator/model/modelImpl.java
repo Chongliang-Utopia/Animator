@@ -1,9 +1,11 @@
 package cs5004.animator.model;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.TreeMap;
 
 /**
  * A class represent the implementation of the IModel, a concrete class as the model of
@@ -51,13 +53,18 @@ public class modelImpl implements IModel {
     }
 
     /**
-     * Return a copy of all the animations in the model.
-     * @return a copy of all the animations in the model, use start time of the animation as the
-     * key for the map, it stores a list of animation under the specific time.
+     * Return a copy of all the animations in the model sorted by time.
+     * @return a copy of all the animations in the model sorted by time, use start time of
+     * the animation as the key for the map, it stores a list of animation under the specific time.
      */
     @Override
-    public Map<Integer, List<AbstractAnimation>> getAllAnimation() {
-        return new HashMap<>(allAnimations);
+    public Map<Integer, List<AbstractAnimation>> getAllAnimationSortedByTime() {
+        Map<Integer, List<AbstractAnimation>> sortedAnimations = new TreeMap<>(
+                Comparator.comparingInt(a -> a));
+        for (int key: allAnimations.keySet()) {
+            sortedAnimations.put(key, allAnimations.get(key));
+        }
+        return sortedAnimations;
     }
 
     /**
