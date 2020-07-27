@@ -45,6 +45,12 @@ public class MoveAnimation extends AbstractAnimation {
   @Override
   public AbstractShape runAnimation(AbstractShape shape, int curTime)
           throws IllegalArgumentException{
+    if (shape == null) {
+      throw new IllegalArgumentException("shape can not be null");
+    }
+    if (!(curTime <= shape.getDisappearTime())) {
+      throw new IllegalArgumentException("shape has disappeared");
+    }
     double curXCoordinate = this.calculateState(startPosition.getX(), endPosition.getX(), curTime);
     double curYCoordinate = this.calculateState(startPosition.getY(), endPosition.getY(), curTime);
     Position2D curPosition = new Position2D(curXCoordinate, curYCoordinate);

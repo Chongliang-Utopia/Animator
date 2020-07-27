@@ -11,7 +11,7 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotEquals;
 
 /**
- * A Junit test class for ModelImpl
+ * A Junit test class for ModelImpl. It includes tests for all the methods of the ModelImpl class.
  */
 public class ModelImplTest {
     IModel model1;
@@ -19,6 +19,9 @@ public class ModelImplTest {
     Map<String, AbstractShape> allShapes1;
     Map<Integer, List<AbstractAnimation>> allAnimations1;
 
+    /**
+     * Construct shape, model and Animation objects for tests.
+     */
     @org.junit.Before
     public void setUp() {
         model11 = new ModelImpl();

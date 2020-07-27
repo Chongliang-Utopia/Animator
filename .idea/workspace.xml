@@ -20,14 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ecaef312-16ff-4a36-a98b-a08b286a985a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/test/cs5004/animator/model/ModelImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/cs5004/animator/model/AnimationTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/A9.iml" beforeDir="false" afterPath="$PROJECT_DIR$/A9.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cs5004/animator/model/ChangeColorAnimation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs5004/animator/model/ChangeColorAnimation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cs5004/animator/model/ColorType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs5004/animator/model/ColorType.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/cs5004/animator/model/MoveAnimation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs5004/animator/model/MoveAnimation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cs5004/animator/model/ScaleAnimation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs5004/animator/model/ScaleAnimation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cs5004/animator/model/modelImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs5004/animator/model/ModelImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/cs5004/animator/model/ModelImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/cs5004/animator/model/ModelImplTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +35,7 @@
       <list>
         <option value="Enum" />
         <option value="Class" />
+        <option value="JUnit4 Test Class" />
       </list>
     </option>
   </component>
@@ -58,16 +55,24 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="cs5004.animator.model" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/cs5004/animator/model" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ModelImplTest">
-    <configuration name="ModelImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.ModelImplTest.testAddAnimation1">
+    <configuration name="AnimationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="A9" />
       <extension name="coverage">
         <pattern>
@@ -76,13 +81,13 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="cs5004.animator.model" />
-      <option name="MAIN_CLASS_NAME" value="cs5004.animator.model.ModelImplTest" />
+      <option name="MAIN_CLASS_NAME" value="cs5004.animator.model.AnimationTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ModelImplTest.deleteShape2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AnimationTest.runAnimation3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="A9" />
       <extension name="coverage">
         <pattern>
@@ -91,8 +96,40 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="cs5004.animator.model" />
-      <option name="MAIN_CLASS_NAME" value="cs5004.animator.model.ModelImplTest" />
-      <option name="METHOD_NAME" value="deleteShape2" />
+      <option name="MAIN_CLASS_NAME" value="cs5004.animator.model.AnimationTest" />
+      <option name="METHOD_NAME" value="runAnimation3" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AnimationTest.runAnimation4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="A9" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cs5004.animator.model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cs5004.animator.model" />
+      <option name="MAIN_CLASS_NAME" value="cs5004.animator.model.AnimationTest" />
+      <option name="METHOD_NAME" value="runAnimation4" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AnimationTest.runAnimationInvalid" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="A9" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cs5004.animator.model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cs5004.animator.model" />
+      <option name="MAIN_CLASS_NAME" value="cs5004.animator.model.AnimationTest" />
+      <option name="METHOD_NAME" value="runAnimationInvalid" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -114,45 +151,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ModelImplTest.testAddAnimationInvalid1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="A9" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cs5004.animator.model.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="cs5004.animator.model" />
-      <option name="MAIN_CLASS_NAME" value="cs5004.animator.model.ModelImplTest" />
-      <option name="METHOD_NAME" value="testAddAnimationInvalid1" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ModelImplTest.testGetAllAnimationSortedByTime1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="A9" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cs5004.animator.model.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="cs5004.animator.model" />
-      <option name="MAIN_CLASS_NAME" value="cs5004.animator.model.ModelImplTest" />
-      <option name="METHOD_NAME" value="testGetAllAnimationSortedByTime1" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ModelImplTest" />
-        <item itemvalue="JUnit.ModelImplTest.testAddAnimationInvalid1" />
         <item itemvalue="JUnit.ModelImplTest.testAddAnimation1" />
-        <item itemvalue="JUnit.ModelImplTest.testGetAllAnimationSortedByTime1" />
-        <item itemvalue="JUnit.ModelImplTest.deleteShape2" />
+        <item itemvalue="JUnit.AnimationTest" />
+        <item itemvalue="JUnit.AnimationTest.runAnimationInvalid" />
+        <item itemvalue="JUnit.AnimationTest.runAnimation4" />
+        <item itemvalue="JUnit.AnimationTest.runAnimation3" />
       </list>
     </recent_temporary>
   </component>
@@ -210,32 +215,32 @@
     <option name="LAST_COMMIT_MESSAGE" value="Update toString method for ColorType and Position2D&#10;Add String representation method: textRender to Oval and Rectangle class;" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="264" y="90" width="1567" height="764" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1595804462687">
+    <state x="30" y="770" width="1567" height="764" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1595872587084">
       <screen x="0" y="23" width="1920" height="1006" />
     </state>
-    <state x="264" y="90" width="1567" height="764" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.23.1920.1006@0.23.1920.1006" timestamp="1595804462687" />
+    <state x="30" y="770" width="1567" height="764" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.23.1920.1006@0.23.1920.1006" timestamp="1595872587084" />
     <state x="2209" y="195" key="#com.intellij.ide.util.MemberChooser" timestamp="1595709499004">
       <screen x="1280" y="-78" width="1920" height="1080" />
     </state>
     <state x="2209" y="195" key="#com.intellij.ide.util.MemberChooser/0.0.1280.800/1280.-78.1920.1080@1280.-78.1920.1080" timestamp="1595709499004" />
     <state x="2209" y="195" key="#com.intellij.ide.util.MemberChooser/0.23.1280.777/1280.-78.1920.1080@1280.-78.1920.1080" timestamp="1595707487418" />
     <state x="929" y="277" key="#com.intellij.ide.util.MemberChooser/0.23.1920.1006@0.23.1920.1006" timestamp="1595700503632" />
-    <state width="1725" height="134" key="GridCell.Tab.0.bottom" timestamp="1595805186345">
+    <state width="1725" height="52" key="GridCell.Tab.0.bottom" timestamp="1595873118543">
       <screen x="0" y="23" width="1920" height="1006" />
     </state>
-    <state width="1725" height="134" key="GridCell.Tab.0.bottom/0.23.1920.1006@0.23.1920.1006" timestamp="1595805186345" />
-    <state width="1725" height="134" key="GridCell.Tab.0.center" timestamp="1595805186345">
+    <state width="1725" height="52" key="GridCell.Tab.0.bottom/0.23.1920.1006@0.23.1920.1006" timestamp="1595873118543" />
+    <state width="1725" height="52" key="GridCell.Tab.0.center" timestamp="1595873118543">
       <screen x="0" y="23" width="1920" height="1006" />
     </state>
-    <state width="1725" height="134" key="GridCell.Tab.0.center/0.23.1920.1006@0.23.1920.1006" timestamp="1595805186345" />
-    <state width="1725" height="134" key="GridCell.Tab.0.left" timestamp="1595805186344">
+    <state width="1725" height="52" key="GridCell.Tab.0.center/0.23.1920.1006@0.23.1920.1006" timestamp="1595873118543" />
+    <state width="1725" height="52" key="GridCell.Tab.0.left" timestamp="1595873118542">
       <screen x="0" y="23" width="1920" height="1006" />
     </state>
-    <state width="1725" height="134" key="GridCell.Tab.0.left/0.23.1920.1006@0.23.1920.1006" timestamp="1595805186344" />
-    <state width="1725" height="134" key="GridCell.Tab.0.right" timestamp="1595805186345">
+    <state width="1725" height="52" key="GridCell.Tab.0.left/0.23.1920.1006@0.23.1920.1006" timestamp="1595873118542" />
+    <state width="1725" height="52" key="GridCell.Tab.0.right" timestamp="1595873118543">
       <screen x="0" y="23" width="1920" height="1006" />
     </state>
-    <state width="1725" height="134" key="GridCell.Tab.0.right/0.23.1920.1006@0.23.1920.1006" timestamp="1595805186345" />
+    <state width="1725" height="52" key="GridCell.Tab.0.right/0.23.1920.1006@0.23.1920.1006" timestamp="1595873118543" />
     <state width="1725" height="84" key="GridCell.Tab.1.bottom" timestamp="1595804639917">
       <screen x="0" y="23" width="1920" height="1006" />
     </state>
@@ -272,6 +277,10 @@
       <screen x="1280" y="-78" width="1920" height="1080" />
     </state>
     <state x="1840" y="202" key="Vcs.Push.Dialog.v2/0.0.1280.800/1280.-78.1920.1080@1280.-78.1920.1080" timestamp="1595712782946" />
+    <state x="806" y="239" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1595870405449">
+      <screen x="0" y="23" width="1920" height="1006" />
+    </state>
+    <state x="806" y="239" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.23.1920.1006@0.23.1920.1006" timestamp="1595870405449" />
     <state width="600" height="424" key="javadoc.popup" timestamp="1595804868758">
       <screen x="0" y="23" width="1920" height="1006" />
     </state>
