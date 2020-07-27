@@ -19,9 +19,18 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ecaef312-16ff-4a36-a98b-a08b286a985a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/cs5004/animator/model/AbstractShape.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs5004/animator/model/AbstractShape.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cs5004/animator/model/ColorType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs5004/animator/model/ColorType.java" afterDir="false" />
+    <list default="true" id="ecaef312-16ff-4a36-a98b-a08b286a985a" name="Default Changelist" comment="Add hashcode and equals to the ColorType">
+      <change afterPath="$PROJECT_DIR$/test/cs5004/animator/model/ShapeFactoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/cs5004/animator/model/ShapeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/A9.iml" beforeDir="false" afterPath="$PROJECT_DIR$/A9.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A9/cs5004/animator/model/ChangeColorAnimation.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A9/cs5004/animator/model/ChangeColorAnimation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A9/cs5004/animator/model/ColorType.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A9/cs5004/animator/model/ColorType.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A9/cs5004/animator/model/Position2D.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A9/cs5004/animator/model/Position2D.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A9/cs5004/animator/model/ShapeFactory$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A9/cs5004/animator/model/ShapeFactory$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A9/cs5004/animator/model/ShapeFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A9/cs5004/animator/model/ShapeFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cs5004/animator/model/Position2D.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs5004/animator/model/Position2D.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cs5004/animator/model/ShapeFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs5004/animator/model/ShapeFactory.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +42,7 @@
       <list>
         <option value="Enum" />
         <option value="Class" />
+        <option value="JUnit4 Test Class" />
       </list>
     </option>
   </component>
@@ -49,19 +59,31 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="cs5004.animator.model" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/cs5004/animator/model" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ModelImplTest">
-    <configuration name="ModelImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.ShapeTest">
+    <configuration name="ShapeFactoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="A9" />
       <extension name="coverage">
         <pattern>
@@ -70,13 +92,13 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="cs5004.animator.model" />
-      <option name="MAIN_CLASS_NAME" value="cs5004.animator.model.ModelImplTest" />
+      <option name="MAIN_CLASS_NAME" value="cs5004.animator.model.ShapeFactoryTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ModelImplTest.deleteShape2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ShapeFactoryTest.buildShape" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="A9" />
       <extension name="coverage">
         <pattern>
@@ -85,14 +107,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="cs5004.animator.model" />
-      <option name="MAIN_CLASS_NAME" value="cs5004.animator.model.ModelImplTest" />
-      <option name="METHOD_NAME" value="deleteShape2" />
+      <option name="MAIN_CLASS_NAME" value="cs5004.animator.model.ShapeFactoryTest" />
+      <option name="METHOD_NAME" value="buildShape" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ModelImplTest.testAddAnimation1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ShapeFactoryTest.invalidOvalAppearDisappear" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="A9" />
       <extension name="coverage">
         <pattern>
@@ -101,14 +123,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="cs5004.animator.model" />
-      <option name="MAIN_CLASS_NAME" value="cs5004.animator.model.ModelImplTest" />
-      <option name="METHOD_NAME" value="testAddAnimation1" />
+      <option name="MAIN_CLASS_NAME" value="cs5004.animator.model.ShapeFactoryTest" />
+      <option name="METHOD_NAME" value="invalidOvalAppearDisappear" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ModelImplTest.testAddAnimationInvalid1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ShapeFactoryTest.nullType" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="A9" />
       <extension name="coverage">
         <pattern>
@@ -117,14 +139,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="cs5004.animator.model" />
-      <option name="MAIN_CLASS_NAME" value="cs5004.animator.model.ModelImplTest" />
-      <option name="METHOD_NAME" value="testAddAnimationInvalid1" />
+      <option name="MAIN_CLASS_NAME" value="cs5004.animator.model.ShapeFactoryTest" />
+      <option name="METHOD_NAME" value="nullType" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ModelImplTest.testGetAllAnimationSortedByTime1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ShapeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="A9" />
       <extension name="coverage">
         <pattern>
@@ -133,20 +155,19 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="cs5004.animator.model" />
-      <option name="MAIN_CLASS_NAME" value="cs5004.animator.model.ModelImplTest" />
-      <option name="METHOD_NAME" value="testGetAllAnimationSortedByTime1" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="MAIN_CLASS_NAME" value="cs5004.animator.model.ShapeTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ModelImplTest" />
-        <item itemvalue="JUnit.ModelImplTest.testAddAnimationInvalid1" />
-        <item itemvalue="JUnit.ModelImplTest.testAddAnimation1" />
-        <item itemvalue="JUnit.ModelImplTest.testGetAllAnimationSortedByTime1" />
-        <item itemvalue="JUnit.ModelImplTest.deleteShape2" />
+        <item itemvalue="JUnit.ShapeTest" />
+        <item itemvalue="JUnit.ShapeFactoryTest" />
+        <item itemvalue="JUnit.ShapeFactoryTest.invalidOvalAppearDisappear" />
+        <item itemvalue="JUnit.ShapeFactoryTest.nullType" />
+        <item itemvalue="JUnit.ShapeFactoryTest.buildShape" />
       </list>
     </recent_temporary>
   </component>
@@ -182,7 +203,14 @@
       <option name="project" value="LOCAL" />
       <updated>1595712701374</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Add hashcode and equals to the ColorType">
+      <created>1595807217951</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1595807217951</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -200,12 +228,14 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Update abstract shape and add two shapes class: Rectangle and Oval.&#10;Update Position2D class.&#10;Change position x y from float to double.&#10;Add ShapeType and ColorType enum." />
     <MESSAGE value="Update toString method for ColorType and Position2D&#10;Add String representation method: textRender to Oval and Rectangle class;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update toString method for ColorType and Position2D&#10;Add String representation method: textRender to Oval and Rectangle class;" />
+    <MESSAGE value="Add hashcode and equals to the ColorType" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add hashcode and equals to the ColorType" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="264" y="90" width="1567" height="764" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1595804462687">
-      <screen x="0" y="23" width="1920" height="1006" />
+    <state x="1544" y="-6" width="1567" height="821" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1595824966619">
+      <screen x="1280" y="-78" width="1920" height="1080" />
     </state>
+    <state x="1544" y="-6" width="1567" height="821" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1280.800/1280.-78.1920.1080@1280.-78.1920.1080" timestamp="1595824966619" />
     <state x="264" y="90" width="1567" height="764" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.23.1920.1006@0.23.1920.1006" timestamp="1595804462687" />
     <state x="2209" y="195" key="#com.intellij.ide.util.MemberChooser" timestamp="1595709499004">
       <screen x="1280" y="-78" width="1920" height="1080" />
@@ -213,37 +243,45 @@
     <state x="2209" y="195" key="#com.intellij.ide.util.MemberChooser/0.0.1280.800/1280.-78.1920.1080@1280.-78.1920.1080" timestamp="1595709499004" />
     <state x="2209" y="195" key="#com.intellij.ide.util.MemberChooser/0.23.1280.777/1280.-78.1920.1080@1280.-78.1920.1080" timestamp="1595707487418" />
     <state x="929" y="277" key="#com.intellij.ide.util.MemberChooser/0.23.1920.1006@0.23.1920.1006" timestamp="1595700503632" />
-    <state width="1725" height="134" key="GridCell.Tab.0.bottom" timestamp="1595805186345">
-      <screen x="0" y="23" width="1920" height="1006" />
+    <state width="1878" height="185" key="GridCell.Tab.0.bottom" timestamp="1595825386775">
+      <screen x="1280" y="-78" width="1920" height="1080" />
     </state>
+    <state width="1878" height="185" key="GridCell.Tab.0.bottom/0.0.1280.800/1280.-78.1920.1080@1280.-78.1920.1080" timestamp="1595825386775" />
     <state width="1725" height="134" key="GridCell.Tab.0.bottom/0.23.1920.1006@0.23.1920.1006" timestamp="1595805186345" />
-    <state width="1725" height="134" key="GridCell.Tab.0.center" timestamp="1595805186345">
-      <screen x="0" y="23" width="1920" height="1006" />
+    <state width="1878" height="185" key="GridCell.Tab.0.center" timestamp="1595825386773">
+      <screen x="1280" y="-78" width="1920" height="1080" />
     </state>
+    <state width="1878" height="185" key="GridCell.Tab.0.center/0.0.1280.800/1280.-78.1920.1080@1280.-78.1920.1080" timestamp="1595825386773" />
     <state width="1725" height="134" key="GridCell.Tab.0.center/0.23.1920.1006@0.23.1920.1006" timestamp="1595805186345" />
-    <state width="1725" height="134" key="GridCell.Tab.0.left" timestamp="1595805186344">
-      <screen x="0" y="23" width="1920" height="1006" />
+    <state width="1878" height="185" key="GridCell.Tab.0.left" timestamp="1595825386772">
+      <screen x="1280" y="-78" width="1920" height="1080" />
     </state>
+    <state width="1878" height="185" key="GridCell.Tab.0.left/0.0.1280.800/1280.-78.1920.1080@1280.-78.1920.1080" timestamp="1595825386772" />
     <state width="1725" height="134" key="GridCell.Tab.0.left/0.23.1920.1006@0.23.1920.1006" timestamp="1595805186344" />
-    <state width="1725" height="134" key="GridCell.Tab.0.right" timestamp="1595805186345">
-      <screen x="0" y="23" width="1920" height="1006" />
+    <state width="1878" height="185" key="GridCell.Tab.0.right" timestamp="1595825386774">
+      <screen x="1280" y="-78" width="1920" height="1080" />
     </state>
+    <state width="1878" height="185" key="GridCell.Tab.0.right/0.0.1280.800/1280.-78.1920.1080@1280.-78.1920.1080" timestamp="1595825386774" />
     <state width="1725" height="134" key="GridCell.Tab.0.right/0.23.1920.1006@0.23.1920.1006" timestamp="1595805186345" />
-    <state width="1725" height="84" key="GridCell.Tab.1.bottom" timestamp="1595804639917">
-      <screen x="0" y="23" width="1920" height="1006" />
+    <state width="1878" height="376" key="GridCell.Tab.1.bottom" timestamp="1595824662706">
+      <screen x="1280" y="-78" width="1920" height="1080" />
     </state>
+    <state width="1878" height="376" key="GridCell.Tab.1.bottom/0.0.1280.800/1280.-78.1920.1080@1280.-78.1920.1080" timestamp="1595824662706" />
     <state width="1725" height="84" key="GridCell.Tab.1.bottom/0.23.1920.1006@0.23.1920.1006" timestamp="1595804639917" />
-    <state width="1725" height="84" key="GridCell.Tab.1.center" timestamp="1595804639916">
-      <screen x="0" y="23" width="1920" height="1006" />
+    <state width="1878" height="376" key="GridCell.Tab.1.center" timestamp="1595824662701">
+      <screen x="1280" y="-78" width="1920" height="1080" />
     </state>
+    <state width="1878" height="376" key="GridCell.Tab.1.center/0.0.1280.800/1280.-78.1920.1080@1280.-78.1920.1080" timestamp="1595824662701" />
     <state width="1725" height="84" key="GridCell.Tab.1.center/0.23.1920.1006@0.23.1920.1006" timestamp="1595804639916" />
-    <state width="1725" height="84" key="GridCell.Tab.1.left" timestamp="1595804639916">
-      <screen x="0" y="23" width="1920" height="1006" />
+    <state width="1878" height="376" key="GridCell.Tab.1.left" timestamp="1595824662699">
+      <screen x="1280" y="-78" width="1920" height="1080" />
     </state>
+    <state width="1878" height="376" key="GridCell.Tab.1.left/0.0.1280.800/1280.-78.1920.1080@1280.-78.1920.1080" timestamp="1595824662699" />
     <state width="1725" height="84" key="GridCell.Tab.1.left/0.23.1920.1006@0.23.1920.1006" timestamp="1595804639916" />
-    <state width="1725" height="84" key="GridCell.Tab.1.right" timestamp="1595804639917">
-      <screen x="0" y="23" width="1920" height="1006" />
+    <state width="1878" height="376" key="GridCell.Tab.1.right" timestamp="1595824662702">
+      <screen x="1280" y="-78" width="1920" height="1080" />
     </state>
+    <state width="1878" height="376" key="GridCell.Tab.1.right/0.0.1280.800/1280.-78.1920.1080@1280.-78.1920.1080" timestamp="1595824662702" />
     <state width="1725" height="84" key="GridCell.Tab.1.right/0.23.1920.1006@0.23.1920.1006" timestamp="1595804639917" />
     <state width="1725" height="84" key="GridCell.Tab.2.bottom" timestamp="1595804639918">
       <screen x="0" y="23" width="1920" height="1006" />
@@ -261,10 +299,18 @@
       <screen x="0" y="23" width="1920" height="1006" />
     </state>
     <state width="1725" height="84" key="GridCell.Tab.2.right/0.23.1920.1006@0.23.1920.1006" timestamp="1595804639918" />
-    <state x="1840" y="202" key="Vcs.Push.Dialog.v2" timestamp="1595712782946">
+    <state x="1840" y="202" key="Vcs.Push.Dialog.v2" timestamp="1595807232095">
       <screen x="1280" y="-78" width="1920" height="1080" />
     </state>
-    <state x="1840" y="202" key="Vcs.Push.Dialog.v2/0.0.1280.800/1280.-78.1920.1080@1280.-78.1920.1080" timestamp="1595712782946" />
+    <state x="1840" y="202" key="Vcs.Push.Dialog.v2/0.0.1280.800/1280.-78.1920.1080@1280.-78.1920.1080" timestamp="1595807232095" />
+    <state x="1963" y="361" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1595807471775">
+      <screen x="1280" y="-78" width="1920" height="1080" />
+    </state>
+    <state x="1963" y="361" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1280.800/1280.-78.1920.1080@1280.-78.1920.1080" timestamp="1595807471775" />
+    <state x="2019" y="143" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1595825055362">
+      <screen x="1280" y="-78" width="1920" height="1080" />
+    </state>
+    <state x="2019" y="143" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1280.800/1280.-78.1920.1080@1280.-78.1920.1080" timestamp="1595825055362" />
     <state width="600" height="424" key="javadoc.popup" timestamp="1595804868758">
       <screen x="0" y="23" width="1920" height="1006" />
     </state>
