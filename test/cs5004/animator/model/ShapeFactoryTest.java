@@ -12,15 +12,14 @@ public class ShapeFactoryTest {
 
   @Test
   public void buildShape() {
-    ShapeFactory shapeFactory = new ShapeFactory();
-    AbstractShape rec = shapeFactory.buildShape("R", ShapeType.RECTANGLE,
+    AbstractShape rec = ShapeFactory.buildShape("R", ShapeType.RECTANGLE,
             new ColorType(1.0f, 0.0f, 0.0f), new Position2D(200.0, 200.0),
             50.0, 100.0, 1, 100);
     assertEquals("Name: R\nType: rectangle\nMin corner: (200.0,200.0), Width: 50.0, " +
                     "Height: 100.0, Color: (1.0,0.0,0.0)\nAppears at t=1\nDisappears at t=100\n",
             rec.textRender());
 
-    AbstractShape oval = shapeFactory.buildShape("O", ShapeType.OVAL,
+    AbstractShape oval = ShapeFactory.buildShape("O", ShapeType.OVAL,
             new ColorType(0.0f, 0.0f, 1.0f), new Position2D(500.0, 100.0),
             60.0, 30.0, 6, 100);
     assertEquals("O", oval.getName());
@@ -31,16 +30,14 @@ public class ShapeFactoryTest {
 
   @Test(expected = IllegalArgumentException.class)
   public void nullType() {
-    ShapeFactory shapeFactory = new ShapeFactory();
-    AbstractShape oval = shapeFactory.buildShape("R", null,
+    AbstractShape oval = ShapeFactory.buildShape("R", null,
             new ColorType(0.0f, 0.0f, 1.0f), new Position2D(500.0, 100.0),
             60.0, 30.0, 6, 100);
   }
 
   @Test(expected = IllegalArgumentException.class)
   public void invalidAppearDisappear() {
-    ShapeFactory shapeFactory = new ShapeFactory();
-    AbstractShape oval = shapeFactory.buildShape("R", ShapeType.OVAL,
+    AbstractShape oval = ShapeFactory.buildShape("R", ShapeType.OVAL,
             new ColorType(1.0f, 0.0f, 0.0f), new Position2D(200.0, 200.0),
             50.0, 100.0, 50, 2);
   }

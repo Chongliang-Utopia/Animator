@@ -205,8 +205,8 @@ public class AnimationTest {
      */
     @Test
     public void testToString1() {
-        assertEquals("Shape R move from (200.0, 200.0) to "
-               + "(300.0, 300.0) from t=10 to t=50", moveAni1.toString());
+        assertEquals("Shape R move from (200.0,200.0) to "
+               + "(300.0,300.0) from t=10 to t=50", moveAni1.toString());
     }
 
     /**
