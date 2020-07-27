@@ -57,4 +57,21 @@ public class ColorType {
             + String.format("%.1f", green) + "," + String.format("%.1f", blue) + ")";
   }
 
+  @Override
+  public boolean equals(Object o) {
+    if (this == o) {
+      return true;
+    }
+    if (!(o instanceof ColorType)) {
+      return false;
+    }
+    ColorType other = (ColorType) o;
+    return this.red == other.red && this.green == other.green && this.blue == other.blue;
+  }
+
+  @Override
+  public int hashCode() {
+    return Objects.hash(this.red, this.blue, this.green);
+  }
+
 }
