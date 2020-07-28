@@ -53,6 +53,12 @@ public class ScaleAnimation extends AbstractAnimation{
     @Override
     public AbstractShape runAnimation(AbstractShape shape, int curTime)
             throws IllegalArgumentException{
+        if (shape == null) {
+            throw new IllegalArgumentException("shape can not be null");
+        }
+        if (!(curTime <= shape.getDisappearTime())) {
+            throw new IllegalArgumentException("shape has disappeared");
+        }
         double curWidth = this.calculateState(fromDimension.get(0), toDimension.get(0), curTime);
         double curHeight = this.calculateState(fromDimension.get(1), toDimension.get(1), curTime);
         // Create an updated shape.

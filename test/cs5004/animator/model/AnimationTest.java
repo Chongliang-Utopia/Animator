@@ -192,6 +192,21 @@ public class AnimationTest {
     }
 
     /**
+     * Test runAnimation.
+     */
+    @Test (expected = IllegalArgumentException.class)
+    public void runAnimation5() {
+        AbstractShape expectedShape = new Rectangle("R", ShapeType.RECTANGLE,
+                new ColorType(1.0f, 0.0f, 0.0f),
+                new Position2D(300.0, 300.0),
+                38.2, 100.0, 1, 100);
+        AbstractShape scaleShape = moveAni1.runAnimation(r, 60);
+        // When the shape has already disappeared
+        assertEquals(expectedShape.textRender(),
+                scaleAni.runAnimation(scaleShape, 120).textRender());
+    }
+
+    /**
      * Test calculate state.
      */
     @Test

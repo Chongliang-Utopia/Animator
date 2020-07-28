@@ -46,6 +46,12 @@ public class ChangeColorAnimation extends AbstractAnimation {
     @Override
     public AbstractShape runAnimation(AbstractShape shape, int curTime)
             throws IllegalArgumentException {
+        if (shape == null) {
+            throw new IllegalArgumentException("shape can not be null");
+        }
+        if (!(curTime <= shape.getDisappearTime())) {
+            throw new IllegalArgumentException("shape has disappeared");
+        }
         ColorType curColor = new ColorType(
                 (float)this.calculateState(startColor.getRed(), endColor.getRed(), curTime),
                 (float)this.calculateState(startColor.getGreen(), endColor.getGreen(), curTime),
