@@ -3,7 +3,7 @@ A Java swing GUI application which allows for creation of 2D animation of shapes
 It's created following the model-view-controller design pattern.
 
 # Model
-The overral design of the model consist of two parts, the Data managing part and individual parts that represent 2D shapes and
+The overal design of the model consist of two parts, the Data managing part and individual parts that represent 2D shapes and
 animations.
 The following concrete classes/abstract classes/interfaces are created for the model of the easy animator. 
 
