@@ -10,7 +10,7 @@ The following concrete classes/abstract classes/interfaces are created for the m
 
 - **Data Managing Part**
 
-    - **IModel**: This interface represents the operations that can be called on the model.It predefines methods to get a 
+    - **IModel**: This interface represents the operations that can be called on the model. It predefines methods to get a 
     deep copy of all the shapes and a deep copy of the animations in sorted order by starting time. It also defines methods to 
     add a shape, delete a shape and add an animation.
     
@@ -48,3 +48,16 @@ The following concrete classes/abstract classes/interfaces are created for the m
     
 - **Shapes** 
     
+    - **AbstractShape**: This abstract class respresents an abstract shape in the model, which contains all common               attributes of shapes: a name, type, color, position, display, appear time, disappear time. It can provide some useful       details of shape for others to retrieve. It also tracks all of the properties in the shape that can be modified, the         operations that will be performed on it, and its own text representation. 
+    
+    - **Oval**: This class extends the AbstractShape and represents an oval object in an animation. It has all of the fields    of an AbstractShape and its dimensions consist of its x radius and y radius. It has overriden equals and hashCode method      so that it can be used to compare with other objects. It also has a detailed implementation for the textRender method,      which returns a string representation of the shape details. 
+
+    - **Rectangle**: This calss represents a rectangle object in an animation. It has all of the fields of an AbstractShape     and its dimenstions consist of its width and height. It has overriden equals and hashCode method so that it can be           used to compare with other objects. It also has a detailed implementation for the textRender method, which returns a         string representation of the shape details. 
+    
+    - **ShapeFactory**: This class is used as a factory pattern to generate an abstract shape according to the given             paramenters.  
+
+    - **ShapeType**: An enum to represent a shape type. Currently, it includes rectangle and oval and it also has toString       method.
+    
+    - **ColorType**: This class represents a color using three float values, which are in the order of Red, Green, and Blue.     It contains the methods to get the attributes properly, as well as the overriden toString, equals, and hashCode.
+    
+    - **Position2D**: This class represents a position, which uses two decimal numbers as x and y of some objects in the         background of animation. It contains the methods to get the attributes properly, as well as the overriden toString,         equals, and hashCode.
