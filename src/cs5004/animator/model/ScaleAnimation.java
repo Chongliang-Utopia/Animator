@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 /**
  * A class represents an animation to scale the shape in width or height, it extends
- * the AbstractAnimation class. It stores the start position and end position of the animation.
+ * the AbstractAnimation class. It stores the start dimension and end dimension of the animation.
  * It can also call a method to run the animation and get an updated Abstract shape.
  */
 public class ScaleAnimation extends AbstractAnimation{

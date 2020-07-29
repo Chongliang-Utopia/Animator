@@ -10,13 +10,15 @@ import java.util.TreeMap;
 /**
  * A class represent the implementation of the IModel, a concrete class as the model of
  * the animator.  It includes all the methods that the model are supposed to
- * return to the outside world.
+ * return to the outside world. It stores all the shapes in a Map, and uses the name of
+ * the shape as the key to enforce fast look up. It has stores all the animations in a Map,
+ * using the start time of the animation as the key since the order of the animation matters.
  */
 public class ModelImpl implements IModel {
-    // Use shape name as the key for the map.
+    // Use shape name as the key for the map for fast lookup.
     private Map<String, AbstractShape> allShapes;
     // Use start time of the animation as the key for the map.
-    // It stores a list of animation under the specific time.
+    // It stores a list of animation under the specific time since the start time matters.
     private Map<Integer, List<AbstractAnimation>> allAnimations;
 
     /**

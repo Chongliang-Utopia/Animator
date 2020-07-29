@@ -3,9 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="e010ddcc-834b-4ea7-9910-0a2fa85a928f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cs5004/animator/model/ChangeColorAnimation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs5004/animator/model/ChangeColorAnimation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cs5004/animator/model/ModelImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs5004/animator/model/ModelImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/cs5004/animator/model/ScaleAnimation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs5004/animator/model/ScaleAnimation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/cs5004/animator/model/AnimationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/cs5004/animator/model/AnimationTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
