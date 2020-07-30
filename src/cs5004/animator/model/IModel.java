@@ -15,11 +15,25 @@ public interface IModel {
     Map<String, AbstractShape> getAllShape();
 
     /**
+     * Return a copy of the shapes in the model at Given time.
+     * All the shapes that are visible at the given time will be included in the map.
+     * @return a copy of the shapes in the model at Given time.
+     */
+    Map<String, AbstractShape> getAllShapeAtGivenTime(int time);
+
+    /**
      * Return a copy of all the animations in the model sorted by time.
      * @return a copy of all the animations in the model sorted by time, use start time of
      * the animation as the key for the map, it stores a list of animation under the specific time.
      */
     Map<Integer, List<AbstractAnimation>> getAllAnimationSortedByTime();
+
+    /**
+     * Return a sorted copy of all the animations that has started at given time.
+     * @return sorted copy of all the animations that has started at given time, use start time of
+     * the animation as the key for the map, it stores a list of animation under the specific time.
+     */
+    Map<Integer, List<AbstractAnimation>> getAllSortedAnimationAtGivenTime(int time);
 
     /**
      * Add a shape to the model.

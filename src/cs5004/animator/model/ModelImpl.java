@@ -9,10 +9,15 @@ import java.util.TreeMap;
 
 /**
  * A class represent the implementation of the IModel, a concrete class as the model of
- * the animator.  It includes all the methods that the model are supposed to
- * return to the outside world. It stores all the shapes in a Map, and uses the name of
- * the shape as the key to enforce fast look up. It has stores all the animations in a Map,
- * using the start time of the animation as the key since the order of the animation matters.
+ * the animator.
+ * Internally, it stores all the shapes in a Map, and uses the name of the shape as
+ * the key to enforce fast look up. It has stores all the animations in a Map, using the start
+ * time of the animation as the key since the order of the animation matters.
+ * Externally, it allows to get a deep copy of all the shapes and a deep copy of the
+ * animations sorted by starting time. It also include methods to add a shape, delete a shape
+ * and add an animation. Additionally, it offers a method to get a copy of all the invisible
+ * shapes at a given time and a method to get a copy of all the animation which start before
+ * a given time.
  */
 public class ModelImpl implements IModel {
     // Use shape name as the key for the map for fast lookup.
@@ -55,6 +60,25 @@ public class ModelImpl implements IModel {
     }
 
     /**
+     * Return a copy of the shapes in the model at Given time.
+     * All the shapes that are visible at the given time will be included in the map returned.
+     * @return a copy of the shapes in the model at Given time.
+     */
+    @Override
+    public Map<String, AbstractShape> getAllShapeAtGivenTime(int time) {
+        Map<String, AbstractShape> allShapesAtGivenTime = new HashMap<>();
+        for (Map.Entry<String, AbstractShape> entry : allShapes.entrySet()) {
+            // Check if the shape is visible. If not, then do not add it to the result.
+            if (entry.getValue().getAppearTime() > time ||
+            entry.getValue().getDisappearTime() <= time) {
+                continue;
+            }
+            allShapesAtGivenTime.put(entry.getKey(), entry.getValue());
+        }
+        return allShapesAtGivenTime;
+    }
+
+    /**
      * Return a copy of all the animations in the model sorted by time.
      * @return a copy of all the animations in the model sorted by time, use start time of
      * the animation as the key for the map, it stores a list of animation under the specific time.
@@ -67,6 +91,40 @@ public class ModelImpl implements IModel {
             sortedAnimations.put(key, new ArrayList<>(allAnimations.get(key)));
         }
         return sortedAnimations;
+    }
+
+    /**
+     * Return a sorted copy of all the animations that has started at given time.
+     * If for an animation, the shape that this animation is for has disappeared or has not
+     * appeared, then we do not need to add the animation to the result.
+     * @return sorted copy of all the animations that has started at given time, use start time of
+     * the animation as the key for the map, it stores a list of animation under the specific time.
+     */
+    @Override
+    public Map<Integer, List<AbstractAnimation>> getAllSortedAnimationAtGivenTime(int time) {
+        Map<Integer, List<AbstractAnimation>> sortedAnimationsAtGivenTime = new TreeMap<>(
+                Comparator.comparingInt(a -> a));
+        for (int key: allAnimations.keySet()) {
+            // Check if the animation has started.
+            if (key <= time) {
+                sortedAnimationsAtGivenTime.put(key, new ArrayList<>());
+                for (AbstractAnimation ani : allAnimations.get(key)) {
+                    // If the shape for this animation is not visible, then
+                    // we do not have to add it to the result.
+                    if (allShapes.get(ani.getShapeName()).getDisappearTime() <= time ||
+                            allShapes.get(ani.getShapeName()).getAppearTime() > time) {
+                        continue;
+                    }
+                    sortedAnimationsAtGivenTime.get(key).add(ani);
+                }
+                // If all the animation under the key is not visible, we do not even need
+                // to put in the map.
+                if (sortedAnimationsAtGivenTime.get(key).size() == 0) {
+                    sortedAnimationsAtGivenTime.remove(key);
+                }
+            }
+        }
+        return sortedAnimationsAtGivenTime;
     }
 
     /**
@@ -141,11 +199,13 @@ public class ModelImpl implements IModel {
      * @return whether the animation to add is valid
      */
     private boolean validAnimation(AbstractAnimation animation) {
+        // This shape has to exist in our allShapes map.
         if (!allShapes.containsKey(animation.getShapeName())) {
             return false;
         }
         for (List<AbstractAnimation> animations : allAnimations.values()) {
             for (AbstractAnimation existingAnimation : animations) {
+                // Check for contradiction.
                 if (existingAnimation.getShapeName().equals(animation.getShapeName())
                 && existingAnimation.getAnimationType() == animation.getAnimationType()) {
                     if (!(existingAnimation.getStartTime() >= animation.getEndTime())

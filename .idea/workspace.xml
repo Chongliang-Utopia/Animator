@@ -3,8 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="e010ddcc-834b-4ea7-9910-0a2fa85a928f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cs5004/animator/model/IModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs5004/animator/model/IModel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/cs5004/animator/model/ModelImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs5004/animator/model/ModelImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cs5004/animator/model/ScaleAnimation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs5004/animator/model/ScaleAnimation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/cs5004/animator/model/ModelImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/cs5004/animator/model/ModelImplTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,39 +43,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AnimationTest.runAnimation5" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Animator" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cs5004.animator.model.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="cs5004.animator.model" />
-      <option name="MAIN_CLASS_NAME" value="cs5004.animator.model.AnimationTest" />
-      <option name="METHOD_NAME" value="runAnimation5" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AnimationTest.testToString1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Animator" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cs5004.animator.model.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="cs5004.animator.model" />
-      <option name="MAIN_CLASS_NAME" value="cs5004.animator.model.AnimationTest" />
-      <option name="METHOD_NAME" value="testToString1" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ModelImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ModelImplTest.testGetAllSortedAnimationAtGivenTime2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Animator" />
       <extension name="coverage">
         <pattern>
@@ -84,12 +53,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="cs5004.animator.model" />
       <option name="MAIN_CLASS_NAME" value="cs5004.animator.model.ModelImplTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="METHOD_NAME" value="testGetAllSortedAnimationAtGivenTime2" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ShapeFactoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ModelImplTest.testGetAllSortedAnimationAtGivenTime3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Animator" />
       <extension name="coverage">
         <pattern>
@@ -98,8 +68,41 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="cs5004.animator.model" />
-      <option name="MAIN_CLASS_NAME" value="cs5004.animator.model.ShapeFactoryTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="MAIN_CLASS_NAME" value="cs5004.animator.model.ModelImplTest" />
+      <option name="METHOD_NAME" value="testGetAllSortedAnimationAtGivenTime3" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ModelImplTest.testGetAllSortedAnimationAtGivenTime4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Animator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cs5004.animator.model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cs5004.animator.model" />
+      <option name="MAIN_CLASS_NAME" value="cs5004.animator.model.ModelImplTest" />
+      <option name="METHOD_NAME" value="testGetAllSortedAnimationAtGivenTime4" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ModelImplTest.testGetAllSortedAnimationAtGivenTime5" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Animator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cs5004.animator.model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cs5004.animator.model" />
+      <option name="MAIN_CLASS_NAME" value="cs5004.animator.model.ModelImplTest" />
+      <option name="METHOD_NAME" value="testGetAllSortedAnimationAtGivenTime5" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -107,10 +110,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.AnimationTest and 3 more" />
-        <item itemvalue="JUnit.AnimationTest.runAnimation5" />
-        <item itemvalue="JUnit.ShapeFactoryTest" />
-        <item itemvalue="JUnit.AnimationTest.testToString1" />
-        <item itemvalue="JUnit.ModelImplTest" />
+        <item itemvalue="JUnit.ModelImplTest.testGetAllSortedAnimationAtGivenTime5" />
+        <item itemvalue="JUnit.ModelImplTest.testGetAllSortedAnimationAtGivenTime4" />
+        <item itemvalue="JUnit.ModelImplTest.testGetAllSortedAnimationAtGivenTime3" />
+        <item itemvalue="JUnit.ModelImplTest.testGetAllSortedAnimationAtGivenTime2" />
       </list>
     </recent_temporary>
   </component>
@@ -128,25 +131,33 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1725" height="70" key="GridCell.Tab.0.bottom" timestamp="1595896671466">
+    <state x="728" y="245" key="#com.intellij.ide.util.MemberChooser" timestamp="1596071515485">
       <screen x="0" y="23" width="1920" height="1006" />
     </state>
-    <state width="1725" height="70" key="GridCell.Tab.0.bottom/0.23.1920.1006@0.23.1920.1006" timestamp="1595896671466" />
-    <state width="1725" height="70" key="GridCell.Tab.0.center" timestamp="1595896671465">
+    <state x="728" y="245" key="#com.intellij.ide.util.MemberChooser/0.23.1920.1006@0.23.1920.1006" timestamp="1596071515485" />
+    <state width="1725" height="72" key="GridCell.Tab.0.bottom" timestamp="1596080552459">
       <screen x="0" y="23" width="1920" height="1006" />
     </state>
-    <state width="1725" height="70" key="GridCell.Tab.0.center/0.23.1920.1006@0.23.1920.1006" timestamp="1595896671465" />
-    <state width="1725" height="70" key="GridCell.Tab.0.left" timestamp="1595896671465">
+    <state width="1725" height="72" key="GridCell.Tab.0.bottom/0.23.1920.1006@0.23.1920.1006" timestamp="1596080552459" />
+    <state width="1725" height="72" key="GridCell.Tab.0.center" timestamp="1596080552459">
       <screen x="0" y="23" width="1920" height="1006" />
     </state>
-    <state width="1725" height="70" key="GridCell.Tab.0.left/0.23.1920.1006@0.23.1920.1006" timestamp="1595896671465" />
-    <state width="1725" height="70" key="GridCell.Tab.0.right" timestamp="1595896671465">
+    <state width="1725" height="72" key="GridCell.Tab.0.center/0.23.1920.1006@0.23.1920.1006" timestamp="1596080552459" />
+    <state width="1725" height="72" key="GridCell.Tab.0.left" timestamp="1596080552458">
       <screen x="0" y="23" width="1920" height="1006" />
     </state>
-    <state width="1725" height="70" key="GridCell.Tab.0.right/0.23.1920.1006@0.23.1920.1006" timestamp="1595896671465" />
+    <state width="1725" height="72" key="GridCell.Tab.0.left/0.23.1920.1006@0.23.1920.1006" timestamp="1596080552458" />
+    <state width="1725" height="72" key="GridCell.Tab.0.right" timestamp="1596080552459">
+      <screen x="0" y="23" width="1920" height="1006" />
+    </state>
+    <state width="1725" height="72" key="GridCell.Tab.0.right/0.23.1920.1006@0.23.1920.1006" timestamp="1596080552459" />
     <state x="395" y="127" key="SettingsEditor" timestamp="1595873576720">
       <screen x="0" y="23" width="1920" height="1006" />
     </state>
     <state x="395" y="127" key="SettingsEditor/0.23.1920.1006@0.23.1920.1006" timestamp="1595873576720" />
+    <state x="580" y="259" width="670" height="676" key="search.everywhere.popup" timestamp="1596071578445">
+      <screen x="0" y="23" width="1920" height="1006" />
+    </state>
+    <state x="580" y="259" width="670" height="676" key="search.everywhere.popup/0.23.1920.1006@0.23.1920.1006" timestamp="1596071578445" />
   </component>
 </project>
