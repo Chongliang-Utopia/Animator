@@ -11,15 +11,17 @@ The following concrete classes/abstract classes/interfaces are created for the m
 - **Data Managing Part**
 
     - **IModel**: This interface represents the operations that can be called on the model. It predefines methods to get a 
-    deep copy of all the shapes and a deep copy of the animations in sorted order by starting time. It also defines methods to 
-    add a shape, delete a shape and add an animation.
+    deep copy of all the shapes and a deep copy of the animations in sorted order by starting time or at a given time. 
+    It also defines methods to add a shape, delete a shape and add an animation.
     
     - **ModelImpl**: This class implements the IModel interface and represents the concrete model of the animator.
     *Internally*, it stores all the shapes in a Map, and uses the name of the shape as the key to enforce fast look up. 
     It has stores all the animations in a Map, using the start time of the animation as the key since the order of the 
     animation matters.
     *Externally*, it allows to get a deep copy of all the shapes and a deep copy of the animations sorted 
-    by starting time. It also include methods to add a shape, delete a shape and add an animation.
+    by starting time. It also include methods to add a shape, delete a shape and add an animation. Additionally,
+    it offers a method to get a copy of all the invisible shapes at a given time and a method to get a copy of all the 
+    animation which start before a given time.
     
  
 - **Animations**   
