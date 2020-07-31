@@ -72,7 +72,7 @@ public class MoveAnimation extends AbstractAnimation {
   public String toString() {
     return "Shape " + this.getShapeName() + " move from " + startPosition.toString()
             + " to " + endPosition.toString()
-            + " from t=" + this.getStartTime() + " to t=" + this.getEndTime();
+            + " from t=" + this.getStartTime() + " to t=" + this.getEndTime() + "\n";
   }
 
   /**

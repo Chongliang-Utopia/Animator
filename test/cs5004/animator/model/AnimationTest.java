@@ -221,7 +221,7 @@ public class AnimationTest {
     @Test
     public void testToString1() {
         assertEquals("Shape R move from (200.0,200.0) to "
-               + "(300.0,300.0) from t=10 to t=50", moveAni1.toString());
+               + "(300.0,300.0) from t=10 to t=50\n", moveAni1.toString());
     }
 
     /**
@@ -230,7 +230,7 @@ public class AnimationTest {
     @Test
     public void testToString2() {
         assertEquals("Shape C changes color from (0.0,0.0,1.0) to "
-                + "(0.0,1.0,0.0) from t=50 to t=80", changeColorAni.toString());
+                + "(0.0,1.0,0.0) from t=50 to t=80\n", changeColorAni.toString());
     }
 
     /**
@@ -239,6 +239,6 @@ public class AnimationTest {
     @Test
     public void testToString3() {
         assertEquals("Shape R scales from Width: 50.0 Height: 100.0 to"
-                + " Width: 25.0 Height: 100.0 from t=51 to t=70", scaleAni.toString());
+                + " Width: 25.0 Height: 100.0 from t=51 to t=70\n", scaleAni.toString());
     }
 }

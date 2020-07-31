@@ -81,7 +81,7 @@ public class ScaleAnimation extends AbstractAnimation{
                 + " Height: " + fromDimension.get(1)
                 + " to Width: " + toDimension.get(0)
                 + " Height: " + toDimension.get(1)
-                + " from t=" + this.getStartTime() + " to t=" + this.getEndTime();
+                + " from t=" + this.getStartTime() + " to t=" + this.getEndTime() + "\n";
     }
 
     /**

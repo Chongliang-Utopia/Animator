@@ -36,6 +36,12 @@ public interface IModel {
     Map<Integer, List<AbstractAnimation>> getAllSortedAnimationAtGivenTime(int time);
 
     /**
+     * Return a String representation of all the shapes and animations.
+     * @return a String representation of all the shapes and animations
+     */
+    String toString();
+
+    /**
      * Add a shape to the model.
      * @param shape the shape to add in the model
      * @throws IllegalArgumentException if the shape cannot be added, such as the shape has an

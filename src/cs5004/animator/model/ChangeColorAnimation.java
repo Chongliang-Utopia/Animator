@@ -74,7 +74,7 @@ public class ChangeColorAnimation extends AbstractAnimation {
     public String toString() {
         return "Shape " + this.getShapeName() + " changes color from " + startColor.toString()
                 + " to " + endColor.toString()
-                + " from t=" + this.getStartTime() + " to t=" + this.getEndTime();
+                + " from t=" + this.getStartTime() + " to t=" + this.getEndTime() + "\n";
     }
 
 

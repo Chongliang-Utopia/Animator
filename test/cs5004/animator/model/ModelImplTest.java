@@ -330,4 +330,45 @@ public class ModelImplTest {
     public void testGetAllSortedAnimationAtGivenTime5() {
         assertEquals(0, model1.getAllSortedAnimationAtGivenTime(180).size());
     }
+
+    /**
+     * Test toString.
+     */
+    @Test
+    public void testToString1() {
+        String expected = "Shapes:\n"
+                + "Name: R\nType: rectangle\nMin corner: (200.0,200.0), Width: 50.0, "
+                + "Height: 100.0, Color: (1.0,0.0,0.0)\nAppears at t=1\nDisappears at t=100\n\n"
+                + "Name: C\nType: oval\nCenter: (500.0,100.0), X radius: 60.0, "
+                + "Y radius: 30.0, Color: (0.0,0.0,1.0)\nAppears at t=6\nDisappears at t=100\n\n"
+                + "Shape R move from (200.0,200.0) to (300.0,300.0) from t=10 to t=50\n"
+                + "Shape C move from (500.0,100.0) to (500.0,400.0) from t=20 to t=70\n"
+                + "Shape C changes color from (0.0,0.0,1.0) to (0.0,1.0,0.0) from t=50 to t=80\n";
+        assertEquals(expected, model1.toString());
+    }
+
+    /**
+     * Test toString.
+     */
+    @Test
+    public void testToString2() {
+        String expected = "Shapes:\n";
+        assertEquals(expected, new ModelImpl().toString());
+    }
+
+    /**
+     * Test toString.
+     */
+    @Test
+    public void testToString3() {
+        String expected = "Shapes:\n"
+                + "Name: R\nType: rectangle\nMin corner: (200.0,200.0), Width: 50.0, "
+                + "Height: 100.0, Color: (1.0,0.0,0.0)\nAppears at t=1\nDisappears at t=100\n\n";
+        IModel model11 = new ModelImpl();
+        model11.addShape(new Rectangle("R", ShapeType.RECTANGLE,
+                new ColorType(1.0f, 0.0f, 0.0f),
+                new Position2D(200.0, 200.0),
+                50.0, 100.0, 1, 100));
+        assertEquals(expected, model11.toString());
+    }
 }

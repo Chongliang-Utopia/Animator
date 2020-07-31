@@ -217,4 +217,22 @@ public class ModelImpl implements IModel {
         }
         return true;
     }
+
+    /**
+     * Return a String representation of all the shapes and animations.
+     * @return a String representation of all the shapes and animations
+     */
+    public String toString() {
+        StringBuilder ret = new StringBuilder("Shapes:\n");
+        for (AbstractShape shape : allShapes.values()) {
+            ret.append(shape.textRender());
+            ret.append("\n");
+        }
+        for (List<AbstractAnimation> aniLst : allAnimations.values()) {
+            for (AbstractAnimation ani : aniLst) {
+                ret.append(ani.toString());
+            }
+        }
+        return ret.toString();
+    }
 }
