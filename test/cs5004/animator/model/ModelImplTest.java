@@ -371,4 +371,24 @@ public class ModelImplTest {
                 50.0, 100.0, 1, 100));
         assertEquals(expected, model11.toString());
     }
+
+    /**
+     * Test toString.
+     */
+    @Test
+    public void testToString4() {
+        model1.addAnimation(new ScaleAnimation(AnimationType.SCALE, "R", 51, 70,
+                List.of(50.0, 100.0), List.of(25.0, 100.0)));
+        String expected = "Shapes:\n"
+                + "Name: R\nType: rectangle\nMin corner: (200.0,200.0), Width: 50.0, "
+                + "Height: 100.0, Color: (1.0,0.0,0.0)\nAppears at t=1\nDisappears at t=100\n\n"
+                + "Name: C\nType: oval\nCenter: (500.0,100.0), X radius: 60.0, "
+                + "Y radius: 30.0, Color: (0.0,0.0,1.0)\nAppears at t=6\nDisappears at t=100\n\n"
+                + "Shape R move from (200.0,200.0) to (300.0,300.0) from t=10 to t=50\n"
+                + "Shape C move from (500.0,100.0) to (500.0,400.0) from t=20 to t=70\n"
+                + "Shape C changes color from (0.0,0.0,1.0) to (0.0,1.0,0.0) from t=50 to t=80\n"
+                + "Shape R scales from Width: 50.0 Height: 100.0 to Width: 25.0 Height: 100.0 "
+                + "from t=51 to t=70\n";
+        assertEquals(expected, model1.toString());
+    }
 }

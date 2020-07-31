@@ -69,22 +69,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ModelImplTest.testToString1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Animator" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cs5004.animator.model.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="cs5004.animator.model" />
-      <option name="MAIN_CLASS_NAME" value="cs5004.animator.model.ModelImplTest" />
-      <option name="METHOD_NAME" value="testToString1" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="ModelImplTest.testToString2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Animator" />
       <extension name="coverage">
@@ -117,13 +101,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ModelImplTest.testToString4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Animator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cs5004.animator.model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cs5004.animator.model" />
+      <option name="MAIN_CLASS_NAME" value="cs5004.animator.model.ModelImplTest" />
+      <option name="METHOD_NAME" value="testToString4" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.AnimationTest and 3 more" />
+        <item itemvalue="JUnit.ModelImplTest.testToString4" />
         <item itemvalue="JUnit.ModelImplTest.testToString3" />
         <item itemvalue="JUnit.ModelImplTest.testToString2" />
         <item itemvalue="JUnit.ModelImplTest" />
-        <item itemvalue="JUnit.ModelImplTest.testToString1" />
       </list>
     </recent_temporary>
   </component>
@@ -141,30 +141,30 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="133" y="514" width="1364" height="764" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1596156442764">
+    <state x="133" y="265" width="1364" height="764" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1596163835716">
       <screen x="0" y="23" width="1920" height="1006" />
     </state>
-    <state x="133" y="514" width="1364" height="764" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.23.1920.1006@0.23.1920.1006" timestamp="1596156442764" />
+    <state x="133" y="265" width="1364" height="764" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.23.1920.1006@0.23.1920.1006" timestamp="1596163835716" />
     <state x="728" y="245" key="#com.intellij.ide.util.MemberChooser" timestamp="1596071515485">
       <screen x="0" y="23" width="1920" height="1006" />
     </state>
     <state x="728" y="245" key="#com.intellij.ide.util.MemberChooser/0.23.1920.1006@0.23.1920.1006" timestamp="1596071515485" />
-    <state width="1776" height="264" key="GridCell.Tab.0.bottom" timestamp="1596156459045">
+    <state width="1776" height="85" key="GridCell.Tab.0.bottom" timestamp="1596163843243">
       <screen x="0" y="23" width="1920" height="1006" />
     </state>
-    <state width="1776" height="264" key="GridCell.Tab.0.bottom/0.23.1920.1006@0.23.1920.1006" timestamp="1596156459045" />
-    <state width="1776" height="264" key="GridCell.Tab.0.center" timestamp="1596156459044">
+    <state width="1776" height="85" key="GridCell.Tab.0.bottom/0.23.1920.1006@0.23.1920.1006" timestamp="1596163843243" />
+    <state width="1776" height="85" key="GridCell.Tab.0.center" timestamp="1596163843242">
       <screen x="0" y="23" width="1920" height="1006" />
     </state>
-    <state width="1776" height="264" key="GridCell.Tab.0.center/0.23.1920.1006@0.23.1920.1006" timestamp="1596156459044" />
-    <state width="1776" height="264" key="GridCell.Tab.0.left" timestamp="1596156459044">
+    <state width="1776" height="85" key="GridCell.Tab.0.center/0.23.1920.1006@0.23.1920.1006" timestamp="1596163843242" />
+    <state width="1776" height="85" key="GridCell.Tab.0.left" timestamp="1596163843241">
       <screen x="0" y="23" width="1920" height="1006" />
     </state>
-    <state width="1776" height="264" key="GridCell.Tab.0.left/0.23.1920.1006@0.23.1920.1006" timestamp="1596156459044" />
-    <state width="1776" height="264" key="GridCell.Tab.0.right" timestamp="1596156459045">
+    <state width="1776" height="85" key="GridCell.Tab.0.left/0.23.1920.1006@0.23.1920.1006" timestamp="1596163843241" />
+    <state width="1776" height="85" key="GridCell.Tab.0.right" timestamp="1596163843242">
       <screen x="0" y="23" width="1920" height="1006" />
     </state>
-    <state width="1776" height="264" key="GridCell.Tab.0.right/0.23.1920.1006@0.23.1920.1006" timestamp="1596156459045" />
+    <state width="1776" height="85" key="GridCell.Tab.0.right/0.23.1920.1006@0.23.1920.1006" timestamp="1596163843242" />
     <state x="395" y="127" key="SettingsEditor" timestamp="1595873576720">
       <screen x="0" y="23" width="1920" height="1006" />
     </state>
