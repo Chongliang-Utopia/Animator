@@ -55,7 +55,7 @@ public abstract class AbstractShape {
   /**
    * Set the shape's color to the given color.
    *
-   * @param color
+   * @param color the color of the shape
    */
   public void setColor(ColorType color) {
     this.color = color;

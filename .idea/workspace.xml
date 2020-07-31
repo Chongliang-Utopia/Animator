@@ -2,19 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e010ddcc-834b-4ea7-9910-0a2fa85a928f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Animator/cs5004/animator/model/AbstractAnimation.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Animator/cs5004/animator/model/AbstractAnimation.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Animator/cs5004/animator/model/ChangeColorAnimation.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Animator/cs5004/animator/model/ChangeColorAnimation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Animator/cs5004/animator/model/IModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Animator/cs5004/animator/model/IModel.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Animator/cs5004/animator/model/ModelImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Animator/cs5004/animator/model/ModelImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Animator/cs5004/animator/model/MoveAnimation.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Animator/cs5004/animator/model/MoveAnimation.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Animator/cs5004/animator/model/ScaleAnimation.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Animator/cs5004/animator/model/ScaleAnimation.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/test/Animator/cs5004/animator/model/AnimationTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/Animator/cs5004/animator/model/AnimationTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/test/Animator/cs5004/animator/model/ModelImplTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/Animator/cs5004/animator/model/ModelImplTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cs5004/animator/model/AbstractAnimation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs5004/animator/model/AbstractAnimation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cs5004/animator/model/AbstractShape.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs5004/animator/model/AbstractShape.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cs5004/animator/model/AnimationType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs5004/animator/model/AnimationType.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/cs5004/animator/model/ChangeColorAnimation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs5004/animator/model/ChangeColorAnimation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cs5004/animator/model/ColorType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs5004/animator/model/ColorType.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/cs5004/animator/model/IModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs5004/animator/model/IModel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/cs5004/animator/model/ModelImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs5004/animator/model/ModelImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/cs5004/animator/model/MoveAnimation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs5004/animator/model/MoveAnimation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/cs5004/animator/model/ScaleAnimation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs5004/animator/model/ScaleAnimation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cs5004/animator/model/ShapeFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs5004/animator/model/ShapeFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/cs5004/animator/model/AnimationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/cs5004/animator/model/AnimationTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/cs5004/animator/model/ModelImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/cs5004/animator/model/ModelImplTest.java" afterDir="false" />
     </list>
@@ -22,6 +28,13 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -38,7 +51,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Java" />
   </component>
   <component name="RunManager" selected="JUnit.AnimationTest and 3 more">
     <configuration name="AnimationTest and 3 more" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
@@ -149,26 +162,34 @@
       <screen x="0" y="23" width="1920" height="1006" />
     </state>
     <state x="728" y="245" key="#com.intellij.ide.util.MemberChooser/0.23.1920.1006@0.23.1920.1006" timestamp="1596071515485" />
-    <state width="1776" height="85" key="GridCell.Tab.0.bottom" timestamp="1596163843243">
+    <state x="1099" y="331" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1596164848276">
       <screen x="0" y="23" width="1920" height="1006" />
     </state>
-    <state width="1776" height="85" key="GridCell.Tab.0.bottom/0.23.1920.1006@0.23.1920.1006" timestamp="1596163843243" />
-    <state width="1776" height="85" key="GridCell.Tab.0.center" timestamp="1596163843242">
+    <state x="1099" y="331" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1920.1006@0.23.1920.1006" timestamp="1596164848276" />
+    <state width="1776" height="132" key="GridCell.Tab.0.bottom" timestamp="1596166512872">
       <screen x="0" y="23" width="1920" height="1006" />
     </state>
-    <state width="1776" height="85" key="GridCell.Tab.0.center/0.23.1920.1006@0.23.1920.1006" timestamp="1596163843242" />
-    <state width="1776" height="85" key="GridCell.Tab.0.left" timestamp="1596163843241">
+    <state width="1776" height="132" key="GridCell.Tab.0.bottom/0.23.1920.1006@0.23.1920.1006" timestamp="1596166512872" />
+    <state width="1776" height="132" key="GridCell.Tab.0.center" timestamp="1596166512872">
       <screen x="0" y="23" width="1920" height="1006" />
     </state>
-    <state width="1776" height="85" key="GridCell.Tab.0.left/0.23.1920.1006@0.23.1920.1006" timestamp="1596163843241" />
-    <state width="1776" height="85" key="GridCell.Tab.0.right" timestamp="1596163843242">
+    <state width="1776" height="132" key="GridCell.Tab.0.center/0.23.1920.1006@0.23.1920.1006" timestamp="1596166512872" />
+    <state width="1776" height="132" key="GridCell.Tab.0.left" timestamp="1596166512871">
       <screen x="0" y="23" width="1920" height="1006" />
     </state>
-    <state width="1776" height="85" key="GridCell.Tab.0.right/0.23.1920.1006@0.23.1920.1006" timestamp="1596163843242" />
-    <state x="395" y="127" key="SettingsEditor" timestamp="1595873576720">
+    <state width="1776" height="132" key="GridCell.Tab.0.left/0.23.1920.1006@0.23.1920.1006" timestamp="1596166512871" />
+    <state width="1776" height="132" key="GridCell.Tab.0.right" timestamp="1596166512872">
       <screen x="0" y="23" width="1920" height="1006" />
     </state>
-    <state x="395" y="127" key="SettingsEditor/0.23.1920.1006@0.23.1920.1006" timestamp="1595873576720" />
+    <state width="1776" height="132" key="GridCell.Tab.0.right/0.23.1920.1006@0.23.1920.1006" timestamp="1596166512872" />
+    <state x="644" y="147" key="SettingsEditor" timestamp="1596165982793">
+      <screen x="0" y="23" width="1920" height="1006" />
+    </state>
+    <state x="644" y="147" key="SettingsEditor/0.23.1920.1006@0.23.1920.1006" timestamp="1596165982793" />
+    <state x="438" y="224" key="new project wizard" timestamp="1596164606781">
+      <screen x="0" y="23" width="1920" height="1006" />
+    </state>
+    <state x="438" y="224" key="new project wizard/0.23.1920.1006@0.23.1920.1006" timestamp="1596164606781" />
     <state x="580" y="259" width="670" height="676" key="search.everywhere.popup" timestamp="1596071578445">
       <screen x="0" y="23" width="1920" height="1006" />
     </state>

@@ -2,6 +2,11 @@ package cs5004.animator.model;
 
 import java.util.Objects;
 
+/**
+ * This class represents a color using three float values, which are in the order of Red,
+ * Green, and Blue. It contains the methods to get the attributes properly, as well as the
+ * overridden toString, equals, and hashCode.
+ */
 public class ColorType {
   private float red;
   private float green;
@@ -9,7 +14,8 @@ public class ColorType {
 
   /**
    * Construct Colors object based on decimal numbers of red, green, and blue.
-   *  @param red   the red value of the color
+   *
+   * @param red   the red value of the color
    * @param green the green value of the color
    * @param blue  the blue value of the color
    */
@@ -54,7 +60,7 @@ public class ColorType {
   @Override
   public String toString() {
     return "(" + String.format("%.1f", red) + ","
-            + String.format("%.1f", green) + "," + String.format("%.1f", blue) + ")";
+        + String.format("%.1f", green) + "," + String.format("%.1f", blue) + ")";
   }
 
   @Override

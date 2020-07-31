@@ -1,13 +1,12 @@
 package cs5004.animator.model;
 
-import static java.util.Objects.requireNonNull;
 
 /**
  * A shapeFactory class to generate a abstract shape according the given parameters.
  */
 public class ShapeFactory {
   /**
-   * A static method to generate an abstract shape according the given parameters
+   * A static method to generate an abstract shape according the given parameters.
    *
    * @param name       the name of the shape
    * @param type       the type of the shape to generate
