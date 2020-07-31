@@ -21,7 +21,8 @@ The following concrete classes/abstract classes/interfaces are created for the m
     *Externally*, it allows to get a deep copy of all the shapes and a deep copy of the animations sorted 
     by starting time. It also include methods to add a shape, delete a shape and add an animation. Additionally,
     it offers a method to get a copy of all the invisible shapes at a given time and a method to get a copy of all the 
-    animation which start before a given time.
+    animation which start before a given time. It contains a public method to return a string representation of all the
+    shapes and animations.
     
  
 - **Animations**   
