@@ -7,6 +7,8 @@ import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
 
+import cs5004.animator.util.AnimationBuilder;
+
 /**
  * A class represent the implementation of the IModel, a concrete class as the model of the
  * animator. Internally, it stores all the shapes in a Map, and uses the name of the shape as the
@@ -48,6 +50,40 @@ public class ModelImpl implements IModel {
     this.allShapes = allShapes;
     this.allAnimations = allAnimations;
   }
+
+  private ModelImpl(Builder builder) {
+    this.allShapes = builder.model.getAllShape();
+    this.allAnimations = builder.model.getAllAnimationSortedByTime();
+  }
+
+  public static final class Builder implements AnimationBuilder<IModel> {
+    protected IModel model;
+
+    public Builder() {
+      this.model = new ModelImpl();
+    }
+    @Override
+    public IModel build() {
+      return new ModelImpl(this);
+    }
+
+    @Override
+    public AnimationBuilder<IModel> setBounds(int x, int y, int width, int height) {
+      return null;
+    }
+
+    @Override
+    public AnimationBuilder<IModel> declareShape(String name, String type) {
+      return null;
+    }
+
+    @Override
+    public AnimationBuilder<IModel> addMotion(String name, int t1, int x1, int y1, int w1, int h1, int r1, int g1, int b1, int t2, int x2, int y2, int w2, int h2, int r2, int g2, int b2) {
+      return null;
+    }
+  }
+
+
 
   /**
    * Return a copy of the shapes in the model.

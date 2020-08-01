@@ -1,53 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e010ddcc-834b-4ea7-9910-0a2fa85a928f" name="Default Changelist" comment="">
+    <list default="true" id="b400006b-a6a1-43c1-94f5-f773426eaf61" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/A9.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Animator.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Animator.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Animator/cs5004/animator/model/ModelImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Animator/cs5004/animator/model/ModelImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Animator/cs5004/animator/model/ScaleAnimation.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Animator/cs5004/animator/model/ScaleAnimation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/Animator/cs5004/animator/model/ModelImplTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/Animator/cs5004/animator/model/ModelImplTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cs5004/animator/model/ModelImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs5004/animator/model/ModelImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="1fHSTm1fWw2bQ0qY9L8BttYK6oE" />
+  <component name="ProjectId" id="1fW1OD24j0FpKPxnsSrMoivlqxw" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Java" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
-  <component name="RunManager" selected="JUnit.AnimationTest and 3 more">
-    <configuration name="AnimationTest and 3 more" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Animator" />
-      <option name="TEST_OBJECT" value="pattern" />
-      <patterns>
-        <pattern testClass="cs5004.animator.model.AnimationTest" />
-        <pattern testClass="cs5004.animator.model.ModelImplTest" />
-        <pattern testClass="cs5004.animator.model.ShapeFactoryTest" />
-        <pattern testClass="cs5004.animator.model.ShapeTest" />
-      </patterns>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ModelImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager">
+    <configuration name="AnimationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Animator" />
       <extension name="coverage">
         <pattern>
@@ -56,67 +44,15 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="cs5004.animator.model" />
-      <option name="MAIN_CLASS_NAME" value="cs5004.animator.model.ModelImplTest" />
+      <option name="MAIN_CLASS_NAME" value="cs5004.animator.model.AnimationTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ModelImplTest.testToString2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Animator" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cs5004.animator.model.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="cs5004.animator.model" />
-      <option name="MAIN_CLASS_NAME" value="cs5004.animator.model.ModelImplTest" />
-      <option name="METHOD_NAME" value="testToString2" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ModelImplTest.testToString3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Animator" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cs5004.animator.model.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="cs5004.animator.model" />
-      <option name="MAIN_CLASS_NAME" value="cs5004.animator.model.ModelImplTest" />
-      <option name="METHOD_NAME" value="testToString3" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ModelImplTest.testToString4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Animator" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cs5004.animator.model.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="cs5004.animator.model" />
-      <option name="MAIN_CLASS_NAME" value="cs5004.animator.model.ModelImplTest" />
-      <option name="METHOD_NAME" value="testToString4" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.AnimationTest and 3 more" />
-        <item itemvalue="JUnit.ModelImplTest.testToString4" />
-        <item itemvalue="JUnit.ModelImplTest.testToString3" />
-        <item itemvalue="JUnit.ModelImplTest.testToString2" />
-        <item itemvalue="JUnit.ModelImplTest" />
+        <item itemvalue="JUnit.AnimationTest" />
       </list>
     </recent_temporary>
   </component>
@@ -125,54 +61,22 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="e010ddcc-834b-4ea7-9910-0a2fa85a928f" name="Default Changelist" comment="" />
-      <created>1595873534976</created>
+      <changelist id="b400006b-a6a1-43c1-94f5-f773426eaf61" name="Default Changelist" comment="" />
+      <created>1596319000654</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1595873534976</updated>
+      <updated>1596319000654</updated>
     </task>
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="133" y="265" width="1364" height="764" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1596163835716">
+    <state x="807" y="294" key="#com.intellij.ide.util.MemberChooser" timestamp="1596319063662">
       <screen x="0" y="23" width="1920" height="1006" />
     </state>
-    <state x="133" y="265" width="1364" height="764" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.23.1920.1006@0.23.1920.1006" timestamp="1596163835716" />
-    <state x="728" y="245" key="#com.intellij.ide.util.MemberChooser" timestamp="1596071515485">
+    <state x="807" y="294" key="#com.intellij.ide.util.MemberChooser/0.23.1920.1006@0.23.1920.1006" timestamp="1596319063662" />
+    <state x="720" y="479" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1596319029323">
       <screen x="0" y="23" width="1920" height="1006" />
     </state>
-    <state x="728" y="245" key="#com.intellij.ide.util.MemberChooser/0.23.1920.1006@0.23.1920.1006" timestamp="1596071515485" />
-    <state x="1099" y="331" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1596164848276">
-      <screen x="0" y="23" width="1920" height="1006" />
-    </state>
-    <state x="1099" y="331" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1920.1006@0.23.1920.1006" timestamp="1596164848276" />
-    <state width="1776" height="132" key="GridCell.Tab.0.bottom" timestamp="1596166512872">
-      <screen x="0" y="23" width="1920" height="1006" />
-    </state>
-    <state width="1776" height="132" key="GridCell.Tab.0.bottom/0.23.1920.1006@0.23.1920.1006" timestamp="1596166512872" />
-    <state width="1776" height="132" key="GridCell.Tab.0.center" timestamp="1596166512872">
-      <screen x="0" y="23" width="1920" height="1006" />
-    </state>
-    <state width="1776" height="132" key="GridCell.Tab.0.center/0.23.1920.1006@0.23.1920.1006" timestamp="1596166512872" />
-    <state width="1776" height="132" key="GridCell.Tab.0.left" timestamp="1596166512871">
-      <screen x="0" y="23" width="1920" height="1006" />
-    </state>
-    <state width="1776" height="132" key="GridCell.Tab.0.left/0.23.1920.1006@0.23.1920.1006" timestamp="1596166512871" />
-    <state width="1776" height="132" key="GridCell.Tab.0.right" timestamp="1596166512872">
-      <screen x="0" y="23" width="1920" height="1006" />
-    </state>
-    <state width="1776" height="132" key="GridCell.Tab.0.right/0.23.1920.1006@0.23.1920.1006" timestamp="1596166512872" />
-    <state x="644" y="147" key="SettingsEditor" timestamp="1596165982793">
-      <screen x="0" y="23" width="1920" height="1006" />
-    </state>
-    <state x="644" y="147" key="SettingsEditor/0.23.1920.1006@0.23.1920.1006" timestamp="1596165982793" />
-    <state x="438" y="224" key="new project wizard" timestamp="1596164606781">
-      <screen x="0" y="23" width="1920" height="1006" />
-    </state>
-    <state x="438" y="224" key="new project wizard/0.23.1920.1006@0.23.1920.1006" timestamp="1596164606781" />
-    <state x="580" y="259" width="670" height="676" key="search.everywhere.popup" timestamp="1596071578445">
-      <screen x="0" y="23" width="1920" height="1006" />
-    </state>
-    <state x="580" y="259" width="670" height="676" key="search.everywhere.popup/0.23.1920.1006@0.23.1920.1006" timestamp="1596071578445" />
+    <state x="720" y="479" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.23.1920.1006@0.23.1920.1006" timestamp="1596319029323" />
   </component>
 </project>
