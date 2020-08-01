@@ -2,27 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e010ddcc-834b-4ea7-9910-0a2fa85a928f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Animator/cs5004/animator/model/AbstractAnimation.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Animator/cs5004/animator/model/AbstractAnimation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Animator/cs5004/animator/model/ChangeColorAnimation.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Animator/cs5004/animator/model/ChangeColorAnimation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Animator/cs5004/animator/model/ModelImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Animator/cs5004/animator/model/ModelImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Animator/cs5004/animator/model/MoveAnimation.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Animator/cs5004/animator/model/MoveAnimation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Animator/cs5004/animator/model/ScaleAnimation.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Animator/cs5004/animator/model/ScaleAnimation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/Animator/cs5004/animator/model/AnimationTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/Animator/cs5004/animator/model/AnimationTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/Animator/cs5004/animator/model/ModelImplTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/Animator/cs5004/animator/model/ModelImplTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cs5004/animator/model/AbstractAnimation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs5004/animator/model/AbstractAnimation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cs5004/animator/model/AbstractShape.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs5004/animator/model/AbstractShape.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cs5004/animator/model/AnimationType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs5004/animator/model/AnimationType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cs5004/animator/model/ChangeColorAnimation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs5004/animator/model/ChangeColorAnimation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cs5004/animator/model/ColorType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs5004/animator/model/ColorType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cs5004/animator/model/IModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs5004/animator/model/IModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cs5004/animator/model/ModelImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs5004/animator/model/ModelImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cs5004/animator/model/MoveAnimation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs5004/animator/model/MoveAnimation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cs5004/animator/model/ScaleAnimation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs5004/animator/model/ScaleAnimation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cs5004/animator/model/ShapeFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs5004/animator/model/ShapeFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/cs5004/animator/model/AnimationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/cs5004/animator/model/AnimationTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/cs5004/animator/model/ModelImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/cs5004/animator/model/ModelImplTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
