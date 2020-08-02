@@ -16,14 +16,6 @@ public interface IModel {
   Map<String, AbstractShape> getAllShape();
 
   /**
-   * Return a copy of the shapes in the model at Given time. All the shapes that are visible at the
-   * given time will be included in the map.
-   *
-   * @return a copy of the shapes in the model at Given time
-   */
-  Map<String, AbstractShape> getAllShapeAtGivenTime(int time);
-
-  /**
    * Return a copy of all the animations in the model sorted by time.
    *
    * @return a copy of all the animations in the model sorted by time, use start time of the
@@ -40,6 +32,13 @@ public interface IModel {
    *         animation under the specific time.
    */
   Map<Integer, List<AbstractAnimation>> getAllSortedAnimationAtGivenTime(int time);
+
+  /**
+   * Return a list of all the updated shape at given time.
+   * @param time the time to check the updated shapes
+   * @return a list of all the updated shape at given time
+   */
+   List<AbstractShape> getUpdatedShapeAtGivenTime(int time);
 
   /**
    * Return a String representation of all the shapes and animations.
@@ -75,4 +74,16 @@ public interface IModel {
    *                                  an existing animation
    */
   void addAnimation(AbstractAnimation animation) throws IllegalArgumentException;
+
+  /**
+   * Return the canvas.
+   * @return the canvas
+   */
+  Screen getCanvas();
+
+  /**
+   * Set Canvas.
+   * @param canvas canvas to set
+   */
+  void setCanvas(Screen canvas);
 }

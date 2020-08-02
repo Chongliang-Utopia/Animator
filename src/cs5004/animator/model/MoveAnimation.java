@@ -20,6 +20,7 @@ public class MoveAnimation extends AbstractAnimation {
    * @param endTime       the end time of the animation
    * @param startPosition the start position
    * @param endPosition   the end position
+   * @param originalShape   the originalShape
    * @throws IllegalArgumentException if the given animation type is invalid
    */
   public MoveAnimation(AnimationType animationType,
@@ -27,39 +28,40 @@ public class MoveAnimation extends AbstractAnimation {
                        int startTime,
                        int endTime,
                        Position2D startPosition,
-                       Position2D endPosition) throws IllegalArgumentException {
-    super(animationType, shapeName, startTime, endTime);
+                       Position2D endPosition,
+                       AbstractShape originalShape) throws IllegalArgumentException {
+    super(animationType, shapeName, startTime, endTime, originalShape);
     if (animationType != AnimationType.MOVE) {
       throw new IllegalArgumentException("Trying to initiate with wrong animation type.");
     }
     this.startPosition = startPosition;
     this.endPosition = endPosition;
+    this.originalShape = originalShape;
   }
 
   /**
    * Abstract method to run the animation, which returns an updated abstract shape.
    *
-   * @param shape   shape to run the animation
    * @param curTime current time
    * @return an updated abstract shape
    * @throws IllegalArgumentException if an updated shape cannot be generated
    */
   @Override
-  public AbstractShape runAnimation(AbstractShape shape, int curTime)
+  public AbstractShape runAnimation(int curTime)
       throws IllegalArgumentException {
-    if (shape == null) {
+    if (originalShape == null) {
       throw new IllegalArgumentException("shape can not be null");
     }
-    if (curTime > shape.getDisappearTime()) {
+    if (curTime > originalShape.getDisappearTime()) {
       throw new IllegalArgumentException("shape has disappeared");
     }
     double curXCoordinate = this.calculateState(startPosition.getX(), endPosition.getX(), curTime);
     double curYCoordinate = this.calculateState(startPosition.getY(), endPosition.getY(), curTime);
     Position2D curPosition = new Position2D(curXCoordinate, curYCoordinate);
     // Create an updated shape.
-    AbstractShape result = ShapeFactory.buildShape(shape.getName(), shape.getType(),
-        shape.getColor(), curPosition, shape.getWidth(), shape.getHeight(),
-        shape.getAppearTime(), shape.getDisappearTime());
+    AbstractShape result = ShapeFactory.buildShape(originalShape.getName(), originalShape.getType(),
+        originalShape.getColor(), curPosition, originalShape.getWidth(), originalShape.getHeight(),
+        originalShape.getAppearTime(), originalShape.getDisappearTime());
     if (result == null) {
       throw new IllegalArgumentException("Invalid animation to run on this shape");
     }

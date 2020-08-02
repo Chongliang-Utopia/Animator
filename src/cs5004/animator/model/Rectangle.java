@@ -38,6 +38,16 @@ public class Rectangle extends AbstractShape {
   }
 
   /**
+   * A default constructor when only the name of the shape is given.
+   * @param name name of the shape
+   */
+  public Rectangle(String name) {
+    super(name);
+    this.width = 1;
+    this.height = 1;
+  }
+
+  /**
    * Get the width of the Rectangle.
    *
    * @return width of the Rectangle

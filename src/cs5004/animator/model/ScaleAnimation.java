@@ -23,6 +23,7 @@ public class ScaleAnimation extends AbstractAnimation {
    * @param endTime       the end time of the animation
    * @param fromDimension the initial dimension as [Width dimension, Height dimension]
    * @param toDimension   the final dimension as [Width dimension, Height dimension]
+   * @param originalShape   the originalShape
    * @throws IllegalArgumentException if the given animation type is invalid
    */
   public ScaleAnimation(AnimationType animationType,
@@ -30,8 +31,9 @@ public class ScaleAnimation extends AbstractAnimation {
                         int startTime,
                         int endTime,
                         List<Double> fromDimension,
-                        List<Double> toDimension) throws IllegalArgumentException {
-    super(animationType, shapeName, startTime, endTime);
+                        List<Double> toDimension, AbstractShape originalShape)
+      throws IllegalArgumentException {
+    super(animationType, shapeName, startTime, endTime, originalShape);
     if (animationType != AnimationType.SCALE) {
       throw new IllegalArgumentException("Trying to initiate with wrong animation type.");
     }
@@ -46,26 +48,25 @@ public class ScaleAnimation extends AbstractAnimation {
   /**
    * Abstract method to run the animation, which returns an updated abstract shape.
    *
-   * @param shape   shape to run the animation
    * @param curTime current time
    * @return an updated abstract shape
    * @throws IllegalArgumentException if an updated shape cannot be generated
    */
   @Override
-  public AbstractShape runAnimation(AbstractShape shape, int curTime)
+  public AbstractShape runAnimation(int curTime)
       throws IllegalArgumentException {
-    if (shape == null) {
+    if (originalShape == null) {
       throw new IllegalArgumentException("shape can not be null");
     }
-    if (curTime > shape.getDisappearTime()) {
+    if (curTime > originalShape.getDisappearTime()) {
       throw new IllegalArgumentException("shape has disappeared");
     }
     double curWidth = this.calculateState(fromDimension.get(0), toDimension.get(0), curTime);
     double curHeight = this.calculateState(fromDimension.get(1), toDimension.get(1), curTime);
     // Create an updated shape.
-    AbstractShape result = ShapeFactory.buildShape(shape.getName(), shape.getType(),
-        shape.getColor(), shape.getPosition(), curWidth, curHeight,
-        shape.getAppearTime(), shape.getDisappearTime());
+    AbstractShape result = ShapeFactory.buildShape(originalShape.getName(), originalShape.getType(),
+        originalShape.getColor(), originalShape.getPosition(), curWidth, curHeight,
+        originalShape.getAppearTime(), originalShape.getDisappearTime());
     if (result == null) {
       throw new IllegalArgumentException("Invalid animation to run on this shape");
     }

@@ -20,6 +20,7 @@ public class ChangeColorAnimation extends AbstractAnimation {
    * @param endTime       the end time of the animation
    * @param startColor    the start color of the animation
    * @param endColor      the end color of the animation
+   * @param originalShape   the originalShape
    * @throws IllegalArgumentException if the given animation type is invalid
    */
   public ChangeColorAnimation(AnimationType animationType,
@@ -27,8 +28,8 @@ public class ChangeColorAnimation extends AbstractAnimation {
                               int startTime,
                               int endTime,
                               ColorType startColor,
-                              ColorType endColor) throws IllegalArgumentException {
-    super(animationType, shapeName, startTime, endTime);
+                              ColorType endColor, AbstractShape originalShape) throws IllegalArgumentException {
+    super(animationType, shapeName, startTime, endTime, originalShape, originalShape);
     if (animationType != AnimationType.CHANGECOLOR) {
       throw new IllegalArgumentException("Trying to initiate with wrong animation type.");
     }
@@ -40,18 +41,17 @@ public class ChangeColorAnimation extends AbstractAnimation {
   /**
    * Abstract method to run the animation, which returns an updated abstract shape.
    *
-   * @param shape   shape to run the animation
    * @param curTime current time
    * @return an updated abstract shape
    * @throws IllegalArgumentException if an updated shape cannot be generated
    */
   @Override
-  public AbstractShape runAnimation(AbstractShape shape, int curTime)
+  public AbstractShape runAnimation(int curTime)
       throws IllegalArgumentException {
-    if (shape == null) {
+    if (originalShape == null) {
       throw new IllegalArgumentException("shape can not be null");
     }
-    if (curTime > shape.getDisappearTime()) {
+    if (curTime > originalShape.getDisappearTime()) {
       throw new IllegalArgumentException("shape has disappeared");
     }
     ColorType curColor = new ColorType(
@@ -59,9 +59,9 @@ public class ChangeColorAnimation extends AbstractAnimation {
         (float) this.calculateState(startColor.getGreen(), endColor.getGreen(), curTime),
         (float) this.calculateState(startColor.getBlue(), endColor.getBlue(), curTime));
     // Create an updated shape.
-    AbstractShape result = ShapeFactory.buildShape(shape.getName(), shape.getType(), curColor,
-        shape.getPosition(), shape.getWidth(), shape.getHeight(),
-        shape.getAppearTime(), shape.getDisappearTime());
+    AbstractShape result = ShapeFactory.buildShape(originalShape.getName(), originalShape.getType(), curColor,
+        originalShape.getPosition(), originalShape.getWidth(), originalShape.getHeight(),
+        originalShape.getAppearTime(), originalShape.getDisappearTime());
     if (result == null) {
       throw new IllegalArgumentException("Invalid animation to run on this shape");
     }

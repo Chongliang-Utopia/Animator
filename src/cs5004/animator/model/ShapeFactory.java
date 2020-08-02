@@ -23,7 +23,7 @@ public class ShapeFactory {
   public static AbstractShape buildShape(String name, ShapeType type,
                                          ColorType color, Position2D position, double width,
                                          double height, int appears, int disappears)
-          throws IllegalArgumentException, NullPointerException {
+          throws IllegalArgumentException {
     AbstractShape result = null;
     if (type == null) {
       throw new IllegalArgumentException("Invalid type.");
@@ -41,6 +41,40 @@ public class ShapeFactory {
         try {
           result = new Rectangle(name, type, color, position, width, height,
                   appears, disappears);
+        } catch (Exception e) {
+          throw new IllegalArgumentException(e);
+        }
+        break;
+      default:
+        throw new IllegalArgumentException("Invalid animation to run");
+    }
+    return result;
+  }
+
+  /**
+   * A static method to generate an abstract default shape.
+   * @param name       the name of the shape
+   * @param type       the type of the shape to generate
+   * @return  an abstract default shape
+   * @throws IllegalArgumentException if the given type is invalid
+   */
+  public static AbstractShape buildShape(String name, ShapeType type)
+      throws IllegalArgumentException {
+    AbstractShape result = null;
+    if (type == null) {
+      throw new IllegalArgumentException("Invalid type.");
+    }
+    switch (type) {
+      case OVAL:
+        try {
+          result = new Oval(name);
+        } catch (Exception e) {
+          throw new IllegalArgumentException(e);
+        }
+        break;
+      case RECTANGLE:
+        try {
+          result = new Rectangle(name);
         } catch (Exception e) {
           throw new IllegalArgumentException(e);
         }

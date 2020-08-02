@@ -44,6 +44,19 @@ public abstract class AbstractShape {
   }
 
   /**
+   * A default constructor when only the name of the shape is given.
+   * @param name name of the shape
+   */
+  public AbstractShape(String name) {
+    this.name = name;
+    this.color = new ColorType(0, 0, 0);
+    this.position = new Position2D(0, 0);
+    this.appearTime = -1;
+    this.disappearTime = -1;
+    this.display = true;
+  }
+
+  /**
    * Get the name of the Shape.
    *
    * @return the name of the shape object

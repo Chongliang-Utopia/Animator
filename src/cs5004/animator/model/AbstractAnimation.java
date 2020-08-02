@@ -9,6 +9,7 @@ package cs5004.animator.model;
 public abstract class AbstractAnimation {
   protected AnimationType animationType;
   protected String shapeName;
+  protected AbstractShape originalShape;
   protected int startTime;
   protected int endTime;
 
@@ -19,10 +20,12 @@ public abstract class AbstractAnimation {
    * @param shapeName     name of the shape
    * @param startTime     start time of the animation
    * @param endTime       end time of the animation
+   * @param originalShape the original shape to transform
    * @throws IllegalArgumentException if the start time or end time is invalid
    */
   public AbstractAnimation(AnimationType animationType, String shapeName,
-                           int startTime, int endTime) throws IllegalArgumentException {
+                           int startTime, int endTime, AbstractShape originalShape)
+      throws IllegalArgumentException {
     if (startTime < 0 || endTime < 0 || startTime >= endTime) {
       throw new IllegalArgumentException("Invalid time frame for the animation.");
     }
@@ -71,12 +74,11 @@ public abstract class AbstractAnimation {
   /**
    * Abstract method to run the animation, which returns an updated abstract shape.
    *
-   * @param shape   shape to run the animation
    * @param curTime current time
    * @return an updated abstract shape
    * @throws IllegalArgumentException if an updated shape cannot be generated
    */
-  public abstract AbstractShape runAnimation(AbstractShape shape, int curTime) throws
+  public abstract AbstractShape runAnimation(int curTime) throws
       IllegalArgumentException;
 
   /**

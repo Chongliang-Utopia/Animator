@@ -2,19 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b400006b-a6a1-43c1-94f5-f773426eaf61" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/A9.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Animator.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Animator.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Animator/cs5004/animator/model/ModelImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Animator/cs5004/animator/model/ModelImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Animator/cs5004/animator/model/ScaleAnimation.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Animator/cs5004/animator/model/ScaleAnimation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/Animator/cs5004/animator/model/ModelImplTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/Animator/cs5004/animator/model/ModelImplTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cs5004/animator/model/AbstractAnimation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs5004/animator/model/AbstractAnimation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cs5004/animator/model/AbstractShape.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs5004/animator/model/AbstractShape.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cs5004/animator/model/ChangeColorAnimation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs5004/animator/model/ChangeColorAnimation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cs5004/animator/model/IModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs5004/animator/model/IModel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/cs5004/animator/model/ModelImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs5004/animator/model/ModelImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cs5004/animator/model/MoveAnimation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs5004/animator/model/MoveAnimation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cs5004/animator/model/Oval.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs5004/animator/model/Oval.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cs5004/animator/model/Rectangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs5004/animator/model/Rectangle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cs5004/animator/model/ScaleAnimation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs5004/animator/model/ScaleAnimation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cs5004/animator/model/ShapeFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs5004/animator/model/ShapeFactory.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -70,13 +80,33 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="807" y="294" key="#com.intellij.ide.util.MemberChooser" timestamp="1596319063662">
+    <state x="807" y="294" key="#com.intellij.ide.util.MemberChooser" timestamp="1596333721387">
       <screen x="0" y="23" width="1920" height="1006" />
     </state>
-    <state x="807" y="294" key="#com.intellij.ide.util.MemberChooser/0.23.1920.1006@0.23.1920.1006" timestamp="1596319063662" />
+    <state x="807" y="294" key="#com.intellij.ide.util.MemberChooser/0.23.1920.1006@0.23.1920.1006" timestamp="1596333721387" />
+    <state width="1776" height="106" key="GridCell.Tab.0.bottom" timestamp="1596320998548">
+      <screen x="0" y="23" width="1920" height="1006" />
+    </state>
+    <state width="1776" height="106" key="GridCell.Tab.0.bottom/0.23.1920.1006@0.23.1920.1006" timestamp="1596320998548" />
+    <state width="1776" height="106" key="GridCell.Tab.0.center" timestamp="1596320998548">
+      <screen x="0" y="23" width="1920" height="1006" />
+    </state>
+    <state width="1776" height="106" key="GridCell.Tab.0.center/0.23.1920.1006@0.23.1920.1006" timestamp="1596320998548" />
+    <state width="1776" height="106" key="GridCell.Tab.0.left" timestamp="1596320998547">
+      <screen x="0" y="23" width="1920" height="1006" />
+    </state>
+    <state width="1776" height="106" key="GridCell.Tab.0.left/0.23.1920.1006@0.23.1920.1006" timestamp="1596320998547" />
+    <state width="1776" height="106" key="GridCell.Tab.0.right" timestamp="1596320998548">
+      <screen x="0" y="23" width="1920" height="1006" />
+    </state>
+    <state width="1776" height="106" key="GridCell.Tab.0.right/0.23.1920.1006@0.23.1920.1006" timestamp="1596320998548" />
     <state x="720" y="479" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1596319029323">
       <screen x="0" y="23" width="1920" height="1006" />
     </state>
     <state x="720" y="479" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.23.1920.1006@0.23.1920.1006" timestamp="1596319029323" />
+    <state x="914" y="169" key="refactoring.ChangeSignatureDialog" timestamp="1596331282750">
+      <screen x="0" y="23" width="1920" height="1006" />
+    </state>
+    <state x="914" y="169" key="refactoring.ChangeSignatureDialog/0.23.1920.1006@0.23.1920.1006" timestamp="1596331282750" />
   </component>
 </project>

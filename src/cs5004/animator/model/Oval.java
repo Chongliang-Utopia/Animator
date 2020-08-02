@@ -38,6 +38,16 @@ public class Oval extends AbstractShape {
   }
 
   /**
+   * A default constructor when only the name of the shape is given.
+   * @param name name of the shape
+   */
+  public Oval(String name) {
+    super(name);
+    this.xRadius = 1;
+    this.yRadius = 1;
+  }
+
+  /**
    * Abstract method to get the horizontal length of the shape, such as width or xRadius.
    *
    * @return the horizontal length of the shape
