@@ -13,16 +13,18 @@ public interface IView {
    *
    * @param allShapes     the given shapes in the view
    * @param allAnimations the given animations in the view
+   * @return the string output of the text view
    */
-  void renderText(Map<String, IReadOnlyShapes> allShapes,
+  String renderText(Map<String, IReadOnlyShapes> allShapes,
                   Map<Integer, List<IReadOnlyShapes>> allAnimations);
 
   /**
    * Render the image view output with all needed information for drawing shapes.
    *
-   * @param allShapes the given shapes in the view
+   * @param allAnimations the given animations in the view
    */
-  void renderImage(Map<String, IReadOnlyShapes> allShapes);
+  public void renderImage(Map<Integer, List<IReadOnlyShapes>> allAnimations);
+
 
   /**
    * Set the default canvas to the given size.
