@@ -36,7 +36,6 @@ public class MoveAnimation extends AbstractAnimation {
     }
     this.startPosition = startPosition;
     this.endPosition = endPosition;
-    this.originalShape = originalShape;
   }
 
   /**
@@ -51,9 +50,6 @@ public class MoveAnimation extends AbstractAnimation {
       throws IllegalArgumentException {
     if (originalShape == null) {
       throw new IllegalArgumentException("shape can not be null");
-    }
-    if (curTime > originalShape.getDisappearTime()) {
-      throw new IllegalArgumentException("shape has disappeared");
     }
     double curXCoordinate = this.calculateState(startPosition.getX(), endPosition.getX(), curTime);
     double curYCoordinate = this.calculateState(startPosition.getY(), endPosition.getY(), curTime);

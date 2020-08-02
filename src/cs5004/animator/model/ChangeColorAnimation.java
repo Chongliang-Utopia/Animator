@@ -29,7 +29,7 @@ public class ChangeColorAnimation extends AbstractAnimation {
                               int endTime,
                               ColorType startColor,
                               ColorType endColor, AbstractShape originalShape) throws IllegalArgumentException {
-    super(animationType, shapeName, startTime, endTime, originalShape, originalShape);
+    super(animationType, shapeName, startTime, endTime, originalShape);
     if (animationType != AnimationType.CHANGECOLOR) {
       throw new IllegalArgumentException("Trying to initiate with wrong animation type.");
     }
@@ -50,9 +50,6 @@ public class ChangeColorAnimation extends AbstractAnimation {
       throws IllegalArgumentException {
     if (originalShape == null) {
       throw new IllegalArgumentException("shape can not be null");
-    }
-    if (curTime > originalShape.getDisappearTime()) {
-      throw new IllegalArgumentException("shape has disappeared");
     }
     ColorType curColor = new ColorType(
         (float) this.calculateState(startColor.getRed(), endColor.getRed(), curTime),

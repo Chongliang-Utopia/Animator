@@ -33,6 +33,7 @@ public abstract class AbstractAnimation {
     this.shapeName = shapeName;
     this.startTime = startTime;
     this.endTime = endTime;
+    this.originalShape = originalShape;
   }
 
   /**
