@@ -23,10 +23,10 @@ public abstract class AbstractView implements IView {
   /**
    * Render the image view output with all needed information for drawing shapes.
    *
-   * @param allAnimations the given animations in the view
+   * @param allShapes the given shapes in the view
    */
   @Override
-  public abstract void renderImage(Map<Integer, List<IReadOnlyShapes>> allAnimations);
+  public abstract void renderImage(Map<String, IReadOnlyShapes> allShapes);
 
   /**
    * Set the default canvas to the given size.
