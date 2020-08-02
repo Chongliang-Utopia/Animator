@@ -51,8 +51,8 @@ public abstract class AbstractShape implements IReadOnlyShapes {
     this.name = name;
     this.color = new ColorType(0, 0, 0);
     this.position = new Position2D(0, 0);
-    this.appearTime = -1;
-    this.disappearTime = -1;
+    this.appearTime = Integer.MAX_VALUE;
+    this.disappearTime = Integer.MIN_VALUE;
     this.display = true;
   }
 

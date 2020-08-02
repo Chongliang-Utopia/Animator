@@ -142,6 +142,7 @@ public class ModelImpl implements IModel {
       AbstractShape originalShape = ShapeFactory.buildShape(name,
           nameToType.get(name), new ColorType(r1, g1, b1), new Position2D(x1, y1),
           w1, h1, t1, t2);
+      if ()
       // Check the animation type.
       if (x1 != x2 || y1 != y2) {
         this.model.addAnimation(new MoveAnimation(AnimationType.MOVE, name, t1, t2,
@@ -235,6 +236,10 @@ public class ModelImpl implements IModel {
       // Check if the animation has started.
       if (key <= time) {
         for (AbstractAnimation ani : allAnimations.get(key)) {
+          // check if the animation has ended.
+          if (ani.getEndTime() < time) {
+            continue;
+          }
           AbstractShape shape = ani.runAnimation(time);
           nameToShape.put(shape.getName(), shape);
         }
