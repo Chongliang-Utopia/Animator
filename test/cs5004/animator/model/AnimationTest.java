@@ -36,6 +36,14 @@ public class AnimationTest {
     r = new Rectangle("R");
     c = new Oval("C");
 
+    r = new Rectangle("R", ShapeType.RECTANGLE,
+            new ColorType(255, 139, 234),
+        new Position2D(200.0, 200.0),
+        50.0, 100.0, 1, 100);
+    c = new Oval("C", ShapeType.OVAL,
+        new ColorType(0.0f, 0.0f, 1.0f),
+        new Position2D(500.0, 100.0),
+        60.0, 30.0, 6, 100);
     // Create Animation.
     R1_Stable = new AnimationOperation("R", ShapeType.RECTANGLE,
         1,200,200,50, 100, 255, 0,  0,
@@ -141,9 +149,9 @@ public class AnimationTest {
   @Test
   public void runAnimation1() {
     AbstractShape moveShape1 = new Rectangle("R", ShapeType.RECTANGLE,
-        new ColorType(1.0f, 0.0f, 0.0f),
-        new Position2D(300.0, 300.0),
-        50.0, 100.0, 1, 100);
+        new ColorType(255, 0, 0),
+        new Position2D(250, 250),
+        50.0, 100.0, 10, 50);
     assertEquals(moveShape1, R2_Move.runAnimation(30));
   }
 

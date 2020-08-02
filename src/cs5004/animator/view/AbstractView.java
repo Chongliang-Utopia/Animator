@@ -3,11 +3,13 @@ package cs5004.animator.view;
 import java.util.List;
 import java.util.Map;
 
+import javax.swing.JFrame;
+
 import cs5004.animator.model.AbstractAnimation;
 import cs5004.animator.model.IReadOnlyShapes;
 import cs5004.animator.model.Screen;
 
-public abstract class AbstractView implements IView {
+public abstract class AbstractView extends JFrame implements IView {
   protected Screen canvas = new Screen(0, 0, 0, 0);
 
   /**
@@ -19,7 +21,7 @@ public abstract class AbstractView implements IView {
    */
   @Override
   public abstract String renderText(Map<String, IReadOnlyShapes> allShapes,
-                                  Map<Integer, List<AbstractAnimation>> allAnimations);
+                                    Map<Integer, List<AbstractAnimation>> allAnimations);
 
   /**
    * Render the image view output with all needed information for drawing shapes.
