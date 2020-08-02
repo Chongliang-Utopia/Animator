@@ -20,7 +20,7 @@ public class ChangeColorAnimation extends AbstractAnimation {
    * @param endTime       the end time of the animation
    * @param startColor    the start color of the animation
    * @param endColor      the end color of the animation
-   * @param originalShape   the originalShape
+   * @param originalShape the originalShape
    * @throws IllegalArgumentException if the given animation type is invalid
    */
   public ChangeColorAnimation(AnimationType animationType,
@@ -47,18 +47,18 @@ public class ChangeColorAnimation extends AbstractAnimation {
    */
   @Override
   public AbstractShape runAnimation(int curTime)
-      throws IllegalArgumentException {
+          throws IllegalArgumentException {
     if (originalShape == null) {
       throw new IllegalArgumentException("shape can not be null");
     }
     ColorType curColor = new ColorType(
-        (float) this.calculateState(startColor.getRed(), endColor.getRed(), curTime),
-        (float) this.calculateState(startColor.getGreen(), endColor.getGreen(), curTime),
-        (float) this.calculateState(startColor.getBlue(), endColor.getBlue(), curTime));
+            (int) this.calculateState(startColor.getRed(), endColor.getRed(), curTime),
+            (int) this.calculateState(startColor.getGreen(), endColor.getGreen(), curTime),
+            (int) this.calculateState(startColor.getBlue(), endColor.getBlue(), curTime));
     // Create an updated shape.
     AbstractShape result = ShapeFactory.buildShape(originalShape.getName(), originalShape.getType(), curColor,
-        originalShape.getPosition(), originalShape.getWidth(), originalShape.getHeight(),
-        originalShape.getAppearTime(), originalShape.getDisappearTime());
+            originalShape.getPosition(), originalShape.getWidth(), originalShape.getHeight(),
+            originalShape.getAppearTime(), originalShape.getDisappearTime());
     if (result == null) {
       throw new IllegalArgumentException("Invalid animation to run on this shape");
     }
@@ -73,8 +73,8 @@ public class ChangeColorAnimation extends AbstractAnimation {
   @Override
   public String toString() {
     return "Shape " + this.getShapeName() + " changes color from " + startColor.toString()
-        + " to " + endColor.toString()
-        + " from t=" + this.getStartTime() + " to t=" + this.getEndTime() + "\n";
+            + " to " + endColor.toString()
+            + " from t=" + this.getStartTime() + " to t=" + this.getEndTime() + "\n";
   }
 
 
@@ -97,11 +97,11 @@ public class ChangeColorAnimation extends AbstractAnimation {
     ChangeColorAnimation that = (ChangeColorAnimation) o;
 
     return this.animationType == that.animationType
-        && this.shapeName.equals(that.shapeName)
-        && this.startTime == that.startTime
-        && this.endTime == that.endTime
-        && this.startColor.equals(that.startColor)
-        && this.endColor.equals(that.endColor);
+            && this.shapeName.equals(that.shapeName)
+            && this.startTime == that.startTime
+            && this.endTime == that.endTime
+            && this.startColor.equals(that.startColor)
+            && this.endColor.equals(that.endColor);
   }
 
   /**
@@ -112,6 +112,6 @@ public class ChangeColorAnimation extends AbstractAnimation {
   @Override
   public int hashCode() {
     return Objects.hash(animationType, shapeName, startTime, endTime,
-        startColor, endColor);
+            startColor, endColor);
   }
 }

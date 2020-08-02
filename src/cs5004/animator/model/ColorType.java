@@ -8,18 +8,18 @@ import java.util.Objects;
  * overridden toString, equals, and hashCode.
  */
 public class ColorType {
-  private float red;
-  private float green;
-  private float blue;
+  private int red;
+  private int green;
+  private int blue;
 
   /**
-   * Construct Colors object based on decimal numbers of red, green, and blue.
+   * Construct Colors object based on numbers of red, green, and blue.
    *
    * @param red   the red value of the color
    * @param green the green value of the color
    * @param blue  the blue value of the color
    */
-  public ColorType(float red, float green, float blue) {
+  public ColorType(int red, int green, int blue) {
     this.red = red;
     this.green = green;
     this.blue = blue;
@@ -53,14 +53,14 @@ public class ColorType {
   }
 
   /**
-   * String representation of the color settings, (red, green, blue) e.g. (0.0,0.0,1.0)
+   * String representation of the color settings, (red, green, blue) e.g. (255, 255, 255)
    *
    * @return the string format of the color settings
    */
   @Override
   public String toString() {
-    return "(" + String.format("%.1f", red) + ","
-        + String.format("%.1f", green) + "," + String.format("%.1f", blue) + ")";
+    return "(" + String.format("%d", red) + ","
+        + String.format("%d", green) + "," + String.format("%d", blue) + ")";
   }
 
   @Override
