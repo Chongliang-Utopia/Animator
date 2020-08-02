@@ -167,7 +167,7 @@ public class ModelImpl implements IModel {
    * @return a copy of the shapes in the model, use shape name as the key for the map.
    */
   @Override
-  public Map<String, IReadOnlyShapes> getAllShape() {
+  public Map<String, AbstractShape> getAllShape() {
     return new HashMap<>(allShapes);
   }
 
@@ -221,6 +221,20 @@ public class ModelImpl implements IModel {
       }
     }
     return sortedAnimationsAtGivenTime;
+  }
+
+  /**
+   * Return a copy of the ReadOnlyShapes in the model.
+   *
+   * @return a copy of the ReadOnlyShapes in the model, use shape name as the key for the map.
+   */
+  @Override
+  public Map<String, IReadOnlyShapes> getReadOnlyShapes() {
+    Map<String, IReadOnlyShapes> ret = new HashMap<>();
+    for (String shapeName : allShapes.keySet()) {
+      ret.put(shapeName, allShapes.get(shapeName));
+    }
+    return ret;
   }
 
   /**
