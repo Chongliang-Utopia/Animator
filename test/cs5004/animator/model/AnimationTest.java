@@ -27,7 +27,7 @@ public class AnimationTest {
   public void setUp() {
     // Create shape.
     r = new Rectangle("R", ShapeType.RECTANGLE,
-        new ColorType(1.0f, 0.0f, 0.0f),
+            new ColorType(255, 139, 234),
         new Position2D(200.0, 200.0),
         50.0, 100.0, 1, 100);
     c = new Oval("C", ShapeType.OVAL,

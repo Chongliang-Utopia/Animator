@@ -20,8 +20,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b400006b-a6a1-43c1-94f5-f773426eaf61" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cs5004/animator/model/ColorType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs5004/animator/model/ColorType.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/cs5004/animator/model/ShapeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/cs5004/animator/model/ShapeTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -62,7 +60,7 @@
       <recent name="cs5004.animator.view" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Invalid_no_input">
+  <component name="RunManager" selected="JUnit.ShapeTest">
     <configuration name="-in smalldemo.txt -view text -speed 2" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="cs5004.animator.EasyAnimator" />
       <module name="Animator" />
@@ -107,14 +105,31 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ShapeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Animator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cs5004.animator.model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cs5004.animator.model" />
+      <option name="MAIN_CLASS_NAME" value="cs5004.animator.model.ShapeTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Application.-in smalldemo.txt -view text -speed 2" />
       <item itemvalue="Application.Invalid_no_input" />
       <item itemvalue="Application.EasyAnimator" />
       <item itemvalue="JUnit.AnimationTest" />
+      <item itemvalue="JUnit.ShapeTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ShapeTest" />
         <item itemvalue="Application.EasyAnimator" />
         <item itemvalue="JUnit.AnimationTest" />
       </list>
@@ -179,5 +194,9 @@
       <screen x="0" y="23" width="1920" height="1006" />
     </state>
     <state x="914" y="169" key="refactoring.ChangeSignatureDialog/0.23.1920.1006@0.23.1920.1006" timestamp="1596331282750" />
+    <state x="1905" y="124" width="670" height="676" key="search.everywhere.popup" timestamp="1596398653908">
+      <screen x="1280" y="-78" width="1920" height="1080" />
+    </state>
+    <state x="1905" y="124" width="670" height="676" key="search.everywhere.popup/0.0.1280.800/1280.-78.1920.1080@1280.-78.1920.1080" timestamp="1596398653908" />
   </component>
 </project>

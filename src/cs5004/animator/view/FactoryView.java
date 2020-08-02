@@ -12,9 +12,7 @@ public class FactoryView {
       case "text":
         return new TextView();
       case "visual":
-        return new ImageView(tempo);
-      case "svg":
-        return new TextView(tempo);
+        return new ImageView();
       default:
         throw new IllegalArgumentException("Not a valid view");
     }
