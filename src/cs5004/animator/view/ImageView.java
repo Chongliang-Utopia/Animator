@@ -1,13 +1,35 @@
 package cs5004.animator.view;
 
+import java.awt.*;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
+import javax.swing.*;
+
 import cs5004.animator.model.AbstractAnimation;
 import cs5004.animator.model.IReadOnlyShapes;
+import cs5004.animator.model.Screen;
 
 public class ImageView extends AbstractView {
-  private int tempo;
+  private final Draw panel;
+
+  /**
+   * Construct an ImageView.
+   */
+  public ImageView() {
+    super();
+    panel = new Draw();
+    panel.setBackground(Color.WHITE);
+
+    JScrollPane scrollPane = new JScrollPane(panel);
+
+    setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+    setResizable(false);
+    add(scrollPane);
+    setVisible(true);
+
+  }
 
   /**
    * Render the text view output, including the text information of all shapes and all animations.
@@ -29,6 +51,19 @@ public class ImageView extends AbstractView {
    */
   @Override
   public void renderImage(Map<String, IReadOnlyShapes> allShapes) {
+    panel.draw(new ArrayList<IReadOnlyShapes>(allShapes.values()));
+  }
 
+  /**
+   * Set the default canvas to the given size.
+   *
+   * @param c given canvas size
+   */
+  @Override
+  public void setCanvas(Screen c) {
+    this.canvas = c;
+    panel.setBounds(canvas.getLocX(), canvas.getLocY(), canvas.getCanvasW(), canvas.getCanvasH());
+    setSize(1000, 800);
+    panel.setPreferredSize(new Dimension(canvas.getCanvasW(), canvas.getCanvasH()));
   }
 }

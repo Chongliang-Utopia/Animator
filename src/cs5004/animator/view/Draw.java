@@ -1,9 +1,7 @@
 package cs5004.animator.view;
 
 import java.awt.*;
-import java.awt.geom.AffineTransform;
 import java.util.List;
-import java.util.Map;
 
 import javax.swing.*;
 
@@ -32,25 +30,21 @@ public class Draw extends JPanel implements IDraw {
   @Override
   public void paintComponent(Graphics g) {
     super.paintComponent(g);
+
     if (this.shapes != null) {
       Graphics2D g2d = (Graphics2D) g;
-      for (IReadOnlyShapes shape : this.shapes) {
-        g2d.setColor(new Color((int) shape.getColor().getRed(),
-                (int) shape.getColor().getGreen(),
-                (int) shape.getColor().getBlue()));
-        AffineTransform transform = new AffineTransform();
-        transform.rotate(Math.toRadians(shape.getRotation()),
-                shape.getPosition().getX() + shape.getSize().getWidth() / 2,
-                shape.getPosition().getY() + shape.getSize().getHeight() / 2);
+      g.setColor(Color.BLACK);
 
-        g2d.setTransform(transform);
-        if (shape.getType().equals(ShapeType.RECTANGLE)) {
-          g2d.fillRect((int) shape.getPosition().getX(), (int) shape.getPosition().getY(),
-                  (int) shape.getWidth(), (int) shape.getHeight());
-        }
-        if (shape.getType().equals(ShapeType.OVAL)) {
+      for (IReadOnlyShapes shape : this.shapes) {
+        g2d.setColor(new Color(shape.getColor().getRed(),
+                shape.getColor().getGreen(), shape.getColor().getBlue()));
+        if (shape.getType() == ShapeType.OVAL) {
           g2d.fillOval((int) shape.getPosition().getX(), (int) shape.getPosition().getY(),
                   (int) shape.getWidth(), (int) shape.getHeight());
+        } else if (shape.getType() == ShapeType.RECTANGLE) {
+          g2d.fillRect((int) shape.getPosition().getX(), (int) shape.getPosition().getY(),
+                  (int) shape.getWidth(), (int) shape.getHeight());
+
         }
       }
 
