@@ -22,7 +22,7 @@ public interface IView {
   /**
    * Render the image view output with all needed information for drawing shapes.
    *
-   * @param allShapes the given animations in the view
+   * @param allShapes the given shapes in the view
    */
   public void renderImage(Map<String, IReadOnlyShapes> allShapes);
 

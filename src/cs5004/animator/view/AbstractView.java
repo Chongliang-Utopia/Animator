@@ -24,7 +24,7 @@ public abstract class AbstractView implements IView {
   /**
    * Render the image view output with all needed information for drawing shapes.
    *
-   * @param allShapes the given allShapes in the view
+   * @param allShapes the given shapes in the view
    */
   @Override
   public abstract void renderImage(Map<String, IReadOnlyShapes> allShapes);

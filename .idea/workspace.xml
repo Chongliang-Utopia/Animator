@@ -1,12 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="b400006b-a6a1-43c1-94f5-f773426eaf61" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< HEAD
+<<<<<<< HEAD
+      <change beforePath="$PROJECT_DIR$/src/cs5004/animator/view/AbstractView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs5004/animator/view/AbstractView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cs5004/animator/view/Draw.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs5004/animator/view/Draw.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cs5004/animator/view/IDraw.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs5004/animator/view/IDraw.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cs5004/animator/view/IView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs5004/animator/view/IView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cs5004/animator/view/ImageView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs5004/animator/view/ImageView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cs5004/animator/view/TextView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs5004/animator/view/TextView.java" afterDir="false" />
+=======
+=======
       <change beforePath="$PROJECT_DIR$/src/cs5004/animator/controller/ControllerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs5004/animator/controller/ControllerImpl.java" afterDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/src/cs5004/animator/controller/IController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs5004/animator/controller/IController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/cs5004/animator/model/IModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs5004/animator/model/IModel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/cs5004/animator/model/ModelImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs5004/animator/model/ModelImpl.java" afterDir="false" />
+=======
+>>>>>>> 2c2674e39c2f191366ade10e9b4f899c970eb2a8
+      <change beforePath="$PROJECT_DIR$/src/cs5004/animator/model/AbstractShape.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs5004/animator/model/AbstractShape.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cs5004/animator/model/IModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs5004/animator/model/IModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cs5004/animator/model/ModelImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs5004/animator/model/ModelImpl.java" afterDir="false" />
+<<<<<<< HEAD
+>>>>>>> faaaa7852484547990c5e9bc32ad92f11eec4b0b
+=======
+      <change beforePath="$PROJECT_DIR$/src/cs5004/animator/view/AbstractView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs5004/animator/view/AbstractView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cs5004/animator/view/IView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs5004/animator/view/IView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cs5004/animator/view/TextView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs5004/animator/view/TextView.java" afterDir="false" />
+>>>>>>> 2c2674e39c2f191366ade10e9b4f899c970eb2a8
+>>>>>>> 15bd85d9d5a0620efd491a8e8d929305e1adbc05
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,9 +67,11 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1fW1OD24j0FpKPxnsSrMoivlqxw" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
@@ -38,6 +82,11 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="cs5004.animator.view" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="AnimationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
@@ -74,11 +123,34 @@
     </task>
     <servers />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="WindowStateProjectService">
+<<<<<<< HEAD
     <state x="807" y="294" key="#com.intellij.ide.util.MemberChooser" timestamp="1596388319695">
       <screen x="0" y="23" width="1920" height="1006" />
     </state>
     <state x="807" y="294" key="#com.intellij.ide.util.MemberChooser/0.23.1920.1006@0.23.1920.1006" timestamp="1596388319695" />
+=======
+<<<<<<< HEAD
+    <state x="2087" y="213" key="#com.intellij.ide.util.MemberChooser" timestamp="1596384695736">
+      <screen x="1280" y="-78" width="1920" height="1080" />
+    </state>
+    <state x="2087" y="213" key="#com.intellij.ide.util.MemberChooser/0.0.1280.800/1280.-78.1920.1080@1280.-78.1920.1080" timestamp="1596384695736" />
+    <state x="2087" y="213" key="#com.intellij.ide.util.MemberChooser/0.23.1280.777/1280.-78.1920.1080@1280.-78.1920.1080" timestamp="1596382054697" />
+    <state x="807" y="294" key="#com.intellij.ide.util.MemberChooser/0.23.1920.1006@0.23.1920.1006" timestamp="1596333721387" />
+    <state x="1380" y="22" width="1720" height="880" key="DiffContextDialog" timestamp="1596385580460">
+      <screen x="1280" y="-78" width="1920" height="1080" />
+    </state>
+    <state x="1380" y="22" width="1720" height="880" key="DiffContextDialog/0.0.1280.800/1280.-78.1920.1080@1280.-78.1920.1080" timestamp="1596385580460" />
+=======
+    <state x="807" y="294" key="#com.intellij.ide.util.MemberChooser" timestamp="1596383600608">
+      <screen x="0" y="23" width="1920" height="1006" />
+    </state>
+    <state x="807" y="294" key="#com.intellij.ide.util.MemberChooser/0.23.1920.1006@0.23.1920.1006" timestamp="1596383600608" />
+>>>>>>> faaaa7852484547990c5e9bc32ad92f11eec4b0b
+>>>>>>> 15bd85d9d5a0620efd491a8e8d929305e1adbc05
     <state width="1776" height="106" key="GridCell.Tab.0.bottom" timestamp="1596320998548">
       <screen x="0" y="23" width="1920" height="1006" />
     </state>

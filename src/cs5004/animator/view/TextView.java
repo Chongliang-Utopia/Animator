@@ -22,7 +22,7 @@ public class TextView extends AbstractView {
     text.append(String.format("Canvas %s\n\n", this.canvas.toString()));
     text.append("Create the following shapes: \n");
     // add shape info to the view
-    for (String name: allShapes.keySet()) {
+    for (String name : allShapes.keySet()) {
       IReadOnlyShapes shape = allShapes.get(name);
       text.append(shape.textRender());
     }
@@ -39,8 +39,9 @@ public class TextView extends AbstractView {
   /**
    * Render the image view output with all needed information for drawing shapes.
    *
-   * @param allShapes the given animations in the view
+   * @param allShapes the given shapes in the view
    */
+  @Override
   public void renderImage(Map<String, IReadOnlyShapes> allShapes) {
 
   }

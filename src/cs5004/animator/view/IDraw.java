@@ -14,8 +14,8 @@ public interface IDraw {
   /**
    * Draw the shapes on the canvas with the corresponding animations.
    *
-   * @param animation the given animation with time and list of IReadOnlyShapes
+   * @param allShapes the given shapes with time and list of IReadOnlyShapes
    */
-  void draw(Map<Integer, List<IReadOnlyShapes>> animation);
+  void draw(Map<String, IReadOnlyShapes> allShapes);
 }
 
