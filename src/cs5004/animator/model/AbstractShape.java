@@ -5,7 +5,7 @@ package cs5004.animator.model;
  * of all shapes and methods to manipulate shapes. It can provide some useful details of shape
  * for others to retrieve.
  */
-public abstract class AbstractShape {
+public abstract class AbstractShape implements IReadOnlyShapes {
   protected String name;
   protected ShapeType type;
   protected ColorType color;
@@ -61,6 +61,7 @@ public abstract class AbstractShape {
    *
    * @return the name of the shape object
    */
+  @Override
   public String getName() {
     return name;
   }
@@ -79,6 +80,7 @@ public abstract class AbstractShape {
    *
    * @return the color of the shape
    */
+  @Override
   public ColorType getColor() {
     return color;
   }
@@ -88,6 +90,7 @@ public abstract class AbstractShape {
    *
    * @return the position of the shape
    */
+  @Override
   public Position2D getPosition() {
     return position;
   }
@@ -97,6 +100,7 @@ public abstract class AbstractShape {
    *
    * @return the appear time of the shape
    */
+  @Override
   public int getAppearTime() {
     return appearTime;
   }
@@ -106,6 +110,7 @@ public abstract class AbstractShape {
    *
    * @return the disappear time of the shape
    */
+  @Override
   public int getDisappearTime() {
     return disappearTime;
   }
@@ -115,6 +120,7 @@ public abstract class AbstractShape {
    *
    * @return the type of the shape
    */
+  @Override
   public ShapeType getType() {
     return type;
   }
@@ -133,6 +139,7 @@ public abstract class AbstractShape {
    *
    * @return true to display the object, otherwise false
    */
+  @Override
   public boolean getDisplay() {
     return this.display;
   }
@@ -141,18 +148,21 @@ public abstract class AbstractShape {
    * Abstract method to get the horizontal length of the shape, such as width or xRadius.
    * @return the horizontal length of the shape
    */
+  @Override
   public abstract double getWidth();
 
   /**
    * Abstract method to get the vertical length of the shape, such as height or yRadius.
    * @return the vertical length of the shape
    */
+  @Override
   public abstract double getHeight();
 
   /**
    * Return String representation of the shape details.
    *
    */
+  @Override
   public String textRender() {
     return "";
   }
