@@ -7,33 +7,30 @@ package cs5004.animator.model;
  * current state according to the current time.
  */
 public abstract class AbstractAnimation {
-  protected AnimationType animationType;
   protected String shapeName;
-  protected AbstractShape originalShape;
   protected int startTime;
   protected int endTime;
+  protected ShapeType shapeType;
 
   /**
    * Constructor an abstract animation object.
    *
-   * @param animationType type of the animation
    * @param shapeName     name of the shape
+   * @param shapeType     shapeType
    * @param startTime     start time of the animation
    * @param endTime       end time of the animation
-   * @param originalShape the original shape to transform
    * @throws IllegalArgumentException if the start time or end time is invalid
    */
-  public AbstractAnimation(AnimationType animationType, String shapeName,
-                           int startTime, int endTime, AbstractShape originalShape)
+  public AbstractAnimation(String shapeName, ShapeType shapeType,
+                           int startTime, int endTime)
       throws IllegalArgumentException {
     if (startTime < 0 || endTime < 0 || startTime >= endTime) {
       throw new IllegalArgumentException("Invalid time frame for the animation.");
     }
-    this.animationType = animationType;
     this.shapeName = shapeName;
     this.startTime = startTime;
     this.endTime = endTime;
-    this.originalShape = originalShape;
+    this.shapeType = shapeType;
   }
 
   /**
@@ -63,14 +60,6 @@ public abstract class AbstractAnimation {
     return this.endTime;
   }
 
-  /**
-   * Return the animation type.
-   *
-   * @return the animation type
-   */
-  public AnimationType getAnimationType() {
-    return this.animationType;
-  }
 
   /**
    * Abstract method to run the animation, which returns an updated abstract shape.

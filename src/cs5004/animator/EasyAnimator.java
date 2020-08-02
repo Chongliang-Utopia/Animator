@@ -81,8 +81,8 @@ public final class EasyAnimator {
             "FileNotFoundException: Could not find file",
             "Error", JOptionPane.ERROR_MESSAGE);
       }
-      IView view = FactoryView.makeView(viewType, speed);
-      IController controller = new ControllerImpl(model, view);
+      IView view = FactoryView.makeView(viewType);
+      IController controller = new ControllerImpl(model, view, speed);
       if (outputName.length() == 0) {
         controller.run(System.out);
       } else {

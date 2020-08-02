@@ -132,33 +132,24 @@ public class ModelImpl implements IModel {
      * @param r2   The final red color-value of the shape
      * @param g2   The final green color-value of the shape
      * @param b2   The final blue color-value of the shape
+     * @throws IllegalArgumentException if the name of the shape does not exist
      * @return This {@link AnimationBuilder}
      */
     @Override
     public AnimationBuilder<IModel> addMotion(String name, int t1, int x1, int y1,
                                               int w1, int h1, int r1, int g1, int b1,
                                               int t2, int x2, int y2,
-                                              int w2, int h2, int r2, int g2, int b2) {
-      AbstractShape originalShape = ShapeFactory.buildShape(name,
-          nameToType.get(name), new ColorType(r1, g1, b1), new Position2D(x1, y1),
-          w1, h1, t1, t2);
-      // Check the animation type.
-      if (x1 != x2 || y1 != y2) {
-        this.model.addAnimation(new MoveAnimation(AnimationType.MOVE, name, t1, t2,
-            new Position2D(x1, y1), new Position2D(x2, y2), originalShape));
+                                              int w2, int h2, int r2, int g2, int b2)
+        throws IllegalArgumentException {
+      if (!nameToType.containsKey(name)) {
+        throw new IllegalArgumentException("This shape does not exist");
       }
-      else if (w1 != w2 || h1 != h2) {
-        this.model.addAnimation(new ScaleAnimation(AnimationType.SCALE, name, t1, t2,
-            List.of((double)w1, (double)h1), List.of((double)w2, (double)h2), originalShape));
-      }
-      else if (r1 != r2 || g1 != g2 || b1 != b2 ) {
-        this.model.addAnimation(new ChangeColorAnimation(AnimationType.SCALE, name, t1, t2,
-            new ColorType(r1, g1, b1),new ColorType(r2, g2, b2), originalShape));
-      }
+      this.model.addAnimation(new AnimationOperation(name, nameToType.get(name),
+      t1, x1, y1, w1, h1, r1, g1, b1,
+      t2, x2, y2, w2, h2, r2, g2, b2));
       return this;
     }
   }
-
 
 
   /**
@@ -367,8 +358,7 @@ public class ModelImpl implements IModel {
     for (List<AbstractAnimation> animations : allAnimations.values()) {
       for (AbstractAnimation existingAnimation : animations) {
         // Check for contradiction.
-        if (existingAnimation.getShapeName().equals(animation.getShapeName())
-            && existingAnimation.getAnimationType() == animation.getAnimationType()) {
+        if (existingAnimation.getShapeName().equals(animation.getShapeName())) {
           boolean notValid = (existingAnimation.getStartTime() < animation.getEndTime())
               && (existingAnimation.getEndTime() > animation.getStartTime());
           if (notValid) {

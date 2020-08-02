@@ -17,13 +17,13 @@ public class ControllerImpl implements IController {
   private final IModel model;
   private final IView view;
 
-  public ControllerImpl(IModel model, IView view) throws IllegalArgumentException{
+  public ControllerImpl(IModel model, IView view, int tempo) throws IllegalArgumentException{
     if (model == null || view == null) {
       throw new IllegalArgumentException("Parameters can not be null");
     }
     this.model = model;
     this.view = view;
-    this.timer = new Timer((int) ((1.0 / view.getTempo()) * 1000), ((e) -> {
+    this.timer = new Timer((int) ((1.0 / tempo) * 1000), ((e) -> {
       Map<String, IReadOnlyShapes> shapesToRender = model.getUpdatedShapeAtGivenTime(tick++);
       view.renderImage(shapesToRender);
       tick = 0;
