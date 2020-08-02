@@ -31,4 +31,11 @@ public interface IView {
    */
   void setCanvas(Screen screen);
 
+  /**
+   * Get the tempo that the user passes in.
+   *
+   * @return the tempo
+   */
+  int getTempo();
+
 }
