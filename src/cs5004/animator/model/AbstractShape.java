@@ -76,6 +76,24 @@ public abstract class AbstractShape implements IReadOnlyShapes {
   }
 
   /**
+   * Set the shape's appearTime to the given color.
+   *
+   * @param appearTime the appearTime of the shape
+   */
+  public void setAppearTime(int appearTime) {
+    this.appearTime = appearTime;
+  }
+
+  /**
+   * Set the shape's appearTime to the given color.
+   *
+   * @param disappearTime the appearTime of the shape
+   */
+  public void setDisappearTime(int disappearTime) {
+    this.disappearTime = disappearTime;
+  }
+
+  /**
    * Get the color of the shape.
    *
    * @return the color of the shape

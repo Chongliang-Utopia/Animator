@@ -142,7 +142,6 @@ public class ModelImpl implements IModel {
       AbstractShape originalShape = ShapeFactory.buildShape(name,
           nameToType.get(name), new ColorType(r1, g1, b1), new Position2D(x1, y1),
           w1, h1, t1, t2);
-      if ()
       // Check the animation type.
       if (x1 != x2 || y1 != y2) {
         this.model.addAnimation(new MoveAnimation(AnimationType.MOVE, name, t1, t2,
@@ -168,7 +167,7 @@ public class ModelImpl implements IModel {
    * @return a copy of the shapes in the model, use shape name as the key for the map.
    */
   @Override
-  public Map<String, AbstractShape> getAllShape() {
+  public Map<String, IReadOnlyShapes> getAllShape() {
     return new HashMap<>(allShapes);
   }
 
@@ -225,13 +224,13 @@ public class ModelImpl implements IModel {
   }
 
   /**
-   * Return a list of all the updated shape at given time.
+   * Return a map of all the updated shape at given time.
    * @param time the time to check the updated shapes
-   * @return a list of all the updated shape at given time
+   * @return a map of all the updated shape at given time
    */
   @Override
-  public List<AbstractShape> getUpdatedShapeAtGivenTime(int time) {
-    Map<String, AbstractShape> nameToShape = new HashMap<>();
+  public Map<String, IReadOnlyShapes> getUpdatedShapeAtGivenTime(int time) {
+    Map<String, IReadOnlyShapes> nameToShape = new HashMap<>();
     for (int key : allAnimations.keySet()) {
       // Check if the animation has started.
       if (key <= time) {
@@ -245,7 +244,7 @@ public class ModelImpl implements IModel {
         }
       }
     }
-    return new ArrayList<>(nameToShape.values());
+    return nameToShape;
   }
 
   /**
@@ -314,6 +313,9 @@ public class ModelImpl implements IModel {
       allAnimations.put(animation.getStartTime(), new ArrayList<>());
     }
     allAnimations.get(animation.getStartTime()).add(animation);
+    AbstractShape shape = allShapes.get(animation.getShapeName());
+    shape.setAppearTime(Math.min(shape.getAppearTime(), animation.getStartTime()));
+    shape.setDisappearTime(Math.min(shape.getDisappearTime(), animation.getEndTime()));
   }
 
   /**
