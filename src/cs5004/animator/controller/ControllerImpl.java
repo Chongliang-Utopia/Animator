@@ -9,6 +9,8 @@ import javax.swing.Timer;
 import cs5004.animator.model.AbstractAnimation;
 import cs5004.animator.model.AbstractShape;
 import cs5004.animator.model.IModel;
+import cs5004.animator.model.IReadOnlyShapes;
+import cs5004.animator.view.IView;
 
 public class ControllerImpl implements IController {
   private final Timer timer;
@@ -23,7 +25,7 @@ public class ControllerImpl implements IController {
     this.model = model;
     this.view = view;
     this.timer = new Timer((int) ((1.0 / view.getTempo()) * 1000), ((e) -> {
-      List<AbstractShape> shapesToRender = model.getUpdatedShapeAtGivenTime(tick++);
+      Map<String, IReadOnlyShapes> shapesToRender = model.getUpdatedShapeAtGivenTime(tick++);
       view.renderImage(shapesToRender);
       tick = 0;
     }));
@@ -35,7 +37,7 @@ public class ControllerImpl implements IController {
     if (ap == null) {
       throw new IllegalStateException("Parameters can not be null");
     }
-    Map<String, AbstractShape> shapes = model.getAllShape();
+    Map<String, IReadOnlyShapes> shapes = model.getAllShape();
     Map<Integer, List<AbstractAnimation>> animations = model.getAllAnimationSortedByTime();
     String text = view.renderText(shapes, animations);
     try {

@@ -20,10 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b400006b-a6a1-43c1-94f5-f773426eaf61" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cs5004/animator/controller/ControllerImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cs5004/animator/controller/IController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< HEAD
 <<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/src/cs5004/animator/view/AbstractView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs5004/animator/view/AbstractView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/cs5004/animator/view/Draw.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs5004/animator/view/Draw.java" afterDir="false" />
@@ -32,9 +30,19 @@
       <change beforePath="$PROJECT_DIR$/src/cs5004/animator/view/ImageView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs5004/animator/view/ImageView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/cs5004/animator/view/TextView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs5004/animator/view/TextView.java" afterDir="false" />
 =======
+=======
+      <change beforePath="$PROJECT_DIR$/src/cs5004/animator/controller/ControllerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs5004/animator/controller/ControllerImpl.java" afterDir="false" />
+>>>>>>> 2c2674e39c2f191366ade10e9b4f899c970eb2a8
       <change beforePath="$PROJECT_DIR$/src/cs5004/animator/model/AbstractShape.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs5004/animator/model/AbstractShape.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cs5004/animator/model/IModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs5004/animator/model/IModel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/cs5004/animator/model/ModelImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs5004/animator/model/ModelImpl.java" afterDir="false" />
+<<<<<<< HEAD
 >>>>>>> faaaa7852484547990c5e9bc32ad92f11eec4b0b
+=======
+      <change beforePath="$PROJECT_DIR$/src/cs5004/animator/view/AbstractView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs5004/animator/view/AbstractView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cs5004/animator/view/IView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs5004/animator/view/IView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cs5004/animator/view/TextView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs5004/animator/view/TextView.java" afterDir="false" />
+>>>>>>> 2c2674e39c2f191366ade10e9b4f899c970eb2a8
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
