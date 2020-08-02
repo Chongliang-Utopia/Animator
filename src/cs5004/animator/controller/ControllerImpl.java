@@ -7,7 +7,6 @@ import java.util.Map;
 import javax.swing.Timer;
 
 import cs5004.animator.model.AbstractAnimation;
-import cs5004.animator.model.AbstractShape;
 import cs5004.animator.model.IModel;
 import cs5004.animator.model.IReadOnlyShapes;
 import cs5004.animator.view.IView;
@@ -37,7 +36,7 @@ public class ControllerImpl implements IController {
     if (ap == null) {
       throw new IllegalStateException("Parameters can not be null");
     }
-    Map<String, IReadOnlyShapes> shapes = model.getAllShape();
+    Map<String, IReadOnlyShapes> shapes = model.getReadOnlyShapes();
     Map<Integer, List<AbstractAnimation>> animations = model.getAllAnimationSortedByTime();
     String text = view.renderText(shapes, animations);
     try {
@@ -46,5 +45,15 @@ public class ControllerImpl implements IController {
       throw new IOException("Cannot append");
     }
     timer.start();
+  }
+
+  /**
+   * Changes the speed of the animations to the given speed.
+   *
+   * @param value the given speed
+   */
+  @Override
+  public void changeSpeed(int value) {
+    this.timer.setDelay((int) ((1.0 / value * 1000)));
   }
 }

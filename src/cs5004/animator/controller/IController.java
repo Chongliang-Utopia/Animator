@@ -1,6 +1,5 @@
 package cs5004.animator.controller;
 
-
 import java.io.IOException;
 
 /**
@@ -12,4 +11,11 @@ public interface IController {
    * The method that will render the text, or draw the shapes.
    */
   void run(Appendable ap) throws  IOException;
+
+  /**
+   * Changes the speed of the animations to the given speed.
+   *
+   * @param value the given speed
+   */
+  void changeSpeed(int value);
 }
