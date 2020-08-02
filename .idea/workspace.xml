@@ -2,17 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b400006b-a6a1-43c1-94f5-f773426eaf61" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cs5004/animator/controller/ControllerImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cs5004/animator/controller/IController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cs5004/animator/model/AbstractAnimation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs5004/animator/model/AbstractAnimation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/cs5004/animator/model/AbstractShape.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs5004/animator/model/AbstractShape.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cs5004/animator/model/ChangeColorAnimation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs5004/animator/model/ChangeColorAnimation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cs5004/animator/model/IModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs5004/animator/model/IModel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/cs5004/animator/model/ModelImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs5004/animator/model/ModelImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cs5004/animator/model/MoveAnimation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs5004/animator/model/MoveAnimation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cs5004/animator/model/Oval.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs5004/animator/model/Oval.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cs5004/animator/model/Rectangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs5004/animator/model/Rectangle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cs5004/animator/model/ScaleAnimation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs5004/animator/model/ScaleAnimation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cs5004/animator/model/ShapeFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs5004/animator/model/ShapeFactory.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +17,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -80,10 +76,10 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="807" y="294" key="#com.intellij.ide.util.MemberChooser" timestamp="1596333721387">
+    <state x="807" y="294" key="#com.intellij.ide.util.MemberChooser" timestamp="1596383600608">
       <screen x="0" y="23" width="1920" height="1006" />
     </state>
-    <state x="807" y="294" key="#com.intellij.ide.util.MemberChooser/0.23.1920.1006@0.23.1920.1006" timestamp="1596333721387" />
+    <state x="807" y="294" key="#com.intellij.ide.util.MemberChooser/0.23.1920.1006@0.23.1920.1006" timestamp="1596383600608" />
     <state width="1776" height="106" key="GridCell.Tab.0.bottom" timestamp="1596320998548">
       <screen x="0" y="23" width="1920" height="1006" />
     </state>
