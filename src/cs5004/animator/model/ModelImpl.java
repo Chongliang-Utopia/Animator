@@ -329,7 +329,7 @@ public class ModelImpl implements IModel {
     allAnimations.get(animation.getStartTime()).add(animation);
     AbstractShape shape = allShapes.get(animation.getShapeName());
     shape.setAppearTime(Math.min(shape.getAppearTime(), animation.getStartTime()));
-    shape.setDisappearTime(Math.min(shape.getDisappearTime(), animation.getEndTime()));
+    shape.setDisappearTime(Math.max(shape.getDisappearTime(), animation.getEndTime()));
   }
 
   /**

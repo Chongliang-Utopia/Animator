@@ -40,6 +40,7 @@ public class ControllerImpl implements IController {
     Map<Integer, List<AbstractAnimation>> animations = model.getAllAnimationSortedByTime();
     String text = view.renderText(shapes, animations);
     try {
+      // write to file/stdin
       ap.append(text);
     } catch (IOException e) {
       throw new IOException("Cannot append");
