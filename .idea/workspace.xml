@@ -22,6 +22,7 @@
     <list default="true" id="b400006b-a6a1-43c1-94f5-f773426eaf61" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/cs5004/animator/model/ColorType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs5004/animator/model/ColorType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/cs5004/animator/model/ShapeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/cs5004/animator/model/ShapeTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

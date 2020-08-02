@@ -15,12 +15,12 @@ public class ShapeTest {
   @Test
   public void rectangleShapeGetter() {
     AbstractShape rectangle = new Rectangle("R", ShapeType.RECTANGLE,
-            new ColorType(1.0f, 0.0f, 0.0f), new Position2D(200.0, 200.0),
+            new ColorType(255, 139, 234), new Position2D(200.0, 200.0),
             50.0, 100.0, 1, 100);
     assertEquals("R", rectangle.getName());
     assertEquals("rectangle", rectangle.getType().toString());
     assertEquals(new Position2D(200.0, 200.0), rectangle.getPosition());
-    assertEquals(new ColorType(1.0f, 0.0f, 0.0f), rectangle.getColor());
+    assertEquals(new ColorType(233, 111, 42), rectangle.getColor());
     assertEquals(50.0, rectangle.getWidth(), 0.0);
     assertEquals(100.0, rectangle.getHeight(), 0.0);
     assertEquals(1, rectangle.getAppearTime(), 0.0);
