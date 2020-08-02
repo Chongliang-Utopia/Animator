@@ -36,14 +36,8 @@ public class AnimationTest {
     r = new Rectangle("R");
     c = new Oval("C");
 
-    r = new Rectangle("R", ShapeType.RECTANGLE,
-            new ColorType(255, 139, 234),
-        new Position2D(200.0, 200.0),
-        50.0, 100.0, 1, 100);
-    c = new Oval("C", ShapeType.OVAL,
-        new ColorType(0.0f, 0.0f, 1.0f),
-        new Position2D(500.0, 100.0),
-        60.0, 30.0, 6, 100);
+    r = new Rectangle("R");
+    c = new Oval("C");
     // Create Animation.
     R1_Stable = new AnimationOperation("R", ShapeType.RECTANGLE,
         1,200,200,50, 100, 255, 0,  0,

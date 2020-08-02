@@ -1,119 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="BranchesTreeState">
-    <expand>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-    </expand>
-    <select />
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="b400006b-a6a1-43c1-94f5-f773426eaf61" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/cs5004/animator/model/AnimationOperation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cs5004/animator/model/StableAnimation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Animator/cs5004/animator/EasyAnimator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Animator/cs5004/animator/EasyAnimator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Animator/cs5004/animator/controller/ControllerImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Animator/cs5004/animator/controller/ControllerImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Animator/cs5004/animator/model/AbstractAnimation.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Animator/cs5004/animator/model/AbstractAnimation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Animator/cs5004/animator/model/AnimationType.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Animator/cs5004/animator/model/AnimationType.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Animator/cs5004/animator/model/ChangeColorAnimation.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Animator/cs5004/animator/model/ModelImpl$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Animator/cs5004/animator/model/ModelImpl$Builder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Animator/cs5004/animator/model/ModelImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Animator/cs5004/animator/model/ModelImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Animator/cs5004/animator/model/MoveAnimation.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Animator/cs5004/animator/model/ScaleAnimation.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cs5004/animator/EasyAnimator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs5004/animator/EasyAnimator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cs5004/animator/controller/ControllerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs5004/animator/controller/ControllerImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cs5004/animator/model/AbstractAnimation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs5004/animator/model/AbstractAnimation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cs5004/animator/model/AnimationType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs5004/animator/model/AnimationType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cs5004/animator/model/ChangeColorAnimation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs5004/animator/model/ChangeColorAnimation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cs5004/animator/model/ModelImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs5004/animator/model/ModelImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cs5004/animator/model/MoveAnimation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs5004/animator/model/MoveAnimation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cs5004/animator/model/ScaleAnimation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs5004/animator/model/ScaleAnimation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cs5004/animator/view/FactoryView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs5004/animator/view/FactoryView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/cs5004/animator/model/AnimationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/cs5004/animator/model/AnimationTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/cs5004/animator/model/ShapeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/cs5004/animator/model/ShapeTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="d6f7471e-8e72-4e3b-a8da-37087b685913" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Interface" />
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="1fW1OD24j0FpKPxnsSrMoivlqxw" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
-  <component name="ProjectViewState">
-    <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showLibraryContents" value="true" />
-  </component>
+  <component name="ProjectId" id="1fYpEY2BFFwnr38u4yZ1UtjsJwq" />
   <component name="PropertiesComponent">
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
-  <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="cs5004.animator.view" />
-    </key>
-  </component>
-  <component name="RunManager" selected="JUnit.AnimationTest.getShapeName1">
-  <component name="RunManager" selected="JUnit.ShapeTest">
-    <configuration name="-in smalldemo.txt -view text -speed 2" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="cs5004.animator.EasyAnimator" />
-      <module name="Animator" />
-      <option name="PROGRAM_PARAMETERS" value="-in smalldemo.txt -view text -speed 2" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="EasyAnimator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="cs5004.animator.EasyAnimator" />
-      <module name="Animator" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cs5004.animator.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Invalid_no_input" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="cs5004.animator.EasyAnimator" />
-      <module name="Animator" />
-      <option name="PROGRAM_PARAMETERS" value="-in -speed 50 -view visual" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AnimationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.AnimationTest.runAnimation1">
+    <configuration name="AnimationTest.runAnimation1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Animator" />
       <extension name="coverage">
         <pattern>
@@ -123,48 +30,32 @@
       </extension>
       <option name="PACKAGE_NAME" value="cs5004.animator.model" />
       <option name="MAIN_CLASS_NAME" value="cs5004.animator.model.AnimationTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AnimationTest.getShapeName1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-    <configuration name="ShapeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Animator" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cs5004.animator.model.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="cs5004.animator.model" />
-      <option name="MAIN_CLASS_NAME" value="cs5004.animator.model.AnimationTest" />
-      <option name="METHOD_NAME" value="getShapeName1" />
+      <option name="METHOD_NAME" value="runAnimation1" />
       <option name="TEST_OBJECT" value="method" />
-      <option name="MAIN_CLASS_NAME" value="cs5004.animator.model.ShapeTest" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <list>
-      <item itemvalue="Application.-in smalldemo.txt -view text -speed 2" />
-      <item itemvalue="Application.Invalid_no_input" />
-      <item itemvalue="Application.EasyAnimator" />
-      <item itemvalue="JUnit.AnimationTest" />
-      <item itemvalue="JUnit.AnimationTest.getShapeName1" />
-    </list>
+    <configuration name="AnimationTest.runAnimationInvalid" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Animator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cs5004.animator.model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cs5004.animator.model" />
+      <option name="MAIN_CLASS_NAME" value="cs5004.animator.model.AnimationTest" />
+      <option name="METHOD_NAME" value="runAnimationInvalid" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.AnimationTest.getShapeName1" />
-        <item itemvalue="JUnit.ShapeTest" />
-      </list>
-    </recent_temporary>
-    <recent_temporary>
-      <list>
-        <item itemvalue="JUnit.ShapeTest" />
-        <item itemvalue="Application.EasyAnimator" />
-        <item itemvalue="JUnit.AnimationTest" />
+        <item itemvalue="JUnit.AnimationTest.runAnimation1" />
+        <item itemvalue="JUnit.AnimationTest.runAnimationInvalid" />
       </list>
     </recent_temporary>
   </component>
@@ -173,67 +64,18 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="b400006b-a6a1-43c1-94f5-f773426eaf61" name="Default Changelist" comment="" />
-      <created>1596319000654</created>
+      <changelist id="d6f7471e-8e72-4e3b-a8da-37087b685913" name="Default Changelist" comment="" />
+      <created>1596404768513</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1596319000654</updated>
+      <updated>1596404768513</updated>
     </task>
     <servers />
   </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="oldMeFiltersMigrated" value="true" />
-  </component>
   <component name="WindowStateProjectService">
-    <state x="648" y="182" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1596395430609">
+    <state x="721" y="428" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1596404777219">
       <screen x="0" y="23" width="1920" height="1006" />
     </state>
-    <state x="648" y="182" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1920.1006@0.23.1920.1006" timestamp="1596395430609" />
-    <state x="807" y="294" key="#com.intellij.ide.util.MemberChooser" timestamp="1596400169747">
-      <screen x="0" y="23" width="1920" height="1006" />
-    </state>
-    <state x="2087" y="213" key="#com.intellij.ide.util.MemberChooser/0.0.1280.800/1280.-78.1920.1080@1280.-78.1920.1080" timestamp="1596384695736" />
-    <state x="2087" y="213" key="#com.intellij.ide.util.MemberChooser/0.23.1280.777/1280.-78.1920.1080@1280.-78.1920.1080" timestamp="1596382054697" />
-    <state x="807" y="294" key="#com.intellij.ide.util.MemberChooser/0.23.1920.1006@0.23.1920.1006" timestamp="1596400169747" />
-    <state x="921" y="311" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1596395429136">
-      <screen x="0" y="23" width="1920" height="1006" />
-    </state>
-    <state x="921" y="311" key="#com.intellij.ide.util.TreeClassChooserDialog/0.23.1920.1006@0.23.1920.1006" timestamp="1596395429136" />
-    <state x="1380" y="22" width="1720" height="880" key="DiffContextDialog" timestamp="1596385580460">
-      <screen x="1280" y="-78" width="1920" height="1080" />
-    </state>
-    <state x="1380" y="22" width="1720" height="880" key="DiffContextDialog/0.0.1280.800/1280.-78.1920.1080@1280.-78.1920.1080" timestamp="1596385580460" />
-    <state width="1808" height="75" key="GridCell.Tab.0.bottom" timestamp="1596403450350">
-      <screen x="0" y="23" width="1920" height="1006" />
-    </state>
-    <state width="1808" height="75" key="GridCell.Tab.0.bottom/0.23.1920.1006@0.23.1920.1006" timestamp="1596403450350" />
-    <state width="1808" height="75" key="GridCell.Tab.0.center" timestamp="1596403450349">
-      <screen x="0" y="23" width="1920" height="1006" />
-    </state>
-    <state width="1808" height="75" key="GridCell.Tab.0.center/0.23.1920.1006@0.23.1920.1006" timestamp="1596403450349" />
-    <state width="1808" height="75" key="GridCell.Tab.0.left" timestamp="1596403450349">
-      <screen x="0" y="23" width="1920" height="1006" />
-    </state>
-    <state width="1808" height="75" key="GridCell.Tab.0.left/0.23.1920.1006@0.23.1920.1006" timestamp="1596403450349" />
-    <state width="1808" height="75" key="GridCell.Tab.0.right" timestamp="1596403450350">
-      <screen x="0" y="23" width="1920" height="1006" />
-    </state>
-    <state width="1808" height="75" key="GridCell.Tab.0.right/0.23.1920.1006@0.23.1920.1006" timestamp="1596403450350" />
-    <state x="720" y="479" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1596319029323">
-      <screen x="0" y="23" width="1920" height="1006" />
-    </state>
-    <state x="720" y="479" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.23.1920.1006@0.23.1920.1006" timestamp="1596319029323" />
-    <state width="600" height="424" key="javadoc.popup" timestamp="1596402746926">
-      <screen x="0" y="23" width="1920" height="1006" />
-    </state>
-    <state width="600" height="424" key="javadoc.popup/0.23.1920.1006@0.23.1920.1006" timestamp="1596402746926" />
-    <state x="914" y="169" key="refactoring.ChangeSignatureDialog" timestamp="1596331282750">
-      <screen x="0" y="23" width="1920" height="1006" />
-    </state>
-    <state x="914" y="169" key="refactoring.ChangeSignatureDialog/0.23.1920.1006@0.23.1920.1006" timestamp="1596331282750" />
-    <state x="1905" y="124" width="670" height="676" key="search.everywhere.popup" timestamp="1596398653908">
-      <screen x="1280" y="-78" width="1920" height="1080" />
-    </state>
-    <state x="1905" y="124" width="670" height="676" key="search.everywhere.popup/0.0.1280.800/1280.-78.1920.1080@1280.-78.1920.1080" timestamp="1596398653908" />
+    <state x="721" y="428" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.23.1920.1006@0.23.1920.1006" timestamp="1596404777219" />
   </component>
 </project>
