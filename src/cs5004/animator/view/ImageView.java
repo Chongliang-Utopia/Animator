@@ -1,11 +1,13 @@
 package cs5004.animator.view;
 
-import java.awt.*;
+import java.awt.Dimension;
+import java.awt.Color;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
-import javax.swing.*;
+import javax.swing.JScrollPane;
+import javax.swing.JFrame;
 
 import cs5004.animator.model.AbstractAnimation;
 import cs5004.animator.model.IReadOnlyShapes;
@@ -51,7 +53,7 @@ public class ImageView extends AbstractView {
    */
   @Override
   public void renderImage(Map<String, IReadOnlyShapes> allShapes) {
-    panel.draw(new ArrayList<IReadOnlyShapes>(allShapes.values()));
+    panel.draw(new ArrayList<>(allShapes.values()));
   }
 
   /**

@@ -17,7 +17,7 @@ public interface IView {
    * @return the string output of the text view
    */
   String renderText(Map<String, IReadOnlyShapes> allShapes,
-                  Map<Integer, List<AbstractAnimation>> allAnimations);
+                    Map<Integer, List<AbstractAnimation>> allAnimations);
 
   /**
    * Render the image view output with all needed information for drawing shapes.

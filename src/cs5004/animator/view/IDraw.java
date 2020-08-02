@@ -1,7 +1,6 @@
 package cs5004.animator.view;
 
 import java.util.List;
-import java.util.Map;
 
 import cs5004.animator.model.IReadOnlyShapes;
 
