@@ -16,7 +16,7 @@ public interface IView {
    * @param allAnimations the given animations in the view
    * @return the string output of the text view
    */
-  String renderText(Map<String, IReadOnlyShapes> allShapes,
+  String renderText(List<IReadOnlyShapes> allShapes,
                     Map<Integer, List<AbstractAnimation>> allAnimations);
 
   /**
@@ -24,7 +24,7 @@ public interface IView {
    *
    * @param allShapes the given shapes in the view
    */
-  public void renderImage(Map<String, IReadOnlyShapes> allShapes);
+  public void renderImage(List<IReadOnlyShapes>allShapes);
 
 
   /**

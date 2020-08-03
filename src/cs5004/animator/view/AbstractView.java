@@ -20,7 +20,7 @@ public abstract class AbstractView extends JFrame implements IView {
    * @return the string output of the text view
    */
   @Override
-  public abstract String renderText(Map<String, IReadOnlyShapes> allShapes,
+  public abstract String renderText(List<IReadOnlyShapes> allShapes,
                                     Map<Integer, List<AbstractAnimation>> allAnimations);
 
   /**
@@ -29,7 +29,7 @@ public abstract class AbstractView extends JFrame implements IView {
    * @param allShapes the given shapes in the view
    */
   @Override
-  public abstract void renderImage(Map<String, IReadOnlyShapes> allShapes);
+  public abstract void renderImage(List<IReadOnlyShapes> allShapes);
 
   /**
    * Set the default canvas to the given size.

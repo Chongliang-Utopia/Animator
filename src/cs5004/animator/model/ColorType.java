@@ -34,7 +34,7 @@ public class ColorType {
    *
    * @return the float value of the blue part of the color
    */
-  public float getBlue() {
+  public int getBlue() {
     return blue;
   }
 
@@ -43,7 +43,7 @@ public class ColorType {
    *
    * @return the float value of the green part of the color
    */
-  public float getGreen() {
+  public int getGreen() {
     return green;
   }
 
@@ -52,7 +52,7 @@ public class ColorType {
    *
    * @return the float value of the red part of the color
    */
-  public float getRed() {
+  public int getRed() {
     return red;
   }
 

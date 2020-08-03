@@ -38,7 +38,7 @@ public class Draw extends JPanel implements IDraw {
 
       for (IReadOnlyShapes shape : this.shapes) {
         g2d.setColor(new Color(shape.getColor().getRed(),
-                shape.getColor().getGreen(), shape.getColor().getBlue()));
+            shape.getColor().getGreen(), shape.getColor().getBlue()));
         if (shape.getType() == ShapeType.OVAL) {
           g2d.fillOval((int) shape.getPosition().getX(), (int) shape.getPosition().getY(),
                   (int) shape.getWidth(), (int) shape.getHeight());

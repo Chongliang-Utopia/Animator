@@ -39,9 +39,6 @@ public class AnimationOperation extends AbstractAnimation {
 
   @Override
   public AbstractShape runAnimation(int curTime) throws IllegalArgumentException {
-    if (curTime < startTime || curTime > endTime) {
-      throw new IllegalArgumentException("Invalid time");
-    }
     int[] curState = new int[startState.length];
     for (int i = 0; i < startState.length; i++) {
       curState[i] = (int) calculateState(startState[i], endState[i], curTime);

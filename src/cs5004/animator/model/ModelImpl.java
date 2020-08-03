@@ -1,6 +1,7 @@
 package cs5004.animator.model;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Comparator;
 import java.util.HashMap;
 import java.util.List;
@@ -20,20 +21,21 @@ import cs5004.animator.util.AnimationBuilder;
  * all the animation which start before a given time.
  */
 public class ModelImpl implements IModel {
-  // Use shape name as the key for the map for fast lookup.
-  private Map<String, AbstractShape> allShapes;
+//  // Use shape name as the key for the map for fast lookup.
+//  private Map<String, AbstractShape> allShapes;
   // Use start time of the animation as the key for the map.
   // It stores a list of animation under the specific time since the start time matters.
   private Map<Integer, List<AbstractAnimation>> allAnimations;
+  private List<AbstractShape> allShapes;
   private Screen canvas;
 
   /**
    * Construct a modelImpl class with the shapes and animations.
    */
   public ModelImpl() {
-    this.allShapes = new HashMap<>();
-    this.allAnimations = new HashMap<>();
+    this.allAnimations = new TreeMap<>(Comparator.comparingInt(a -> a));
     this.canvas = new Screen(0, 0, 500, 500);
+    this.allShapes = new ArrayList<>();
   }
 
   /**
@@ -43,7 +45,7 @@ public class ModelImpl implements IModel {
    * @param allAnimations animations to include in the model
    * @throws IllegalArgumentException if the parameter is null
    */
-  public ModelImpl(Map<String, AbstractShape> allShapes,
+  public ModelImpl(List<AbstractShape> allShapes,
                    Map<Integer, List<AbstractAnimation>> allAnimations) throws
       IllegalArgumentException {
     if (allAnimations == null || allShapes == null) {
@@ -158,8 +160,8 @@ public class ModelImpl implements IModel {
    * @return a copy of the shapes in the model, use shape name as the key for the map.
    */
   @Override
-  public Map<String, AbstractShape> getAllShape() {
-    return new HashMap<>(allShapes);
+  public List<AbstractShape> getAllShape() {
+    return new ArrayList<>(allShapes);
   }
 
 
@@ -180,76 +182,45 @@ public class ModelImpl implements IModel {
   }
 
   /**
-   * Return a sorted copy of all the animations that has started at given time. If for an animation,
-   * the shape that this animation is for has disappeared or has not appeared, then we do not need
-   * to add the animation to the result.
-   *
-   * @return sorted copy of all the animations that has started at given time, use start time of the
-   *         animation as the key for the map, it stores a list of animation under the specific time
-   */
-  @Override
-  public Map<Integer, List<AbstractAnimation>> getAllSortedAnimationAtGivenTime(int time) {
-    Map<Integer, List<AbstractAnimation>> sortedAnimationsAtGivenTime = new TreeMap<>(
-        Comparator.comparingInt(a -> a));
-    for (int key : allAnimations.keySet()) {
-      // Check if the animation has started.
-      if (key <= time) {
-        sortedAnimationsAtGivenTime.put(key, new ArrayList<>());
-        for (AbstractAnimation ani : allAnimations.get(key)) {
-          // If the shape for this animation is not visible, then
-          // we do not have to add it to the result.
-          if (allShapes.get(ani.getShapeName()).getDisappearTime() <= time
-              || allShapes.get(ani.getShapeName()).getAppearTime() > time) {
-            continue;
-          }
-          sortedAnimationsAtGivenTime.get(key).add(ani);
-        }
-        // If all the animation under the key is not visible, we do not even need
-        // to put in the map.
-        if (sortedAnimationsAtGivenTime.get(key).size() == 0) {
-          sortedAnimationsAtGivenTime.remove(key);
-        }
-      }
-    }
-    return sortedAnimationsAtGivenTime;
-  }
-
-  /**
    * Return a copy of the ReadOnlyShapes in the model.
    *
    * @return a copy of the ReadOnlyShapes in the model, use shape name as the key for the map.
    */
   @Override
-  public Map<String, IReadOnlyShapes> getReadOnlyShapes() {
-    Map<String, IReadOnlyShapes> ret = new HashMap<>();
-    for (String shapeName : allShapes.keySet()) {
-      ret.put(shapeName, allShapes.get(shapeName));
-    }
+  public List<IReadOnlyShapes> getReadOnlyShapes() {
+    List<IReadOnlyShapes> ret = new ArrayList<>(allShapes);
     return ret;
   }
 
   /**
-   * Return a map of all the updated shape at given time.
+   * Return a list of all the updated shape at given time.
    * @param time the time to check the updated shapes
-   * @return a map of all the updated shape at given time
+   * @return a list of all the updated shape at given time
    */
   @Override
-  public Map<String, IReadOnlyShapes> getUpdatedShapeAtGivenTime(int time) {
-    Map<String, IReadOnlyShapes> nameToShape = new HashMap<>();
+  public List<IReadOnlyShapes> getUpdatedShapeAtGivenTime(int time) {
+    List<IReadOnlyShapes> ret = new ArrayList<>();
+    for (AbstractShape sh : allShapes) {
+      if (sh.getDisappearTime() >= time) {
+        ret.add(sh);
+      }
+    }
     for (int key : allAnimations.keySet()) {
       // Check if the animation has started.
       if (key <= time) {
         for (AbstractAnimation ani : allAnimations.get(key)) {
-          // check if the animation has ended.
-          if (ani.getEndTime() < time) {
-            continue;
-          }
+          if (ani.getEndTime() < time) continue;
           AbstractShape shape = ani.runAnimation(time);
-          nameToShape.put(shape.getName(), shape);
+          for (IReadOnlyShapes s : ret) {
+            if (s.getName().equals(shape.getName())) {
+              ret.set(ret.indexOf(s), shape);
+              break;
+            }
+          }
         }
       }
     }
-    return nameToShape;
+    return ret;
   }
 
   /**
@@ -261,13 +232,26 @@ public class ModelImpl implements IModel {
    */
   @Override
   public void addShape(AbstractShape shape) throws IllegalArgumentException {
-    if (allShapes.containsKey(shape.getName())) {
+    if (findShape(shape.getName()) != null) {
       throw new IllegalArgumentException(
           "Cannot create add a shape with an existing shape name");
     }
-    allShapes.put(shape.getName(), shape);
+    allShapes.add(shape);
   }
 
+  /**
+   * Helper method to return the shape with the given name. Null if not found
+   * @param shapeName name of the shape to add
+   * @return the shape with the given name, null if not found
+   */
+  private AbstractShape findShape(String shapeName) {
+    for (AbstractShape s : allShapes) {
+      if (s.getName().equals(shapeName)) {
+        return s;
+      }
+    }
+    return null;
+  }
 
   /**
    * Delete a shape in the model.
@@ -278,11 +262,11 @@ public class ModelImpl implements IModel {
    */
   @Override
   public void deleteShape(String shapeName) throws IllegalArgumentException {
-    if (!allShapes.containsKey(shapeName)) {
+    if (findShape(shapeName) == null) {
       throw new IllegalArgumentException("Shape not found.");
     }
     // Remove shape.
-    allShapes.remove(shapeName);
+    allShapes.remove(findShape(shapeName));
     // Remove corresponding animations with this removed shape.
     Map<Integer, List<AbstractAnimation>> updatedAnimations = new HashMap<>();
     for (Map.Entry<Integer, List<AbstractAnimation>> entry : allAnimations.entrySet()) {
@@ -318,7 +302,8 @@ public class ModelImpl implements IModel {
       allAnimations.put(animation.getStartTime(), new ArrayList<>());
     }
     allAnimations.get(animation.getStartTime()).add(animation);
-    AbstractShape shape = allShapes.get(animation.getShapeName());
+    AbstractShape shape = findShape(animation.getShapeName());
+    assert shape != null;
     shape.setAppearTime(Math.min(shape.getAppearTime(), animation.getStartTime()));
     shape.setDisappearTime(Math.max(shape.getDisappearTime(), animation.getEndTime()));
   }
@@ -352,7 +337,7 @@ public class ModelImpl implements IModel {
    */
   private boolean validAnimation(AbstractAnimation animation) {
     // This shape has to exist in our allShapes map.
-    if (!allShapes.containsKey(animation.getShapeName())) {
+    if (findShape(animation.getShapeName()) == null) {
       return false;
     }
     for (List<AbstractAnimation> animations : allAnimations.values()) {
@@ -377,7 +362,7 @@ public class ModelImpl implements IModel {
    */
   public String toString() {
     StringBuilder ret = new StringBuilder("Shapes:\n");
-    for (AbstractShape shape : allShapes.values()) {
+    for (AbstractShape shape : allShapes) {
       ret.append(shape.textRender());
       ret.append("\n");
     }

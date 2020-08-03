@@ -24,9 +24,9 @@ public abstract class AbstractAnimation {
   public AbstractAnimation(String shapeName, ShapeType shapeType,
                            int startTime, int endTime)
       throws IllegalArgumentException {
-    if (startTime < 0 || endTime < 0 || startTime >= endTime) {
-      throw new IllegalArgumentException("Invalid time frame for the animation.");
-    }
+//    if (startTime < 0 || endTime < 0 || startTime >= endTime) {
+//      throw new IllegalArgumentException("Invalid time frame for the animation.");
+//    }
     this.shapeName = shapeName;
     this.startTime = startTime;
     this.endTime = endTime;

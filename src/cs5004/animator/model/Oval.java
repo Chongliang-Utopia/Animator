@@ -45,6 +45,7 @@ public class Oval extends AbstractShape {
     super(name);
     this.xRadius = 1;
     this.yRadius = 1;
+    this.type = ShapeType.OVAL;
   }
 
   /**

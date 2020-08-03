@@ -45,6 +45,7 @@ public class Rectangle extends AbstractShape {
     super(name);
     this.width = 1;
     this.height = 1;
+    this.type = ShapeType.RECTANGLE;
   }
 
   /**

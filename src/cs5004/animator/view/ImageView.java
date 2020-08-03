@@ -41,7 +41,7 @@ public class ImageView extends AbstractView {
    * @return the string output of the text view
    */
   @Override
-  public String renderText(Map<String, IReadOnlyShapes> allShapes,
+  public String renderText(List<IReadOnlyShapes> allShapes,
                            Map<Integer, List<AbstractAnimation>> allAnimations) {
     return null;
   }
@@ -52,8 +52,8 @@ public class ImageView extends AbstractView {
    * @param allShapes the given shapes in the view
    */
   @Override
-  public void renderImage(Map<String, IReadOnlyShapes> allShapes) {
-    panel.draw(new ArrayList<>(allShapes.values()));
+  public void renderImage(List<IReadOnlyShapes> allShapes) {
+    panel.draw(allShapes);
   }
 
   /**

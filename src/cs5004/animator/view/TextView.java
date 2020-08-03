@@ -15,15 +15,14 @@ public class TextView extends AbstractView {
    * @return the string output of the text view
    */
   @Override
-  public String renderText(Map<String, IReadOnlyShapes> allShapes,
+  public String renderText(List<IReadOnlyShapes> allShapes,
                            Map<Integer, List<AbstractAnimation>> allAnimations) {
     StringBuilder text = new StringBuilder();
     // add canvas info to the view
     text.append(String.format("Canvas %s\n\n", this.canvas.toString()));
     text.append("Create the following shapes: \n");
     // add shape info to the view
-    for (String name : allShapes.keySet()) {
-      IReadOnlyShapes shape = allShapes.get(name);
+    for (IReadOnlyShapes shape : allShapes) {
       text.append(shape.textRender());
     }
     text.append("\n");
@@ -42,7 +41,7 @@ public class TextView extends AbstractView {
    * @param allShapes the given shapes in the view
    */
   @Override
-  public void renderImage(Map<String, IReadOnlyShapes> allShapes) {
+  public void renderImage(List<IReadOnlyShapes> allShapes) {
 
   }
 }

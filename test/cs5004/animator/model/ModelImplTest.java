@@ -22,6 +22,20 @@
 //  IModel model11;
 //  Map<String, AbstractShape> allShapes1;
 //  Map<Integer, List<AbstractAnimation>> allAnimations1;
+//  AbstractAnimation R1_Stable;
+//  AbstractAnimation R2_Move;
+//  AbstractAnimation R3_Stable;
+//  AbstractAnimation R4_Scale;
+//  AbstractAnimation R5_Move;
+//
+//  AbstractAnimation C1_Stable;
+//  AbstractAnimation C2_Move;
+//  AbstractAnimation C3_Double;
+//  AbstractAnimation C4_ChangeColor;
+//  AbstractAnimation C5_Stable;
+//
+//  AbstractShape r;
+//  AbstractShape c;
 //
 //  /**
 //   * Construct shape, model and Animation objects for tests.
@@ -29,46 +43,42 @@
 //  @Before
 //  public void setUp() {
 //    model11 = new ModelImpl();
-//    allShapes1 = new HashMap<>();
-//    allShapes1.put("R", new Rectangle("R", ShapeType.RECTANGLE,
-//        new ColorType(1.0f, 0.0f, 0.0f),
-//        new Position2D(200.0, 200.0),
-//        50.0, 100.0, 1, 100));
-//    allShapes1.put("C", new Oval("C", ShapeType.OVAL,
-//        new ColorType(0.0f, 0.0f, 1.0f),
-//        new Position2D(500.0, 100.0),
-//        60.0, 30.0, 6, 100));
-//    allAnimations1 = new TreeMap<>(Comparator.comparingInt(a -> a));
-//    allAnimations1.put(10, List.of(new MoveAnimation(AnimationType.MOVE,
-//        "R", 10, 50, new Position2D(200.0, 200.0),
-//        new Position2D(300.0, 300.0))));
-//    allAnimations1.put(20, List.of(new MoveAnimation(AnimationType.MOVE,
-//        "C", 20, 70, new Position2D(500.0, 100.0),
-//        new Position2D(500.0, 400.0))));
-//    allAnimations1.put(50, List.of(new ChangeColorAnimation(AnimationType.CHANGECOLOR,
-//        "C", 50, 80,
-//        new ColorType(0.0f, 0.0f, 1.0f),
-//        new ColorType(0.0f, 1.0f, 0.0f))));
-//    // Add shapes
-//    model11.addShape(new Rectangle("R", ShapeType.RECTANGLE,
-//        new ColorType(1.0f, 0.0f, 0.0f),
-//        new Position2D(200.0, 200.0),
-//        50.0, 100.0, 1, 100));
-//    model11.addShape(new Oval("C", ShapeType.OVAL,
-//        new ColorType(0.0f, 0.0f, 1.0f),
-//        new Position2D(500.0, 100.0),
-//        60.0, 30.0, 6, 100));
-//    // Add animations
-//    model11.addAnimation(new ChangeColorAnimation(AnimationType.CHANGECOLOR,
-//        "C", 50, 80,
-//        new ColorType(0.0f, 0.0f, 1.0f),
-//        new ColorType(0.0f, 1.0f, 0.0f)));
-//    model11.addAnimation(new MoveAnimation(AnimationType.MOVE,
-//        "C", 20, 70, new Position2D(500.0, 100.0),
-//        new Position2D(500.0, 400.0)));
-//    model11.addAnimation(new MoveAnimation(AnimationType.MOVE,
-//        "R", 10, 50, new Position2D(200.0, 200.0),
-//        new Position2D(300.0, 300.0)));
+//
+//    r = new Rectangle("R");
+//    c = new Oval("C");
+//    // Create Animation.
+//    R1_Stable = new AnimationOperation("R", ShapeType.RECTANGLE,
+//        1,200,200,50, 100, 255, 0,  0,
+//        10,  200, 200,50, 100, 255, 0,  0);
+//    R2_Move = new AnimationOperation("R", ShapeType.RECTANGLE,
+//        10, 200, 200, 50, 100, 255, 0,  0,
+//        50,  300, 300, 50, 100, 255, 0,  0);
+//    R3_Stable = new AnimationOperation("R", ShapeType.RECTANGLE,
+//        50,300, 300, 50, 100, 255, 0,  0,
+//        51,300, 300, 50, 100, 255, 0,  0);
+//    R4_Scale = new AnimationOperation("R", ShapeType.RECTANGLE,
+//        51, 300, 300, 50, 100, 255, 0,  0,
+//        70,  300, 300, 25, 100, 255, 0,  0);
+//    R5_Move = new AnimationOperation("R", ShapeType.RECTANGLE,
+//        70, 300, 300,25, 100, 255, 0,  0,
+//        100, 200, 200, 25, 100, 255, 0,  0);
+//    C1_Stable = new AnimationOperation("C", ShapeType.OVAL,
+//        6, 440, 70, 120, 60, 0, 0, 255,
+//        20, 440, 70, 120, 60, 0, 0, 255);
+//    C2_Move = new AnimationOperation("C", ShapeType.OVAL,
+//        20,440, 70, 120, 60,0, 0, 255,
+//        50, 440, 250, 120, 60, 0, 0, 255);
+//    C3_Double = new AnimationOperation("C", ShapeType.OVAL,
+//        50, 440, 250, 120, 60,0, 0, 255,
+//        70, 440, 370, 120, 60, 0, 170, 85);
+//    C4_ChangeColor = new AnimationOperation("C", ShapeType.OVAL,
+//        70, 440, 370,120, 60, 0, 170, 85,
+//        80, 440, 370, 120, 60, 0, 255, 0);
+//    C5_Stable = new AnimationOperation("C", ShapeType.OVAL,
+//        80, 440, 370, 120, 60, 0, 255, 0,
+//        100, 440, 370, 120, 60, 0, 255, 0);
+//
+//
 //
 //    model1 = new ModelImpl(allShapes1, allAnimations1);
 //  }

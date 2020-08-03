@@ -1,5 +1,6 @@
 package cs5004.animator;
 
+import java.awt.desktop.SystemEventListener;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileWriter;
@@ -8,6 +9,7 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 
 import javax.swing.*;
+import javax.swing.plaf.synth.SynthTextAreaUI;
 
 import cs5004.animator.controller.ControllerImpl;
 import cs5004.animator.controller.IController;

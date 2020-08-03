@@ -13,7 +13,7 @@ public interface IModel {
    *
    * @return a copy of the shapes in the model, use shape name as the key for the map.
    */
-  Map<String, AbstractShape> getAllShape();
+  List<AbstractShape> getAllShape();
 
   /**
    * Return a copy of all the animations in the model sorted by time.
@@ -25,27 +25,18 @@ public interface IModel {
   Map<Integer, List<AbstractAnimation>> getAllAnimationSortedByTime();
 
   /**
-   * Return a sorted copy of all the animations that has started at given time.
-   *
-   * @return sorted copy of all the animations that has started at given time,
-   *         use start time of the animation as the key for the map, it stores a list of
-   *         animation under the specific time.
-   */
-  Map<Integer, List<AbstractAnimation>> getAllSortedAnimationAtGivenTime(int time);
-
-  /**
    * Return a copy of the ReadOnlyShapes in the model.
    *
    * @return a copy of the ReadOnlyShapes in the model, use shape name as the key for the map.
    */
-  Map<String, IReadOnlyShapes> getReadOnlyShapes();
+  List<IReadOnlyShapes> getReadOnlyShapes();
 
   /**
-   * Return a map of all the updated ReadOnly shape at given time.
+   * Return a list of all the updated ReadOnly shape at given time.
    * @param time the time to check the updated shapes
    * @return a list of all the updated ReadOnly shape at given time
    */
-  Map<String, IReadOnlyShapes> getUpdatedShapeAtGivenTime(int time);
+  List<IReadOnlyShapes> getUpdatedShapeAtGivenTime(int time);
 
   /**
    * Return a String representation of all the shapes and animations.

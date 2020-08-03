@@ -3,8 +3,6 @@ package cs5004.animator.model;
 import org.junit.Before;
 import org.junit.Test;
 
-import java.util.List;
-
 import static org.junit.Assert.assertEquals;
 
 /**
@@ -33,9 +31,6 @@ public class AnimationTest {
   @Before
   public void setUp() {
     // Create shape.
-    r = new Rectangle("R");
-    c = new Oval("C");
-
     r = new Rectangle("R");
     c = new Oval("C");
     // Create Animation.
@@ -155,10 +150,10 @@ public class AnimationTest {
   @Test
   public void runAnimation2() {
     AbstractShape moveShape1 = new Rectangle("R", ShapeType.RECTANGLE,
-        new ColorType(1.0f, 0.0f, 0.0f),
+        new ColorType(255, 0, 0),
         new Position2D(250.0, 250.0),
-        50.0, 100.0, 1, 100);
-    assertEquals(moveShape1, R2_Move.runAnimation(r, 30));
+        50.0, 100.0, 10, 50);
+    assertEquals(moveShape1, R2_Move.runAnimation( 30));
   }
 
   /**
@@ -167,13 +162,13 @@ public class AnimationTest {
   @Test
   public void runAnimation3() {
     AbstractShape expectedShape = new Oval("C", ShapeType.OVAL,
-        new ColorType(0.0f, 0.5f, 0.5f),
-        new Position2D(500.0, 370.0),
-        60.0, 30.0, 6, 100);
-    AbstractShape colorShape1 = C2_Move.runAnimation(c, 65);
+        new ColorType(0, 0, 255),
+        new Position2D(440, 160),
+        120, 60, 20, 50);
+    AbstractShape colorShape1 = C2_Move.runAnimation(35);
     // Run change color animation.
     assertEquals(expectedShape.textRender(),
-        changeColorAni3_C.runAnimation(colorShape1, 65).textRender());
+        C2_Move.runAnimation(35).textRender());
   }
 
   /**
@@ -181,30 +176,15 @@ public class AnimationTest {
    */
   @Test
   public void runAnimation4() {
-    AbstractShape expectedShape = new Rectangle("R", ShapeType.RECTANGLE,
-        new ColorType(1.0f, 0.0f, 0.0f),
-        new Position2D(300.0, 300.0),
-        38.2, 100.0, 1, 100);
-    AbstractShape scaleShape = R2_Move.runAnimation(r, 60);
+    AbstractShape expectedShape = new Oval("C", ShapeType.OVAL,
+        new ColorType(0, 212, 42),
+        new Position2D(440, 370),
+        120, 60, 70, 80);
     // Run scale animation.
     assertEquals(expectedShape.textRender(),
-        R4_Scale.runAnimation(scaleShape, 60).textRender());
+        C4_ChangeColor.runAnimation(75).textRender());
   }
 
-  /**
-   * Test runAnimation.
-   */
-  @Test(expected = IllegalArgumentException.class)
-  public void runAnimation5() {
-    AbstractShape expectedShape = new Rectangle("R", ShapeType.RECTANGLE,
-        new ColorType(1.0f, 0.0f, 0.0f),
-        new Position2D(300.0, 300.0),
-        38.2, 100.0, 1, 100);
-    AbstractShape scaleShape = R2_Move.runAnimation(r, 60);
-    // When the shape has already disappeared
-    assertEquals(expectedShape.textRender(),
-        R4_Scale.runAnimation(scaleShape, 120).textRender());
-  }
 
   /**
    * Test calculate state.
@@ -229,8 +209,8 @@ public class AnimationTest {
    */
   @Test
   public void testToString2() {
-    assertEquals("Shape C changes color from (0.0,0.0,1.0) to "
-        + "(0.0,1.0,0.0) from t=50 to t=80\n", changeColorAni3_C.toString());
+    assertEquals("Shape C changes color from (0,170,85) to "
+        + "(0,255,0) from t=70 to t=80\n", C4_ChangeColor.toString());
   }
 
   /**
@@ -238,7 +218,7 @@ public class AnimationTest {
    */
   @Test
   public void testToString3() {
-    assertEquals("Shape R scales from Width: 50.0 Height: 100.0 to"
-        + " Width: 25.0 Height: 100.0 from t=51 to t=70\n", R4_Scale.toString());
+    assertEquals("Shape R scales from Width: 50 Height: 100 to"
+        + " Width: 25 Height: 100 from t=51 to t=70\n", R4_Scale.toString());
   }
 }

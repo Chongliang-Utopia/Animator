@@ -24,9 +24,9 @@ public class ControllerImpl implements IController {
     this.model = model;
     this.view = view;
     this.timer = new Timer((int) ((1.0 / tempo) * 1000), ((e) -> {
-      Map<String, IReadOnlyShapes> shapesToRender = model.getUpdatedShapeAtGivenTime(tick++);
+      List<IReadOnlyShapes> shapesToRender = model.getUpdatedShapeAtGivenTime(tick);
       view.renderImage(shapesToRender);
-      tick = 0;
+      tick += 1;
     }));
     view.setCanvas(model.getCanvas());
   }
@@ -36,7 +36,7 @@ public class ControllerImpl implements IController {
     if (ap == null) {
       throw new IllegalStateException("Parameters can not be null");
     }
-    Map<String, IReadOnlyShapes> shapes = model.getReadOnlyShapes();
+    List<IReadOnlyShapes> shapes = model.getReadOnlyShapes();
     Map<Integer, List<AbstractAnimation>> animations = model.getAllAnimationSortedByTime();
     String text = view.renderText(shapes, animations);
     try {
