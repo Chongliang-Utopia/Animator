@@ -1,22 +1,44 @@
-Canvas 200 70 360 360
+Canvas 145 50 410 220
 
 
 Create the following shapes: 
-Name: R
+Name: disk1
 Type: rectangle
 Min corner: (0.0,0.0), Width: 1.0, Height: 1.0, Color: (0,0,0)
 Appears at t=1
-Disappears at t=100
-Name: C
-Type: oval
-Center: (0.0,0.0), X radius: 1.0, Y radius: 1.0, Color: (0,0,0)
-Appears at t=6
-Disappears at t=100
+Disappears at t=302
+Name: disk2
+Type: rectangle
+Min corner: (0.0,0.0), Width: 1.0, Height: 1.0, Color: (0,0,0)
+Appears at t=1
+Disappears at t=302
+Name: disk3
+Type: rectangle
+Min corner: (0.0,0.0), Width: 1.0, Height: 1.0, Color: (0,0,0)
+Appears at t=1
+Disappears at t=302
 
-Shape R move from (200.0,200.0) to (300.0,300.0) from t=10 to t=50
-Shape C move from (440.0,70.0) to (440.0,250.0) from t=20 to t=50
-Shape C move from (440.0,250.0) to (440.0,370.0) from t=50 to t=70
-Shape C changes color from (0,0,255) to (0,170,85) from t=50 to t=70
-Shape R scales from Width: 50 Height: 100 to Width: 25 Height: 100 from t=51 to t=70
-Shape R move from (300.0,300.0) to (200.0,200.0) from t=70 to t=100
-Shape C changes color from (0,170,85) to (0,255,0) from t=70 to t=80
+Shape disk1 move from (190.0,180.0) to (190.0,50.0) from t=25 to t=35
+Shape disk1 move from (190.0,50.0) to (490.0,50.0) from t=36 to t=46
+Shape disk1 move from (490.0,50.0) to (490.0,240.0) from t=47 to t=57
+Shape disk2 move from (167.0,210.0) to (167.0,50.0) from t=57 to t=67
+Shape disk2 move from (167.0,50.0) to (317.0,50.0) from t=68 to t=78
+Shape disk2 move from (317.0,50.0) to (317.0,240.0) from t=79 to t=89
+Shape disk1 move from (490.0,240.0) to (490.0,50.0) from t=89 to t=99
+Shape disk1 move from (490.0,50.0) to (340.0,50.0) from t=100 to t=110
+Shape disk1 move from (340.0,50.0) to (340.0,210.0) from t=111 to t=121
+Shape disk3 move from (145.0,240.0) to (145.0,50.0) from t=121 to t=131
+Shape disk3 move from (145.0,50.0) to (445.0,50.0) from t=132 to t=142
+Shape disk3 move from (445.0,50.0) to (445.0,240.0) from t=143 to t=153
+Shape disk1 move from (340.0,210.0) to (340.0,50.0) from t=153 to t=163
+Shape disk3 changes color from (11,45,175) to (0,255,0) from t=153 to t=161
+Shape disk1 move from (340.0,50.0) to (190.0,50.0) from t=164 to t=174
+Shape disk1 move from (190.0,50.0) to (190.0,240.0) from t=175 to t=185
+Shape disk2 move from (317.0,240.0) to (317.0,50.0) from t=185 to t=195
+Shape disk2 move from (317.0,50.0) to (467.0,50.0) from t=196 to t=206
+Shape disk2 move from (467.0,50.0) to (467.0,210.0) from t=207 to t=217
+Shape disk1 move from (190.0,240.0) to (190.0,50.0) from t=217 to t=227
+Shape disk2 changes color from (6,247,41) to (0,255,0) from t=217 to t=225
+Shape disk1 move from (190.0,50.0) to (490.0,50.0) from t=228 to t=238
+Shape disk1 move from (490.0,50.0) to (490.0,180.0) from t=239 to t=249
+Shape disk1 changes color from (0,49,90) to (0,255,0) from t=249 to t=257

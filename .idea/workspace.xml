@@ -3,37 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="d6f7471e-8e72-4e3b-a8da-37087b685913" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Animator/cs5004/animator/EasyAnimator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Animator/cs5004/animator/EasyAnimator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Animator/cs5004/animator/controller/ControllerImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Animator/cs5004/animator/controller/ControllerImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Animator/cs5004/animator/model/AbstractAnimation.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Animator/cs5004/animator/model/AbstractAnimation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Animator/cs5004/animator/model/AnimationOperation.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Animator/cs5004/animator/model/AnimationOperation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Animator/cs5004/animator/model/ColorType.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Animator/cs5004/animator/model/ColorType.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Animator/cs5004/animator/model/IModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Animator/cs5004/animator/model/IModel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Animator/cs5004/animator/model/ModelImpl$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Animator/cs5004/animator/model/ModelImpl$Builder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Animator/cs5004/animator/model/ModelImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Animator/cs5004/animator/model/ModelImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Animator/cs5004/animator/model/Oval.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Animator/cs5004/animator/model/Oval.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Animator/cs5004/animator/model/Rectangle.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Animator/cs5004/animator/model/Rectangle.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Animator/cs5004/animator/view/AbstractView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Animator/cs5004/animator/view/AbstractView.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Animator/cs5004/animator/view/Draw.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Animator/cs5004/animator/view/Draw.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Animator/cs5004/animator/view/IView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Animator/cs5004/animator/view/IView.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Animator/cs5004/animator/view/ImageView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Animator/cs5004/animator/view/ImageView.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Animator/cs5004/animator/view/TextView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Animator/cs5004/animator/view/TextView.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cs5004/animator/EasyAnimator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs5004/animator/EasyAnimator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cs5004/animator/controller/ControllerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs5004/animator/controller/ControllerImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cs5004/animator/model/AbstractAnimation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs5004/animator/model/AbstractAnimation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cs5004/animator/model/AnimationOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs5004/animator/model/AnimationOperation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cs5004/animator/model/ColorType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs5004/animator/model/ColorType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cs5004/animator/model/IModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs5004/animator/model/IModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cs5004/animator/model/ModelImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs5004/animator/model/ModelImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cs5004/animator/model/Oval.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs5004/animator/model/Oval.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cs5004/animator/model/Rectangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs5004/animator/model/Rectangle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cs5004/animator/view/AbstractView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs5004/animator/view/AbstractView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cs5004/animator/view/Draw.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs5004/animator/view/Draw.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cs5004/animator/view/IView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs5004/animator/view/IView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cs5004/animator/view/ImageView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs5004/animator/view/ImageView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cs5004/animator/view/TextView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs5004/animator/view/TextView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/cs5004/animator/model/AnimationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/cs5004/animator/model/AnimationTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/cs5004/animator/model/ModelImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/cs5004/animator/model/ModelImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/text-transcript.txt" beforeDir="false" afterPath="$PROJECT_DIR$/text-transcript.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +28,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
-  <component name="RunManager" selected="Application.-in buildings copy.txt -speed 30 -view visual">
+  <component name="RunManager" selected="JUnit.ModelImplTest.testGetUpdatedShapeAtGivenTime1">
     <configuration name="-in big-bang-big-crunch.txt -speed 10000 -view visual" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="cs5004.animator.EasyAnimator" />
       <module name="Animator" />
@@ -82,14 +53,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="-in smalldemo.txt -view text -out text-transcript.txt" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="cs5004.animator.EasyAnimator" />
-      <module name="Animator" />
-      <option name="PROGRAM_PARAMETERS" value="-in smalldemo.txt -view text -out text-transcript.txt" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="-in smalldemo.txt -view text -speed 2" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="cs5004.animator.EasyAnimator" />
       <module name="Animator" />
@@ -106,6 +69,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="-in toh-3.txt -view text -out text-transcript.txt" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="cs5004.animator.EasyAnimator" />
+      <module name="Animator" />
+      <option name="PROGRAM_PARAMETERS" value="-in toh-3.txt -view text -out text-transcript.txt" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="-in toh-5.txt -speed 30 -view visual" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="cs5004.animator.EasyAnimator" />
       <module name="Animator" />
@@ -114,7 +85,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AnimationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ModelImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Animator" />
       <extension name="coverage">
         <pattern>
@@ -123,13 +94,13 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="cs5004.animator.model" />
-      <option name="MAIN_CLASS_NAME" value="cs5004.animator.model.AnimationTest" />
+      <option name="MAIN_CLASS_NAME" value="cs5004.animator.model.ModelImplTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AnimationTest.testToString2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ModelImplTest.testAddAnimation1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Animator" />
       <extension name="coverage">
         <pattern>
@@ -138,24 +109,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="cs5004.animator.model" />
-      <option name="MAIN_CLASS_NAME" value="cs5004.animator.model.AnimationTest" />
-      <option name="METHOD_NAME" value="testToString2" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AnimationTest.testToString3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Animator" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cs5004.animator.model.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="cs5004.animator.model" />
-      <option name="MAIN_CLASS_NAME" value="cs5004.animator.model.AnimationTest" />
-      <option name="METHOD_NAME" value="testToString3" />
+      <option name="MAIN_CLASS_NAME" value="cs5004.animator.model.ModelImplTest" />
+      <option name="METHOD_NAME" value="testAddAnimation1" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -177,7 +132,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ShapeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ModelImplTest.testGetUpdatedShapeAtGivenTime1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Animator" />
       <extension name="coverage">
         <pattern>
@@ -186,33 +141,50 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="cs5004.animator.model" />
-      <option name="MAIN_CLASS_NAME" value="cs5004.animator.model.ShapeTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="MAIN_CLASS_NAME" value="cs5004.animator.model.ModelImplTest" />
+      <option name="METHOD_NAME" value="testGetUpdatedShapeAtGivenTime1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ModelImplTest.testToString1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Animator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cs5004.animator.model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cs5004.animator.model" />
+      <option name="MAIN_CLASS_NAME" value="cs5004.animator.model.ModelImplTest" />
+      <option name="METHOD_NAME" value="testToString1" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.-in smalldemo.txt -view text -speed 2" />
-      <item itemvalue="Application.-in smalldemo.txt -speed 50 -view visual" />
-      <item itemvalue="Application.-in toh-3.txt -speed 30 -view visual" />
-      <item itemvalue="Application.-in toh-5.txt -speed 30 -view visual" />
-      <item itemvalue="Application.-in smalldemo.txt -view text -out text-transcript.txt" />
       <item itemvalue="Application.-in big-bang-big-crunch.txt -speed 10000 -view visual" />
       <item itemvalue="Application.-in buildings copy.txt -speed 30 -view visual" />
-      <item itemvalue="JUnit.AnimationTest" />
-      <item itemvalue="JUnit.AnimationTest.testToString2" />
-      <item itemvalue="JUnit.AnimationTest.testToString3" />
+      <item itemvalue="Application.-in smalldemo.txt -speed 50 -view visual" />
+      <item itemvalue="Application.-in toh-3.txt -view text -out text-transcript.txt" />
+      <item itemvalue="Application.-in smalldemo.txt -view text -speed 2" />
+      <item itemvalue="Application.-in toh-3.txt -speed 30 -view visual" />
+      <item itemvalue="Application.-in toh-5.txt -speed 30 -view visual" />
       <item itemvalue="JUnit.ModelImplTest.testConstructor1" />
-      <item itemvalue="JUnit.ShapeTest" />
+      <item itemvalue="JUnit.ModelImplTest" />
+      <item itemvalue="JUnit.ModelImplTest.testAddAnimation1" />
+      <item itemvalue="JUnit.ModelImplTest.testToString1" />
+      <item itemvalue="JUnit.ModelImplTest.testGetUpdatedShapeAtGivenTime1" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ShapeTest" />
+        <item itemvalue="JUnit.ModelImplTest.testGetUpdatedShapeAtGivenTime1" />
+        <item itemvalue="JUnit.ModelImplTest" />
+        <item itemvalue="JUnit.ModelImplTest.testToString1" />
+        <item itemvalue="JUnit.ModelImplTest.testAddAnimation1" />
         <item itemvalue="JUnit.ModelImplTest.testConstructor1" />
-        <item itemvalue="JUnit.AnimationTest" />
-        <item itemvalue="JUnit.AnimationTest.testToString3" />
-        <item itemvalue="JUnit.AnimationTest.testToString2" />
       </list>
     </recent_temporary>
   </component>
@@ -234,50 +206,50 @@
       <screen x="0" y="23" width="1920" height="1006" />
     </state>
     <state x="673" y="242" key="#-in_toh-3.txt_-speed_50_-view_visual/0.23.1920.1006@0.23.1920.1006" timestamp="1596417013965" />
-    <state x="465" y="240" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1596417487335">
+    <state x="465" y="240" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1596473260738">
       <screen x="0" y="23" width="1920" height="1006" />
     </state>
-    <state x="465" y="240" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1920.1006@0.23.1920.1006" timestamp="1596417487335" />
-    <state x="216" y="454" width="1650" height="803" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1596417293817">
+    <state x="465" y="240" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1920.1006@0.23.1920.1006" timestamp="1596473260738" />
+    <state x="459" y="634" width="1650" height="803" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1596497241069">
       <screen x="0" y="23" width="1920" height="1006" />
     </state>
-    <state x="216" y="454" width="1650" height="803" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.23.1920.1006@0.23.1920.1006" timestamp="1596417293817" />
+    <state x="459" y="634" width="1650" height="803" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.23.1920.1006@0.23.1920.1006" timestamp="1596497241069" />
     <state x="743" y="369" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1596417277202">
       <screen x="0" y="23" width="1920" height="1006" />
     </state>
     <state x="743" y="369" key="#com.intellij.ide.util.TreeClassChooserDialog/0.23.1920.1006@0.23.1920.1006" timestamp="1596417277202" />
-    <state width="1808" height="131" key="GridCell.Tab.0.bottom" timestamp="1596418333985">
+    <state width="1617" height="308" key="GridCell.Tab.0.bottom" timestamp="1596497646733">
       <screen x="0" y="23" width="1920" height="1006" />
     </state>
-    <state width="1808" height="131" key="GridCell.Tab.0.bottom/0.23.1920.1006@0.23.1920.1006" timestamp="1596418333985" />
-    <state width="1808" height="131" key="GridCell.Tab.0.center" timestamp="1596418333985">
+    <state width="1617" height="308" key="GridCell.Tab.0.bottom/0.23.1920.1006@0.23.1920.1006" timestamp="1596497646733" />
+    <state width="1617" height="308" key="GridCell.Tab.0.center" timestamp="1596497646731">
       <screen x="0" y="23" width="1920" height="1006" />
     </state>
-    <state width="1808" height="131" key="GridCell.Tab.0.center/0.23.1920.1006@0.23.1920.1006" timestamp="1596418333985" />
-    <state width="1808" height="131" key="GridCell.Tab.0.left" timestamp="1596418333985">
+    <state width="1617" height="308" key="GridCell.Tab.0.center/0.23.1920.1006@0.23.1920.1006" timestamp="1596497646731" />
+    <state width="1617" height="308" key="GridCell.Tab.0.left" timestamp="1596497646730">
       <screen x="0" y="23" width="1920" height="1006" />
     </state>
-    <state width="1808" height="131" key="GridCell.Tab.0.left/0.23.1920.1006@0.23.1920.1006" timestamp="1596418333985" />
-    <state width="1808" height="131" key="GridCell.Tab.0.right" timestamp="1596418333985">
+    <state width="1617" height="308" key="GridCell.Tab.0.left/0.23.1920.1006@0.23.1920.1006" timestamp="1596497646730" />
+    <state width="1617" height="308" key="GridCell.Tab.0.right" timestamp="1596497646732">
       <screen x="0" y="23" width="1920" height="1006" />
     </state>
-    <state width="1808" height="131" key="GridCell.Tab.0.right/0.23.1920.1006@0.23.1920.1006" timestamp="1596418333985" />
-    <state width="1808" height="308" key="GridCell.Tab.1.bottom" timestamp="1596418333981">
+    <state width="1617" height="308" key="GridCell.Tab.0.right/0.23.1920.1006@0.23.1920.1006" timestamp="1596497646732" />
+    <state width="1617" height="308" key="GridCell.Tab.1.bottom" timestamp="1596497647131">
       <screen x="0" y="23" width="1920" height="1006" />
     </state>
-    <state width="1808" height="308" key="GridCell.Tab.1.bottom/0.23.1920.1006@0.23.1920.1006" timestamp="1596418333981" />
-    <state width="1808" height="308" key="GridCell.Tab.1.center" timestamp="1596418333981">
+    <state width="1617" height="308" key="GridCell.Tab.1.bottom/0.23.1920.1006@0.23.1920.1006" timestamp="1596497647131" />
+    <state width="1617" height="308" key="GridCell.Tab.1.center" timestamp="1596497647130">
       <screen x="0" y="23" width="1920" height="1006" />
     </state>
-    <state width="1808" height="308" key="GridCell.Tab.1.center/0.23.1920.1006@0.23.1920.1006" timestamp="1596418333981" />
-    <state width="1808" height="308" key="GridCell.Tab.1.left" timestamp="1596418333980">
+    <state width="1617" height="308" key="GridCell.Tab.1.center/0.23.1920.1006@0.23.1920.1006" timestamp="1596497647130" />
+    <state width="1617" height="308" key="GridCell.Tab.1.left" timestamp="1596497647130">
       <screen x="0" y="23" width="1920" height="1006" />
     </state>
-    <state width="1808" height="308" key="GridCell.Tab.1.left/0.23.1920.1006@0.23.1920.1006" timestamp="1596418333980" />
-    <state width="1808" height="308" key="GridCell.Tab.1.right" timestamp="1596418333981">
+    <state width="1617" height="308" key="GridCell.Tab.1.left/0.23.1920.1006@0.23.1920.1006" timestamp="1596497647130" />
+    <state width="1617" height="308" key="GridCell.Tab.1.right" timestamp="1596497647131">
       <screen x="0" y="23" width="1920" height="1006" />
     </state>
-    <state width="1808" height="308" key="GridCell.Tab.1.right/0.23.1920.1006@0.23.1920.1006" timestamp="1596418333981" />
+    <state width="1617" height="308" key="GridCell.Tab.1.right/0.23.1920.1006@0.23.1920.1006" timestamp="1596497647131" />
     <state width="1808" height="308" key="GridCell.Tab.2.bottom" timestamp="1596418333982">
       <screen x="0" y="23" width="1920" height="1006" />
     </state>
@@ -309,6 +281,11 @@
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/test/cs5004/animator/model/ModelImplTest.java</url>
+          <line>295</line>
+          <option name="timeStamp" value="16" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
