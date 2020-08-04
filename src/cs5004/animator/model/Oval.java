@@ -125,4 +125,18 @@ public class Oval extends AbstractShape {
             + "\n";
     return text;
   }
+
+  /**
+   * Return String representation of the oval position and size. e.g.
+   * center at (500.0,100.0), radius: 60, radius: 30
+   *
+   * @return string representation of the oval information
+   */
+  @Override
+  public String stringPosSize() {
+    String text = "";
+    text += "center at " + this.position.toString()
+            + String.format(", radius: %.0f and %.0f\n", this.xRadius, this.yRadius);
+    return text;
+  }
 }

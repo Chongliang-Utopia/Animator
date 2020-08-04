@@ -10,65 +10,74 @@ public interface IReadOnlyShapes {
    *
    * @return the name of the shape object
    */
-  public String getName();
+  String getName();
 
   /**
    * Get the color of the shape.
    *
    * @return the color of the shape
    */
-  public ColorType getColor();
+  ColorType getColor();
 
   /**
    * Get the current position of the shape.
    *
    * @return the position of the shape
    */
-  public Position2D getPosition();
+  Position2D getPosition();
 
   /**
    * Get the appear time of the shape.
    *
    * @return the appear time of the shape
    */
-  public int getAppearTime();
+  int getAppearTime();
 
   /**
    * Get the disappear time of the shape.
    *
    * @return the disappear time of the shape
    */
-  public int getDisappearTime();
+  int getDisappearTime();
 
   /**
    * Get the type of the shape.
    *
    * @return the type of the shape
    */
-  public ShapeType getType();
+  ShapeType getType();
 
   /**
    * Get whether to display the shape.
    *
    * @return true to display the object, otherwise false
    */
-  public boolean getDisplay();
+  boolean getDisplay();
 
   /**
    * Abstract method to get the horizontal length of the shape, such as width or xRadius.
+   *
    * @return the horizontal length of the shape
    */
-  public double getWidth();
+  double getWidth();
 
   /**
    * Abstract method to get the vertical length of the shape, such as height or yRadius.
+   *
    * @return the vertical length of the shape
    */
-  public double getHeight();
+  double getHeight();
 
   /**
    * Return String representation of the shape details.
-   *
+   * @return string representation of the shape details
    */
-  public String textRender();
+  String textRender();
+
+  /**
+   * Return String representation of the shape position and size.
+   * @return string representation of the shape position and size
+   */
+
+  String stringPosSize();
 }

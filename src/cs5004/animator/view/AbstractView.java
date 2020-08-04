@@ -3,14 +3,28 @@ package cs5004.animator.view;
 import java.util.List;
 import java.util.Map;
 
-import javax.swing.JFrame;
+import javax.swing.*;
 
 import cs5004.animator.model.AbstractAnimation;
 import cs5004.animator.model.IReadOnlyShapes;
 import cs5004.animator.model.Screen;
 
 public abstract class AbstractView extends JFrame implements IView {
+  protected int tempo;
   protected Screen canvas = new Screen(0, 0, 0, 0);
+
+  /**
+   * Construct an AbstractView object with the given tempo, tick per second.
+   *
+   * @param tempo the speed of the view
+   * @throws IllegalArgumentException if the speed is invalid
+   */
+  public AbstractView(int tempo) throws IllegalArgumentException {
+    if (tempo < 0) {
+      throw new IllegalArgumentException("Invalid speed.");
+    }
+    this.tempo = tempo;
+  }
 
   /**
    * Render the text view output, including the text information of all shapes and all animations.
@@ -48,6 +62,6 @@ public abstract class AbstractView extends JFrame implements IView {
    */
   @Override
   public int getTempo() {
-    return 0;
+    return this.tempo;
   }
 }
