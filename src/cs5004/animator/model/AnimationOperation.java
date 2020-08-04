@@ -1,11 +1,17 @@
 package cs5004.animator.model;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Objects;
 import java.util.Arrays;
 
 public class AnimationOperation extends AbstractAnimation {
-  private final int[] startState;
-  private final int[] endState;
+  private final Position2D startPos;
+  private final Position2D endPos;
+  private final ColorType startColor;
+  private final ColorType endColor;
+  private final int[] startDimension;
+  private final int[] endDimension;
 
   /**
    * Constructor an abstract animation object.
@@ -33,20 +39,70 @@ public class AnimationOperation extends AbstractAnimation {
                             int t2, int x2, int y2,
                             int w2, int h2, int r2, int g2, int b2) {
     super(name, type, t1, t2);
-    startState = new int[] {x1, y1, w1, h1, r1, g1, b1};
-    endState = new int[] {x2, y2, w2, h2, r2, g2, b2};
+    this.startPos = new Position2D(x1, y1);
+    this.endPos = new Position2D(x2, y2);
+    this.startColor = new ColorType(r1, g1, b1);
+    this.endColor = new ColorType(r2, g2, b2);
+    this.startDimension = new int[] {w1, h1};
+    this.endDimension = new int[] {w2, h2};
   }
 
+  /**
+   * Return a list of start position and end position of the animation.
+   *
+   * @return a list of start position and end position of the animation
+   */
+  @Override
+  public List<Position2D> getPos() {
+    return List.of(startPos, endPos);
+  }
+
+  /**
+   * Return a list of start color and end color of the animation.
+   *
+   * @return a list of start color and end color of the animation
+   */
+  @Override
+  public List<ColorType> getColor() {
+    return List.of(startColor, endColor);
+  }
+
+  /**
+   * Return a list of start dimension and end dimension of the animation.
+   *
+   * @return a list of start dimension and end dimension of the animation
+   */
+  @Override
+  public List<int[]> getDimension() {
+    return List.of(startDimension, endDimension);
+  }
+
+  /**
+   * Abstract method to run the animation, which returns an updated abstract shape.
+   *
+   * @param curTime current time
+   * @return an updated abstract shape
+   * @throws IllegalArgumentException if an updated shape cannot be generated
+   */
   @Override
   public AbstractShape runAnimation(int curTime) throws IllegalArgumentException {
-    int[] curState = new int[startState.length];
-    for (int i = 0; i < startState.length; i++) {
-      curState[i] = (int) calculateState(startState[i], endState[i], curTime);
+    if (curTime < startTime || curTime > endTime) {
+      throw new IllegalArgumentException("Invalid time");
     }
-    ColorType color = new ColorType(curState[4], curState[5], curState[6]);
-    Position2D pos = new Position2D(curState[0], curState[1]);
+    int r = (int)calculateState(
+        startColor.getRed(), endColor.getRed(), curTime);
+    int g = (int)calculateState(
+        startColor.getGreen(), endColor.getGreen(), curTime);
+    int b = (int)calculateState(
+        startColor.getBlue(), endColor.getBlue(), curTime);
+    ColorType color = new ColorType(r, g, b);
+    double width = calculateState(startDimension[0], endDimension[0], curTime);
+    double height = calculateState(startDimension[1], endDimension[1], curTime);
+    double x = calculateState(startPos.getX(), endPos.getX(), curTime);
+    double y = calculateState(startPos.getY(), endPos.getY(), curTime);
+    Position2D pos = new Position2D(x, y);
     return ShapeFactory.buildShape(shapeName, shapeType, color, pos,
-        curState[2], curState[3], startTime, endTime);
+        width, height, startTime, endTime);
   }
 
   /**
@@ -57,26 +113,24 @@ public class AnimationOperation extends AbstractAnimation {
   @Override
   public String toString() {
     String ret = "";
-    if (startState[0] != endState[0] || startState[1] != endState[1] ) {
+    if (!startPos.equals(endPos)) {
       ret += ("Shape " + this.getShapeName() + " move from "
-          + new Position2D(startState[0], startState[1]).toString()
-        + " to " + new Position2D(endState[0], endState[1]).toString()
+          + new Position2D(startPos.getX(), startPos.getY()).toString()
+        + " to " + new Position2D(endPos.getX(), endPos.getY()).toString()
         + " from t=" + this.getStartTime() + " to t=" + this.getEndTime() + "\n");
     }
-    if (startState[2] != endState[2] || startState[3] != endState[3]) {
-      ret += ("Shape " + this.getShapeName() + " scales from Width: " + startState[2]
-          + " Height: " + startState[3]
-          + " to Width: " + endState[2]
-          + " Height: " + endState[3]
+    if (!Arrays.equals(startDimension, endDimension)) {
+      ret += ("Shape " + this.getShapeName() + " scales from Width: " + startDimension[0]
+          + " Height: " + startDimension[1]
+          + " to Width: " + endDimension[0]
+          + " Height: " + endDimension[1]
           + " from t=" + this.getStartTime() + " to t=" + this.getEndTime() + "\n");
     }
-    if (startState[4] != endState[4]
-        || startState[5] != endState[5]
-        || startState[6] != endState[6]) {
+    if (!startColor.equals(endColor)) {
       ret += ("Shape " + this.getShapeName() + " changes color from "
-          + new ColorType(startState[4], startState[5], startState[6])
+          + new ColorType(startColor.getRed(), startColor.getGreen(), startColor.getBlue())
           + " to "
-          + new ColorType(endState[4], endState[5], endState[6])
+          + new ColorType(endColor.getRed(), endColor.getGreen(), endColor.getBlue())
           + " from t=" + this.getStartTime() + " to t=" + this.getEndTime() + "\n");
     }
     return ret;
@@ -103,8 +157,12 @@ public class AnimationOperation extends AbstractAnimation {
     return this.shapeName.equals(that.shapeName)
         && this.startTime == that.startTime
         && this.endTime == that.endTime
-        && Arrays.equals(startState, that.startState)
-        && Arrays.equals(endState, that.endState);
+        && Arrays.equals(startDimension, that.startDimension)
+        && Arrays.equals(endDimension, that.endDimension)
+        && this.startColor.equals(that.startColor)
+        && this.endColor.equals(that.endColor)
+        && this.startPos.equals(that.startPos)
+        && this.endPos.equals(that.endPos);
   }
 
   /**
@@ -115,6 +173,6 @@ public class AnimationOperation extends AbstractAnimation {
   @Override
   public int hashCode() {
     return Objects.hash(shapeName, startTime, endTime,
-        startState, endState);
+        startDimension, endDimension, startColor, endColor, startPos, endPos);
   }
 }

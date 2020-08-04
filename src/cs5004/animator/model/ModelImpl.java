@@ -200,23 +200,25 @@ public class ModelImpl implements IModel {
   @Override
   public List<IReadOnlyShapes> getUpdatedShapeAtGivenTime(int time) {
     List<IReadOnlyShapes> ret = new ArrayList<>();
+    Map<String, Integer> shapeNameToIndex = new HashMap<>();
+    int curIndex = 0;
     for (AbstractShape sh : allShapes) {
-      if (sh.getDisappearTime() >= time) {
+      if (sh.getDisappearTime() >= time && sh.getAppearTime() <= time) {
         ret.add(sh);
+        shapeNameToIndex.put(sh.getName(), curIndex);
+        curIndex++;
       }
     }
     for (int key : allAnimations.keySet()) {
       // Check if the animation has started.
-      if (key <= time) {
-        for (AbstractAnimation ani : allAnimations.get(key)) {
-          if (ani.getEndTime() < time) continue;
-          AbstractShape shape = ani.runAnimation(time);
-          for (IReadOnlyShapes s : ret) {
-            if (s.getName().equals(shape.getName())) {
-              ret.set(ret.indexOf(s), shape);
-              break;
-            }
-          }
+      if (key > time) {
+        break;
+      }
+      for (AbstractAnimation ani : allAnimations.get(key)) {
+        if (ani.getEndTime() < time) continue;
+        AbstractShape shape = ani.runAnimation(time);
+        if (shapeNameToIndex.containsKey(shape.getName())) {
+          ret.set(shapeNameToIndex.get(shape.getName()), shape);
         }
       }
     }

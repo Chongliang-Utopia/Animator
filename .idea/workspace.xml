@@ -1,29 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d6f7471e-8e72-4e3b-a8da-37087b685913" name="Default Changelist" comment="">
+    <list default="true" id="8263ffd2-26d4-46dd-b615-fb575bb216bb" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-<<<<<<< HEAD
+      <change beforePath="$PROJECT_DIR$/out/production/Animator/cs5004/animator/model/AbstractAnimation.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Animator/cs5004/animator/model/AbstractAnimation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Animator/cs5004/animator/model/AnimationOperation.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Animator/cs5004/animator/model/AnimationOperation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Animator/cs5004/animator/model/ModelImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Animator/cs5004/animator/model/ModelImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/Animator/cs5004/animator/model/ModelImplTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/Animator/cs5004/animator/model/ModelImplTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cs5004/animator/model/AbstractAnimation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs5004/animator/model/AbstractAnimation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cs5004/animator/model/AnimationOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs5004/animator/model/AnimationOperation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cs5004/animator/model/ModelImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs5004/animator/model/ModelImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/cs5004/animator/model/ModelImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/cs5004/animator/model/ModelImplTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/text-transcript.txt" beforeDir="false" afterPath="$PROJECT_DIR$/text-transcript.txt" afterDir="false" />
-=======
-      <change beforePath="$PROJECT_DIR$/test/cs5004/animator/model/ShapeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/cs5004/animator/model/ShapeTest.java" afterDir="false" />
->>>>>>> 7b9a4238873bdc1f2fef68d6b07b86cfe2bf2d0f
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="1fYpEY2BFFwnr38u4yZ1UtjsJwq" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
+  <component name="ProjectId" id="1fbxDaKQch5aorUF3t1MxcquWha" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
@@ -31,27 +39,23 @@
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
-<<<<<<< HEAD
-  <component name="RunManager" selected="JUnit.ModelImplTest.testGetUpdatedShapeAtGivenTime1">
-=======
-  <component name="RunManager" selected="JUnit.ShapeFactoryTest">
->>>>>>> 7b9a4238873bdc1f2fef68d6b07b86cfe2bf2d0f
-    <configuration name="-in big-bang-big-crunch.txt -speed 10000 -view visual" type="Application" factoryName="Application">
+  <component name="RunManager" selected="Application.-in buildings.txt -speed 50 -view visual">
+    <configuration name="-in big-bang-big-crunch.txt -speed 50 -view visual" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="cs5004.animator.EasyAnimator" />
       <module name="Animator" />
-      <option name="PROGRAM_PARAMETERS" value="-in big-bang-big-crunch.txt -speed 10000 -view visual" />
+      <option name="PROGRAM_PARAMETERS" value="-in big-bang-big-crunch.txt -speed 50 -view visual" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="-in buildings copy.txt -speed 30 -view visual" type="Application" factoryName="Application">
+    <configuration name="-in buildings.txt -speed 50 -view visual" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="cs5004.animator.EasyAnimator" />
       <module name="Animator" />
-      <option name="PROGRAM_PARAMETERS" value="-in buildings.txt -speed 30 -view visual" />
+      <option name="PROGRAM_PARAMETERS" value="-in buildings.txt -speed 50 -view visual" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -64,34 +68,31 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="-in smalldemo.txt -view text -speed 2" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="cs5004.animator.EasyAnimator" />
+    <configuration name="AnimationTest and 3 more" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Animator" />
-      <option name="PROGRAM_PARAMETERS" value="-in smalldemo.txt -view text -speed 2" />
+      <option name="TEST_OBJECT" value="pattern" />
+      <patterns>
+        <pattern testClass="cs5004.animator.model.AnimationTest" />
+        <pattern testClass="cs5004.animator.model.ModelImplTest" />
+        <pattern testClass="cs5004.animator.model.ShapeFactoryTest" />
+        <pattern testClass="cs5004.animator.model.ShapeTest" />
+      </patterns>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="-in toh-3.txt -speed 30 -view visual" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="cs5004.animator.EasyAnimator" />
+    <configuration name="AnimationTest.runAnimation3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Animator" />
-      <option name="PROGRAM_PARAMETERS" value="-in toh-3.txt -speed 30 -view visual" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="-in toh-3.txt -view text -out text-transcript.txt" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="cs5004.animator.EasyAnimator" />
-      <module name="Animator" />
-      <option name="PROGRAM_PARAMETERS" value="-in toh-3.txt -view text -out text-transcript.txt" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="-in toh-5.txt -speed 30 -view visual" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="cs5004.animator.EasyAnimator" />
-      <module name="Animator" />
-      <option name="PROGRAM_PARAMETERS" value="-in toh-5.txt -speed 30 -view visual" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cs5004.animator.model.Dimension2D" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cs5004.animator.model" />
+      <option name="MAIN_CLASS_NAME" value="cs5004.animator.model.AnimationTest" />
+      <option name="METHOD_NAME" value="runAnimation3" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -100,7 +101,7 @@
       <module name="Animator" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="cs5004.animator.model.*" />
+          <option name="PATTERN" value="cs5004.animator.model.Dimension2D" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -111,145 +112,55 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-<<<<<<< HEAD
-    <configuration name="ModelImplTest.testAddAnimation1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-=======
-    <configuration name="ModelImplTest.testConstructor1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
->>>>>>> 7b9a4238873bdc1f2fef68d6b07b86cfe2bf2d0f
+    <configuration name="ModelImplTest.testBuilder1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Animator" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="cs5004.animator.model.*" />
+          <option name="PATTERN" value="cs5004.animator.model.Dimension2D" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="cs5004.animator.model" />
       <option name="MAIN_CLASS_NAME" value="cs5004.animator.model.ModelImplTest" />
-<<<<<<< HEAD
-      <option name="METHOD_NAME" value="testAddAnimation1" />
-=======
-      <option name="METHOD_NAME" value="testConstructor1" />
->>>>>>> 7b9a4238873bdc1f2fef68d6b07b86cfe2bf2d0f
+      <option name="METHOD_NAME" value="testBuilder1" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-<<<<<<< HEAD
-    <configuration name="ModelImplTest.testConstructor1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-=======
-    <configuration name="ShapeFactoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
->>>>>>> 7b9a4238873bdc1f2fef68d6b07b86cfe2bf2d0f
+    <configuration name="ModelImplTest.testGetUpdatedShapeAtGivenTime4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Animator" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="cs5004.animator.model.*" />
+          <option name="PATTERN" value="cs5004.animator.model.Dimension2D" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="cs5004.animator.model" />
-<<<<<<< HEAD
       <option name="MAIN_CLASS_NAME" value="cs5004.animator.model.ModelImplTest" />
-      <option name="METHOD_NAME" value="testConstructor1" />
-      <option name="TEST_OBJECT" value="method" />
-=======
-      <option name="MAIN_CLASS_NAME" value="cs5004.animator.model.ShapeFactoryTest" />
-      <option name="TEST_OBJECT" value="class" />
->>>>>>> 7b9a4238873bdc1f2fef68d6b07b86cfe2bf2d0f
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-<<<<<<< HEAD
-    <configuration name="ModelImplTest.testGetUpdatedShapeAtGivenTime1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-=======
-    <configuration name="ShapeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
->>>>>>> 7b9a4238873bdc1f2fef68d6b07b86cfe2bf2d0f
-      <module name="Animator" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cs5004.animator.model.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="cs5004.animator.model" />
-<<<<<<< HEAD
-      <option name="MAIN_CLASS_NAME" value="cs5004.animator.model.ModelImplTest" />
-      <option name="METHOD_NAME" value="testGetUpdatedShapeAtGivenTime1" />
-      <option name="TEST_OBJECT" value="method" />
-=======
-      <option name="MAIN_CLASS_NAME" value="cs5004.animator.model.ShapeTest" />
-      <option name="TEST_OBJECT" value="class" />
->>>>>>> 7b9a4238873bdc1f2fef68d6b07b86cfe2bf2d0f
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-<<<<<<< HEAD
-    <configuration name="ModelImplTest.testToString1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-=======
-    <configuration name="ShapeTest.ovalShapeSetter" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
->>>>>>> 7b9a4238873bdc1f2fef68d6b07b86cfe2bf2d0f
-      <module name="Animator" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cs5004.animator.model.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="cs5004.animator.model" />
-<<<<<<< HEAD
-      <option name="MAIN_CLASS_NAME" value="cs5004.animator.model.ModelImplTest" />
-      <option name="METHOD_NAME" value="testToString1" />
-=======
-      <option name="MAIN_CLASS_NAME" value="cs5004.animator.model.ShapeTest" />
-      <option name="METHOD_NAME" value="ovalShapeSetter" />
->>>>>>> 7b9a4238873bdc1f2fef68d6b07b86cfe2bf2d0f
+      <option name="METHOD_NAME" value="testGetUpdatedShapeAtGivenTime4" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.-in big-bang-big-crunch.txt -speed 10000 -view visual" />
-      <item itemvalue="Application.-in buildings copy.txt -speed 30 -view visual" />
       <item itemvalue="Application.-in smalldemo.txt -speed 50 -view visual" />
-      <item itemvalue="Application.-in toh-3.txt -view text -out text-transcript.txt" />
-      <item itemvalue="Application.-in smalldemo.txt -view text -speed 2" />
-      <item itemvalue="Application.-in toh-3.txt -speed 30 -view visual" />
-      <item itemvalue="Application.-in toh-5.txt -speed 30 -view visual" />
-<<<<<<< HEAD
-      <item itemvalue="JUnit.ModelImplTest.testConstructor1" />
+      <item itemvalue="Application.-in big-bang-big-crunch.txt -speed 50 -view visual" />
+      <item itemvalue="Application.-in buildings.txt -speed 50 -view visual" />
+      <item itemvalue="JUnit.ModelImplTest.testGetUpdatedShapeAtGivenTime4" />
+      <item itemvalue="JUnit.AnimationTest.runAnimation3" />
+      <item itemvalue="JUnit.ModelImplTest.testBuilder1" />
       <item itemvalue="JUnit.ModelImplTest" />
-      <item itemvalue="JUnit.ModelImplTest.testAddAnimation1" />
-      <item itemvalue="JUnit.ModelImplTest.testToString1" />
-      <item itemvalue="JUnit.ModelImplTest.testGetUpdatedShapeAtGivenTime1" />
+      <item itemvalue="JUnit.AnimationTest and 3 more" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ModelImplTest.testGetUpdatedShapeAtGivenTime1" />
+        <item itemvalue="JUnit.AnimationTest and 3 more" />
         <item itemvalue="JUnit.ModelImplTest" />
-        <item itemvalue="JUnit.ModelImplTest.testToString1" />
-        <item itemvalue="JUnit.ModelImplTest.testAddAnimation1" />
-        <item itemvalue="JUnit.ModelImplTest.testConstructor1" />
-=======
-      <item itemvalue="Application.-in smalldemo.txt -view text -out text-transcript.txt" />
-      <item itemvalue="Application.-in big-bang-big-crunch.txt -speed 10000 -view visual" />
-      <item itemvalue="Application.-in buildings copy.txt -speed 30 -view visual" />
-      <item itemvalue="JUnit.AnimationTest" />
-      <item itemvalue="JUnit.ModelImplTest.testConstructor1" />
-      <item itemvalue="JUnit.ShapeTest" />
-      <item itemvalue="JUnit.ShapeTest.ovalShapeSetter" />
-      <item itemvalue="JUnit.ShapeFactoryTest" />
-    </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="JUnit.ShapeFactoryTest" />
-        <item itemvalue="JUnit.ShapeTest" />
-        <item itemvalue="JUnit.ShapeTest.ovalShapeSetter" />
-        <item itemvalue="JUnit.ModelImplTest.testConstructor1" />
-        <item itemvalue="JUnit.AnimationTest" />
->>>>>>> 7b9a4238873bdc1f2fef68d6b07b86cfe2bf2d0f
+        <item itemvalue="JUnit.ModelImplTest.testBuilder1" />
+        <item itemvalue="JUnit.AnimationTest.runAnimation3" />
+        <item itemvalue="JUnit.ModelImplTest.testGetUpdatedShapeAtGivenTime4" />
       </list>
     </recent_temporary>
   </component>
@@ -258,104 +169,62 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="d6f7471e-8e72-4e3b-a8da-37087b685913" name="Default Changelist" comment="" />
-      <created>1596404768513</created>
+      <changelist id="8263ffd2-26d4-46dd-b615-fb575bb216bb" name="Default Changelist" comment="" />
+      <created>1596500475011</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1596404768513</updated>
+      <updated>1596500475011</updated>
     </task>
     <servers />
   </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="oldMeFiltersMigrated" value="true" />
-  </component>
   <component name="WindowStateProjectService">
-    <state x="673" y="242" key="#-in_toh-3.txt_-speed_50_-view_visual" timestamp="1596417013965">
+    <state x="695" y="305" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1596504615669">
       <screen x="0" y="23" width="1920" height="1006" />
     </state>
-    <state x="673" y="242" key="#-in_toh-3.txt_-speed_50_-view_visual/0.23.1920.1006@0.23.1920.1006" timestamp="1596417013965" />
-    <state x="465" y="240" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1596473260738">
+    <state x="695" y="305" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1920.1006@0.23.1920.1006" timestamp="1596504615669" />
+    <state x="233" y="174" width="1459" height="806" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1596502847863">
       <screen x="0" y="23" width="1920" height="1006" />
     </state>
-    <state x="465" y="240" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1920.1006@0.23.1920.1006" timestamp="1596473260738" />
-    <state x="459" y="634" width="1650" height="803" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1596497241069">
+    <state x="233" y="174" width="1459" height="806" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.23.1920.1006@0.23.1920.1006" timestamp="1596502847863" />
+    <state x="794" y="261" key="#com.intellij.ide.util.MemberChooser" timestamp="1596558884013">
       <screen x="0" y="23" width="1920" height="1006" />
     </state>
-    <state x="459" y="634" width="1650" height="803" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.23.1920.1006@0.23.1920.1006" timestamp="1596497241069" />
-    <state x="743" y="369" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1596417277202">
+    <state x="794" y="261" key="#com.intellij.ide.util.MemberChooser/0.23.1920.1006@0.23.1920.1006" timestamp="1596558884013" />
+    <state x="713" y="317" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1596503278090">
       <screen x="0" y="23" width="1920" height="1006" />
     </state>
-    <state x="743" y="369" key="#com.intellij.ide.util.TreeClassChooserDialog/0.23.1920.1006@0.23.1920.1006" timestamp="1596417277202" />
-    <state width="1617" height="308" key="GridCell.Tab.0.bottom" timestamp="1596497646733">
+    <state x="713" y="317" key="#com.intellij.ide.util.TreeClassChooserDialog/0.23.1920.1006@0.23.1920.1006" timestamp="1596503278090" />
+    <state x="553" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1596557202944">
       <screen x="0" y="23" width="1920" height="1006" />
     </state>
-    <state width="1617" height="308" key="GridCell.Tab.0.bottom/0.23.1920.1006@0.23.1920.1006" timestamp="1596497646733" />
-    <state width="1617" height="308" key="GridCell.Tab.0.center" timestamp="1596497646731">
+    <state x="553" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.23.1920.1006@0.23.1920.1006" timestamp="1596557202944" />
+    <state x="719" y="299" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1596557365094">
       <screen x="0" y="23" width="1920" height="1006" />
     </state>
-    <state width="1617" height="308" key="GridCell.Tab.0.center/0.23.1920.1006@0.23.1920.1006" timestamp="1596497646731" />
-    <state width="1617" height="308" key="GridCell.Tab.0.left" timestamp="1596497646730">
+    <state x="719" y="299" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1920.1006@0.23.1920.1006" timestamp="1596557365094" />
+    <state width="1617" height="52" key="GridCell.Tab.0.bottom" timestamp="1596558962408">
       <screen x="0" y="23" width="1920" height="1006" />
     </state>
-    <state width="1617" height="308" key="GridCell.Tab.0.left/0.23.1920.1006@0.23.1920.1006" timestamp="1596497646730" />
-    <state width="1617" height="308" key="GridCell.Tab.0.right" timestamp="1596497646732">
+    <state width="1617" height="52" key="GridCell.Tab.0.bottom/0.23.1920.1006@0.23.1920.1006" timestamp="1596558962408" />
+    <state width="1617" height="52" key="GridCell.Tab.0.center" timestamp="1596558962407">
       <screen x="0" y="23" width="1920" height="1006" />
     </state>
-    <state width="1617" height="308" key="GridCell.Tab.0.right/0.23.1920.1006@0.23.1920.1006" timestamp="1596497646732" />
-    <state width="1617" height="308" key="GridCell.Tab.1.bottom" timestamp="1596497647131">
+    <state width="1617" height="52" key="GridCell.Tab.0.center/0.23.1920.1006@0.23.1920.1006" timestamp="1596558962407" />
+    <state width="1617" height="52" key="GridCell.Tab.0.left" timestamp="1596558962406">
       <screen x="0" y="23" width="1920" height="1006" />
     </state>
-    <state width="1617" height="308" key="GridCell.Tab.1.bottom/0.23.1920.1006@0.23.1920.1006" timestamp="1596497647131" />
-    <state width="1617" height="308" key="GridCell.Tab.1.center" timestamp="1596497647130">
+    <state width="1617" height="52" key="GridCell.Tab.0.left/0.23.1920.1006@0.23.1920.1006" timestamp="1596558962406" />
+    <state width="1617" height="52" key="GridCell.Tab.0.right" timestamp="1596558962407">
       <screen x="0" y="23" width="1920" height="1006" />
     </state>
-    <state width="1617" height="308" key="GridCell.Tab.1.center/0.23.1920.1006@0.23.1920.1006" timestamp="1596497647130" />
-    <state width="1617" height="308" key="GridCell.Tab.1.left" timestamp="1596497647130">
+    <state width="1617" height="52" key="GridCell.Tab.0.right/0.23.1920.1006@0.23.1920.1006" timestamp="1596558962407" />
+    <state x="702" y="427" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1596500561916">
       <screen x="0" y="23" width="1920" height="1006" />
     </state>
-    <state width="1617" height="308" key="GridCell.Tab.1.left/0.23.1920.1006@0.23.1920.1006" timestamp="1596497647130" />
-    <state width="1617" height="308" key="GridCell.Tab.1.right" timestamp="1596497647131">
+    <state x="702" y="427" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.23.1920.1006@0.23.1920.1006" timestamp="1596500561916" />
+    <state x="627" y="296" width="670" height="676" key="search.everywhere.popup" timestamp="1596502223738">
       <screen x="0" y="23" width="1920" height="1006" />
     </state>
-    <state width="1617" height="308" key="GridCell.Tab.1.right/0.23.1920.1006@0.23.1920.1006" timestamp="1596497647131" />
-    <state width="1808" height="308" key="GridCell.Tab.2.bottom" timestamp="1596418333982">
-      <screen x="0" y="23" width="1920" height="1006" />
-    </state>
-    <state width="1808" height="308" key="GridCell.Tab.2.bottom/0.23.1920.1006@0.23.1920.1006" timestamp="1596418333982" />
-    <state width="1808" height="308" key="GridCell.Tab.2.center" timestamp="1596418333981">
-      <screen x="0" y="23" width="1920" height="1006" />
-    </state>
-    <state width="1808" height="308" key="GridCell.Tab.2.center/0.23.1920.1006@0.23.1920.1006" timestamp="1596418333981" />
-    <state width="1808" height="308" key="GridCell.Tab.2.left" timestamp="1596418333981">
-      <screen x="0" y="23" width="1920" height="1006" />
-    </state>
-    <state width="1808" height="308" key="GridCell.Tab.2.left/0.23.1920.1006@0.23.1920.1006" timestamp="1596418333981" />
-    <state width="1808" height="308" key="GridCell.Tab.2.right" timestamp="1596418333982">
-      <screen x="0" y="23" width="1920" height="1006" />
-    </state>
-    <state width="1808" height="308" key="GridCell.Tab.2.right/0.23.1920.1006@0.23.1920.1006" timestamp="1596418333982" />
-    <state x="721" y="428" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1596404777219">
-      <screen x="0" y="23" width="1920" height="1006" />
-    </state>
-    <state x="721" y="428" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.23.1920.1006@0.23.1920.1006" timestamp="1596404777219" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/cs5004/animator/model/Rectangle.java</url>
-          <line>112</line>
-          <properties class="cs5004.animator.model.Rectangle">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="13" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/test/cs5004/animator/model/ModelImplTest.java</url>
-          <line>295</line>
-          <option name="timeStamp" value="16" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <state x="627" y="296" width="670" height="676" key="search.everywhere.popup/0.23.1920.1006@0.23.1920.1006" timestamp="1596502223738" />
   </component>
 </project>

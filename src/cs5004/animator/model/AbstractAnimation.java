@@ -1,5 +1,7 @@
 package cs5004.animator.model;
 
+import java.util.List;
+
 /**
  * Represent an abstract class of animation in the model. It contains the common attributes of
  * common attributes and methods, including the animation type, shape name, start time and end time.
@@ -24,9 +26,9 @@ public abstract class AbstractAnimation {
   public AbstractAnimation(String shapeName, ShapeType shapeType,
                            int startTime, int endTime)
       throws IllegalArgumentException {
-//    if (startTime < 0 || endTime < 0 || startTime >= endTime) {
-//      throw new IllegalArgumentException("Invalid time frame for the animation.");
-//    }
+    if (startTime < 0 || endTime < 0 || startTime > endTime) {
+      throw new IllegalArgumentException("Invalid time frame for the animation.");
+    }
     this.shapeName = shapeName;
     this.startTime = startTime;
     this.endTime = endTime;
@@ -59,6 +61,27 @@ public abstract class AbstractAnimation {
   public int getEndTime() {
     return this.endTime;
   }
+
+  /**
+   * Return a list of start position and end position of the animation.
+   *
+   * @return a list of start position and end position of the animation
+   */
+  public abstract List<Position2D> getPos();
+
+  /**
+   * Return a list of start color and end color of the animation.
+   *
+   * @return a list of start color and end color of the animation
+   */
+  public abstract List<ColorType> getColor();
+
+  /**
+   * Return a list of start dimension and end dimension of the animation.
+   *
+   * @return a list of start dimension and end dimension of the animation
+   */
+  public abstract List<int[]> getDimension();
 
 
   /**
