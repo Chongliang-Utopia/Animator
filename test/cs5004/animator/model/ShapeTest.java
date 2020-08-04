@@ -54,7 +54,7 @@ public class ShapeTest {
             new ColorType(255, 139, 234), new Position2D(200.0, 200.0),
             50.0, 100.0, 1, 100);
     assertEquals("Name: R\nType: rectangle\nMin corner: (200.0,200.0), Width: 50.0, " +
-                    "Height: 100.0, Color: (1.0,0.0,0.0)\nAppears at t=1\nDisappears at t=100\n",
+                    "Height: 100.0, Color: (255,139,234)\nAppears at t=1\nDisappears at t=100\n",
             rectangle.textRender());
   }
 
@@ -140,10 +140,10 @@ public class ShapeTest {
 
     ColorType newColor = new ColorType(222, 139, 234);
     oval.setColor(newColor);
-    assertEquals(new ColorType(255, 139, 234), oval.getColor());
+    assertEquals(new ColorType(222, 139, 234), oval.getColor());
 
     assertEquals(new Oval("O", ShapeType.OVAL,
-            new ColorType(255, 139, 234), new Position2D(500.0, 100.0),
+            new ColorType(222, 139, 234), new Position2D(500.0, 100.0),
             60.0, 30.0, 6, 100), oval);
   }
 
@@ -153,7 +153,7 @@ public class ShapeTest {
             new ColorType(255, 139, 234), new Position2D(500.0, 100.0),
             60.0, 30.0, 6, 100);
     assertEquals("Name: O\nType: oval\nCenter: (500.0,100.0), X radius: 60.0, "
-                    + "Y radius: 30.0, Color: (255, 139, 234)\nAppears at t=6\nDisappears at t=100\n",
+                    + "Y radius: 30.0, Color: (255,139,234)\nAppears at t=6\nDisappears at t=100\n",
             oval.textRender());
   }
 
