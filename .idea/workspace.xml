@@ -3,8 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="d6f7471e-8e72-4e3b-a8da-37087b685913" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/test/cs5004/animator/model/ModelImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/cs5004/animator/model/ModelImplTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/text-transcript.txt" beforeDir="false" afterPath="$PROJECT_DIR$/text-transcript.txt" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/test/cs5004/animator/model/ShapeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/cs5004/animator/model/ShapeTest.java" afterDir="false" />
+>>>>>>> 7b9a4238873bdc1f2fef68d6b07b86cfe2bf2d0f
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,9 +19,11 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1fYpEY2BFFwnr38u4yZ1UtjsJwq" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
@@ -25,10 +31,15 @@
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
+<<<<<<< HEAD
   <component name="RunManager" selected="JUnit.ModelImplTest.testGetUpdatedShapeAtGivenTime1">
+=======
+  <component name="RunManager" selected="JUnit.ShapeFactoryTest">
+>>>>>>> 7b9a4238873bdc1f2fef68d6b07b86cfe2bf2d0f
     <configuration name="-in big-bang-big-crunch.txt -speed 10000 -view visual" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="cs5004.animator.EasyAnimator" />
       <module name="Animator" />
@@ -100,7 +111,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+<<<<<<< HEAD
     <configuration name="ModelImplTest.testAddAnimation1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+=======
+    <configuration name="ModelImplTest.testConstructor1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+>>>>>>> 7b9a4238873bdc1f2fef68d6b07b86cfe2bf2d0f
       <module name="Animator" />
       <extension name="coverage">
         <pattern>
@@ -110,13 +125,21 @@
       </extension>
       <option name="PACKAGE_NAME" value="cs5004.animator.model" />
       <option name="MAIN_CLASS_NAME" value="cs5004.animator.model.ModelImplTest" />
+<<<<<<< HEAD
       <option name="METHOD_NAME" value="testAddAnimation1" />
+=======
+      <option name="METHOD_NAME" value="testConstructor1" />
+>>>>>>> 7b9a4238873bdc1f2fef68d6b07b86cfe2bf2d0f
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+<<<<<<< HEAD
     <configuration name="ModelImplTest.testConstructor1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+=======
+    <configuration name="ShapeFactoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+>>>>>>> 7b9a4238873bdc1f2fef68d6b07b86cfe2bf2d0f
       <module name="Animator" />
       <extension name="coverage">
         <pattern>
@@ -125,14 +148,23 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="cs5004.animator.model" />
+<<<<<<< HEAD
       <option name="MAIN_CLASS_NAME" value="cs5004.animator.model.ModelImplTest" />
       <option name="METHOD_NAME" value="testConstructor1" />
       <option name="TEST_OBJECT" value="method" />
+=======
+      <option name="MAIN_CLASS_NAME" value="cs5004.animator.model.ShapeFactoryTest" />
+      <option name="TEST_OBJECT" value="class" />
+>>>>>>> 7b9a4238873bdc1f2fef68d6b07b86cfe2bf2d0f
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+<<<<<<< HEAD
     <configuration name="ModelImplTest.testGetUpdatedShapeAtGivenTime1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+=======
+    <configuration name="ShapeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+>>>>>>> 7b9a4238873bdc1f2fef68d6b07b86cfe2bf2d0f
       <module name="Animator" />
       <extension name="coverage">
         <pattern>
@@ -141,14 +173,23 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="cs5004.animator.model" />
+<<<<<<< HEAD
       <option name="MAIN_CLASS_NAME" value="cs5004.animator.model.ModelImplTest" />
       <option name="METHOD_NAME" value="testGetUpdatedShapeAtGivenTime1" />
       <option name="TEST_OBJECT" value="method" />
+=======
+      <option name="MAIN_CLASS_NAME" value="cs5004.animator.model.ShapeTest" />
+      <option name="TEST_OBJECT" value="class" />
+>>>>>>> 7b9a4238873bdc1f2fef68d6b07b86cfe2bf2d0f
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+<<<<<<< HEAD
     <configuration name="ModelImplTest.testToString1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+=======
+    <configuration name="ShapeTest.ovalShapeSetter" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+>>>>>>> 7b9a4238873bdc1f2fef68d6b07b86cfe2bf2d0f
       <module name="Animator" />
       <extension name="coverage">
         <pattern>
@@ -157,8 +198,13 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="cs5004.animator.model" />
+<<<<<<< HEAD
       <option name="MAIN_CLASS_NAME" value="cs5004.animator.model.ModelImplTest" />
       <option name="METHOD_NAME" value="testToString1" />
+=======
+      <option name="MAIN_CLASS_NAME" value="cs5004.animator.model.ShapeTest" />
+      <option name="METHOD_NAME" value="ovalShapeSetter" />
+>>>>>>> 7b9a4238873bdc1f2fef68d6b07b86cfe2bf2d0f
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -172,6 +218,7 @@
       <item itemvalue="Application.-in smalldemo.txt -view text -speed 2" />
       <item itemvalue="Application.-in toh-3.txt -speed 30 -view visual" />
       <item itemvalue="Application.-in toh-5.txt -speed 30 -view visual" />
+<<<<<<< HEAD
       <item itemvalue="JUnit.ModelImplTest.testConstructor1" />
       <item itemvalue="JUnit.ModelImplTest" />
       <item itemvalue="JUnit.ModelImplTest.testAddAnimation1" />
@@ -185,6 +232,24 @@
         <item itemvalue="JUnit.ModelImplTest.testToString1" />
         <item itemvalue="JUnit.ModelImplTest.testAddAnimation1" />
         <item itemvalue="JUnit.ModelImplTest.testConstructor1" />
+=======
+      <item itemvalue="Application.-in smalldemo.txt -view text -out text-transcript.txt" />
+      <item itemvalue="Application.-in big-bang-big-crunch.txt -speed 10000 -view visual" />
+      <item itemvalue="Application.-in buildings copy.txt -speed 30 -view visual" />
+      <item itemvalue="JUnit.AnimationTest" />
+      <item itemvalue="JUnit.ModelImplTest.testConstructor1" />
+      <item itemvalue="JUnit.ShapeTest" />
+      <item itemvalue="JUnit.ShapeTest.ovalShapeSetter" />
+      <item itemvalue="JUnit.ShapeFactoryTest" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.ShapeFactoryTest" />
+        <item itemvalue="JUnit.ShapeTest" />
+        <item itemvalue="JUnit.ShapeTest.ovalShapeSetter" />
+        <item itemvalue="JUnit.ModelImplTest.testConstructor1" />
+        <item itemvalue="JUnit.AnimationTest" />
+>>>>>>> 7b9a4238873bdc1f2fef68d6b07b86cfe2bf2d0f
       </list>
     </recent_temporary>
   </component>
@@ -200,6 +265,9 @@
       <updated>1596404768513</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="673" y="242" key="#-in_toh-3.txt_-speed_50_-view_visual" timestamp="1596417013965">
@@ -277,7 +345,7 @@
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/cs5004/animator/model/Rectangle.java</url>
           <line>112</line>
-          <properties class="cs5004.animator.model.Rectangle" method="textRender">
+          <properties class="cs5004.animator.model.Rectangle">
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="13" />
