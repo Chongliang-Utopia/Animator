@@ -14,15 +14,17 @@ import cs5004.animator.view.IView;
 public class ControllerImpl implements IController {
   private final Timer timer;
   private int tick;
+  private int tempo;
   private final IModel model;
   private final IView view;
 
-  public ControllerImpl(IModel model, IView view, int tempo) throws IllegalArgumentException{
+  public ControllerImpl(IModel model, IView view) throws IllegalArgumentException{
     if (model == null || view == null) {
       throw new IllegalArgumentException("Parameters can not be null");
     }
     this.model = model;
     this.view = view;
+    this.tempo = view.getTempo();
     this.timer = new Timer((int) ((1.0 / tempo) * 1000), ((e) -> {
       List<IReadOnlyShapes> shapesToRender = model.getUpdatedShapeAtGivenTime(tick);
       view.renderImage(shapesToRender);

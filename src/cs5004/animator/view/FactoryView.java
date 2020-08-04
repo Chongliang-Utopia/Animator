@@ -11,15 +11,15 @@ public class FactoryView {
    * @return the IView object
    * @throws IllegalArgumentException if the input is invalid view
    */
-  public static IView makeView(String type) throws IllegalArgumentException {
+  public static IView makeView(String type, int tempo) throws IllegalArgumentException {
     if (type == null) {
       throw new IllegalArgumentException("Not a valid view");
     }
     switch (type) {
       case "text":
-        return new TextView();
+        return new TextView(tempo);
       case "visual":
-        return new ImageView();
+        return new ImageView(tempo);
       default:
         throw new IllegalArgumentException("Not a valid view");
     }
