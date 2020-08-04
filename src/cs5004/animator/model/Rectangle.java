@@ -121,18 +121,18 @@ public class Rectangle extends AbstractShape {
     return text;
   }
 
-  /**
-   * Return String representation of the oval position and size. e.g.
-   * center at (500.0,100.0), radius: 60, radius: 30
-   *
-   * @return string representation of the oval information
-   */
-  @Override
-  public String stringPosSize() {
-    String text = "";
-    text += "corner at " + this.position.toString()
-            + String.format(", width: %.0f and height %.0f\n", this.width, this.height);
-    return text;
-  }
+//  /**
+//   * Return String representation of the oval position and size. e.g.
+//   * center at (500.0,100.0), radius: 60, radius: 30
+//   *
+//   * @return string representation of the oval information
+//   */
+//  @Override
+//  public String stringPosSize() {
+//    String text = "";
+//    text += "corner at " + this.position.toString()
+//            + String.format(", width: %.0f and height %.0f\n", this.width, this.height);
+//    return text;
+//  }
 
 }
