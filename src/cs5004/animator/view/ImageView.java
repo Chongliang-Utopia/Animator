@@ -1,13 +1,11 @@
 package cs5004.animator.view;
 
-import java.awt.Dimension;
-import java.awt.Color;
-import java.util.ArrayList;
+import java.awt.*;
 import java.util.List;
 import java.util.Map;
 
-import javax.swing.JScrollPane;
-import javax.swing.JFrame;
+import javax.swing.*;
+
 
 import cs5004.animator.model.AbstractAnimation;
 import cs5004.animator.model.IReadOnlyShapes;
@@ -17,10 +15,13 @@ public class ImageView extends AbstractView {
   private final Draw panel;
 
   /**
-   * Construct an ImageView.
+   * Construct an image view with the given tempo.
+   *
+   * @param tempo the speed of the view
+   * @throws IllegalArgumentException if the speed is invalid
    */
-  public ImageView() {
-    super();
+  public ImageView(int tempo) throws IllegalArgumentException {
+    super(tempo);
     panel = new Draw();
     panel.setBackground(Color.WHITE);
 

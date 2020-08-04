@@ -178,7 +178,7 @@ public abstract class AbstractShape implements IReadOnlyShapes {
 
   /**
    * Return String representation of the shape details.
-   *
+   * @return string representation of the shape details
    */
   @Override
   public String textRender() {
@@ -186,5 +186,13 @@ public abstract class AbstractShape implements IReadOnlyShapes {
   }
 
 
+  /**
+   * Return String representation of the shape position and size.
+   * @return string representation of the shape position and size
+   */
+  @Override
+  public String stringPosSize() {
+    return "";
+  }
 
 }

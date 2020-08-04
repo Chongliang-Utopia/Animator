@@ -24,7 +24,7 @@ public interface IView {
    *
    * @param allShapes the given shapes in the view
    */
-  public void renderImage(List<IReadOnlyShapes>allShapes);
+  void renderImage(List<IReadOnlyShapes>allShapes);
 
 
   /**
