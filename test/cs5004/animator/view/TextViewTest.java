@@ -44,6 +44,7 @@ public class TextViewTest {
 
   List<IReadOnlyShapes> shapes;
   Map<Integer, List<AbstractAnimation>> ani;
+  Map<Integer, List<AbstractAnimation>> noAni;
 
   @Before
   public void setUp() {
@@ -103,6 +104,11 @@ public class TextViewTest {
     ani.put(75, List.of(R6_Scale));
     ani.put(80, List.of(C5_Stable));
     ani.put(100, List.of(C6_Scale));
+
+    noAni = new TreeMap<>(Comparator.comparingInt(a -> a));
+    noAni.put(1, List.of(R1_Stable));
+    noAni.put(6, List.of(C1_Stable));
+    noAni.put(80, List.of(C5_Stable));
   }
 
 
@@ -127,8 +133,8 @@ public class TextViewTest {
   }
 
   /**
-   * Test the text view with the shapes R and C, including animations of move, change color, change
-   * width, change height, no changes and multiple changes at the same time for both shape types.
+   * Test the text view with the shapes R and C, including 1. animations of move, 2. change color,
+   * 3. change width, 4. change height, 5. no changes 6. multiple changes at the same time.
    */
   @Test
   public void testRenderText() {
@@ -149,6 +155,28 @@ public class TextViewTest {
             + "C changes width from 120 to 60 from time t=50 to t=60\n";
 
     assertEquals(expected, textView.renderText(shapes, ani));
+    assertEquals(2, textView.getTempo());
+  }
+
+  /**
+   * Test the text view with the shapes R and C, but all shapes are stable.
+   */
+  @Test
+  public void testRenderTextNoChanges() {
+    IView textView = new TextView(2);
+    String expected = "Create rectangle R with color (255,0,0) with corner at (200.0,200.0), "
+            + "width: 50 and height 100\n"
+            + "Create oval C with color (0,0,255) with center at (440.0,70.0), radius: 120 and 60\n"
+            + "\nR appears at time t=0 and disappear at time t=50\n"
+            + "C appears at time t=3 and disappear at time t=50\n\n";
+
+    assertEquals(expected, textView.renderText(shapes, noAni));
+  }
+
+  @Test(expected = NullPointerException.class)
+  public void testNull() {
+    IView textView = new TextView(2);
+    textView.setCanvas(null);
   }
 
 

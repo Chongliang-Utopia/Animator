@@ -3,6 +3,7 @@ import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.util.List;
+import java.util.Objects;
 
 import javax.swing.JPanel;
 
@@ -27,9 +28,11 @@ public class Draw extends JPanel implements IDraw {
    * Draws a shape with corresponding position, color, and size.
    *
    * @param g given graphics
+   * @throws NullPointerException if the given graphics is null
    */
   @Override
   public void paintComponent(Graphics g) {
+    Objects.requireNonNull(g);
     super.paintComponent(g);
 
     if (this.shapes != null) {
@@ -58,6 +61,7 @@ public class Draw extends JPanel implements IDraw {
    */
   @Override
   public void draw(List<IReadOnlyShapes> shapes) {
+    Objects.requireNonNull(shapes);
     this.shapes = shapes;
     repaint();
   }

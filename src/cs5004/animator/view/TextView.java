@@ -6,6 +6,9 @@ import java.util.Map;
 import cs5004.animator.model.AbstractAnimation;
 import cs5004.animator.model.IReadOnlyShapes;
 
+/**
+ * A class that renders the text of the motions of all the shapes.
+ */
 public class TextView extends AbstractView {
   /**
    * Construct an AbstractView object with the given tempo, tick per second.

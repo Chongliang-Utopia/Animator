@@ -2,6 +2,7 @@ package cs5004.animator.view;
 
 import java.util.List;
 import java.util.Map;
+import java.util.Objects;
 
 import javax.swing.*;
 
@@ -9,6 +10,10 @@ import cs5004.animator.model.AbstractAnimation;
 import cs5004.animator.model.IReadOnlyShapes;
 import cs5004.animator.model.Screen;
 
+/**
+ * An Abstract class for various types of views. It includes method renderText for the text view and
+ * method renderImage for the image view. It can also get the tempo and set the canvas.
+ */
 public abstract class AbstractView extends JFrame implements IView {
   protected int tempo;
   protected Screen canvas = new Screen(0, 0, 0, 0);
@@ -20,7 +25,7 @@ public abstract class AbstractView extends JFrame implements IView {
    * @throws IllegalArgumentException if the speed is invalid
    */
   public AbstractView(int tempo) throws IllegalArgumentException {
-    if (tempo < 0) {
+    if (tempo <= 0) {
       throw new IllegalArgumentException("Invalid speed.");
     }
     this.tempo = tempo;
@@ -49,9 +54,11 @@ public abstract class AbstractView extends JFrame implements IView {
    * Set the default canvas to the given size.
    *
    * @param screen the given size canvas
+   * @throws NullPointerException if the given screen is null
    */
   @Override
-  public void setCanvas(Screen screen) {
+  public void setCanvas(Screen screen) throws NullPointerException {
+    Objects.requireNonNull(screen);
     this.canvas = screen;
   }
 

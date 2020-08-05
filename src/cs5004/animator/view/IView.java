@@ -7,6 +7,9 @@ import cs5004.animator.model.AbstractAnimation;
 import cs5004.animator.model.IReadOnlyShapes;
 import cs5004.animator.model.Screen;
 
+/**
+ * An IView interface that enables two different views including text view and canvas view.
+ */
 public interface IView {
 
   /**
@@ -31,8 +34,9 @@ public interface IView {
    * Set the default canvas to the given size.
    *
    * @param screen the given size canvas
+   * @throws NullPointerException if the given screen is null
    */
-  void setCanvas(Screen screen);
+  void setCanvas(Screen screen) throws NullPointerException;
 
   /**
    * Get the tempo that the user passes in.

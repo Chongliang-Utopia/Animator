@@ -11,6 +11,9 @@ import cs5004.animator.model.AbstractAnimation;
 import cs5004.animator.model.IReadOnlyShapes;
 import cs5004.animator.model.Screen;
 
+/**
+ * A class that renders the animation of the motions of all the shapes on the canvas.
+ */
 public class ImageView extends AbstractView {
   private final Draw panel;
 
