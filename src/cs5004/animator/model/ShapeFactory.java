@@ -2,11 +2,11 @@ package cs5004.animator.model;
 
 
 /**
- * A shapeFactory class to generate a abstract shape according the given parameters.
+ * A shapeFactory class to generate a shape according the given parameters.
  */
 public class ShapeFactory {
   /**
-   * A static method to generate an abstract shape according the given parameters.
+   * A static method to generate a shape according the given parameters.
    *
    * @param name       the name of the shape
    * @param type       the type of the shape to generate
@@ -20,7 +20,7 @@ public class ShapeFactory {
    * @throws IllegalArgumentException if the given shapeType is not supported or the input is
    *                                  invalid
    */
-  public static AbstractShape buildShape(String name, ShapeType type,
+  public static IShape buildShape(String name, ShapeType type,
                                          ColorType color, Position2D position, double width,
                                          double height, int appears, int disappears)
           throws IllegalArgumentException {
@@ -52,13 +52,13 @@ public class ShapeFactory {
   }
 
   /**
-   * A static method to generate an abstract default shape.
+   * A static method to generate a default shape.
    * @param name       the name of the shape
    * @param type       the type of the shape to generate
    * @return  an abstract default shape
    * @throws IllegalArgumentException if the given type is invalid
    */
-  public static AbstractShape buildShape(String name, ShapeType type)
+  public static IShape buildShape(String name, ShapeType type)
       throws IllegalArgumentException {
     AbstractShape result = null;
     if (type == null) {

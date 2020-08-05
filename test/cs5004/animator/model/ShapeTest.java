@@ -30,7 +30,7 @@ public class ShapeTest {
 
   @Test
   public void rectangleShapeSetter() {
-    AbstractShape rectangle = new Rectangle("R", ShapeType.RECTANGLE,
+    IShape rectangle = new Rectangle("R", ShapeType.RECTANGLE,
             new ColorType(255, 139, 234), new Position2D(200.0, 200.0),
             50.0, 100.0, 1, 100);
 
@@ -50,7 +50,7 @@ public class ShapeTest {
 
   @Test
   public void rectangleShapeText() {
-    AbstractShape rectangle = new Rectangle("R", ShapeType.RECTANGLE,
+    IShape rectangle = new Rectangle("R", ShapeType.RECTANGLE,
             new ColorType(255, 139, 234), new Position2D(200.0, 200.0),
             50.0, 100.0, 1, 100);
     assertEquals("Name: R\nType: rectangle\nMin corner: (200.0,200.0), Width: 50.0, " +
@@ -60,60 +60,60 @@ public class ShapeTest {
 
   @Test(expected = IllegalArgumentException.class)
   public void nullName() {
-    AbstractShape rectangle = new Rectangle(null, ShapeType.RECTANGLE,
+    IShape rectangle = new Rectangle(null, ShapeType.RECTANGLE,
             new ColorType(255, 139, 234), new Position2D(200.0, 200.0),
             50.0, 100.0, 1, 100);
   }
 
   @Test(expected = IllegalArgumentException.class)
   public void nullType() {
-    AbstractShape rectangle = new Rectangle("R", null,
+    IShape rectangle = new Rectangle("R", null,
             new ColorType(255, 139, 234), new Position2D(200.0, 200.0),
             50.0, 100.0, 1, 100);
   }
 
   @Test(expected = IllegalArgumentException.class)
   public void nullColor() {
-    AbstractShape rectangle = new Rectangle("R", ShapeType.RECTANGLE,
+    IShape rectangle = new Rectangle("R", ShapeType.RECTANGLE,
             null, new Position2D(200.0, 200.0),
             50.0, 100.0, 1, 100);
   }
 
   @Test(expected = IllegalArgumentException.class)
   public void nullPosition() {
-    AbstractShape rectangle = new Rectangle("R", ShapeType.RECTANGLE,
+    IShape rectangle = new Rectangle("R", ShapeType.RECTANGLE,
             new ColorType(255, 139, 234), null,
             50.0, 100.0, 1, 100);
   }
 
   @Test(expected = IllegalArgumentException.class)
   public void invalidAppear() {
-    AbstractShape rectangle = new Rectangle("R", ShapeType.RECTANGLE,
+    IShape rectangle = new Rectangle("R", ShapeType.RECTANGLE,
             new ColorType(255, 139, 234), new Position2D(200.0, 200.0),
             50.0, 100.0, -1, 100);
   }
 
   @Test(expected = IllegalArgumentException.class)
   public void invalidDisappear() {
-    AbstractShape rectangle = new Rectangle("R", ShapeType.RECTANGLE,
+    IShape rectangle = new Rectangle("R", ShapeType.RECTANGLE,
             new ColorType(255, 139, 234), new Position2D(200.0, 200.0),
             50.0, 100.0, 50, 2);
   }
 
   @Test(expected = IllegalArgumentException.class)
   public void invalidWidthHeight() {
-    AbstractShape rectangle1 = new Rectangle("R", ShapeType.RECTANGLE,
+    IShape rectangle1 = new Rectangle("R", ShapeType.RECTANGLE,
             new ColorType(255, 139, 234), new Position2D(200.0, 200.0),
             0, 2, 1, 22);
 
-    AbstractShape rectangle2 = new Rectangle("R", ShapeType.RECTANGLE,
+    IShape rectangle2 = new Rectangle("R", ShapeType.RECTANGLE,
             new ColorType(255, 139, 234), new Position2D(200.0, 200.0),
             2, 0, 1, 22);
   }
 
   @Test
   public void ovalShapeGetter() {
-    AbstractShape oval = new Oval("O", ShapeType.OVAL,
+    IShape oval = new Oval("O", ShapeType.OVAL,
             new ColorType(255, 139, 234), new Position2D(500.0, 100.0),
             60.0, 30.0, 6, 100);
     assertEquals("O", oval.getName());
@@ -129,7 +129,7 @@ public class ShapeTest {
 
   @Test
   public void ovalShapeSetter() {
-    AbstractShape oval = new Oval("O", ShapeType.OVAL,
+    IShape oval = new Oval("O", ShapeType.OVAL,
             new ColorType(255, 139, 234), new Position2D(500.0, 100.0),
             60.0, 30.0, 6, 100);
 
@@ -149,7 +149,7 @@ public class ShapeTest {
 
   @Test
   public void ovalShapeText() {
-    AbstractShape oval = new Oval("O", ShapeType.OVAL,
+    IShape oval = new Oval("O", ShapeType.OVAL,
             new ColorType(255, 139, 234), new Position2D(500.0, 100.0),
             60.0, 30.0, 6, 100);
     assertEquals("Name: O\nType: oval\nCenter: (500.0,100.0), X radius: 60.0, "
@@ -159,21 +159,21 @@ public class ShapeTest {
 
   @Test(expected = IllegalArgumentException.class)
   public void nullOvalName() {
-    AbstractShape oval = new Oval(null, ShapeType.OVAL,
+    IShape oval = new Oval(null, ShapeType.OVAL,
             new ColorType(255, 139, 234), new Position2D(500.0, 100.0),
             60.0, 30.0, 6, 100);
   }
 
   @Test(expected = IllegalArgumentException.class)
   public void nullOvalType() {
-    AbstractShape oval = new Oval("R", null,
+    IShape oval = new Oval("R", null,
             new ColorType(255, 139, 234), new Position2D(500.0, 100.0),
             60.0, 30.0, 6, 100);
   }
 
   @Test(expected = IllegalArgumentException.class)
   public void nullOvalColor() {
-    AbstractShape oval = new Oval("R", ShapeType.OVAL,
+    IShape oval = new Oval("R", ShapeType.OVAL,
             null, new Position2D(200.0, 200.0),
             50.0, 100.0, 1, 100);
   }
@@ -182,32 +182,32 @@ public class ShapeTest {
 
   @Test(expected = IllegalArgumentException.class)
   public void nullOvalPosition() {
-    AbstractShape oval = new Oval("R", ShapeType.OVAL,
+    IShape oval = new Oval("R", ShapeType.OVAL,
             new ColorType(255, 139, 234), null,
             50.0, 100.0, 1, 100);
   }
 
   @Test(expected = IllegalArgumentException.class)
   public void invalidOvalAppear() {
-    AbstractShape oval = new Oval("R", ShapeType.OVAL,
+    IShape oval = new Oval("R", ShapeType.OVAL,
             new ColorType(255, 139, 234), new Position2D(200.0, 200.0),
             50.0, 100.0, -1, 100);
   }
 
   @Test(expected = IllegalArgumentException.class)
   public void invalidOvalDisappear() {
-    AbstractShape oval = new Oval("R", ShapeType.OVAL,
+    IShape oval = new Oval("R", ShapeType.OVAL,
             new ColorType(255, 139, 234), new Position2D(200.0, 200.0),
             50.0, 100.0, 50, 2);
   }
 
   @Test(expected = IllegalArgumentException.class)
   public void invalidOvalWidthHeight() {
-    AbstractShape oval1 = new Oval("R", ShapeType.OVAL,
+    IShape oval1 = new Oval("R", ShapeType.OVAL,
             new ColorType(255, 139, 234), new Position2D(200.0, 200.0),
             0, 2, 1, 22);
 
-    AbstractShape oval2 = new Oval("R", ShapeType.OVAL,
+    IShape oval2 = new Oval("R", ShapeType.OVAL,
             new ColorType(255, 139, 234), new Position2D(200.0, 200.0),
             2, 0, 1, 22);
   }

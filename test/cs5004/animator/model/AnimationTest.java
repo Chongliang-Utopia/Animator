@@ -26,8 +26,8 @@ public class AnimationTest {
   IAnimation C4_ChangeColor;
   IAnimation C5_Stable;
 
-  AbstractShape r;
-  AbstractShape c;
+  IShape r;
+  IShape c;
 
   /**
    * Construct shape and Animation objects for tests.
@@ -141,7 +141,7 @@ public class AnimationTest {
    */
   @Test
   public void runAnimation1() {
-    AbstractShape moveShape1 = new Rectangle("R", ShapeType.RECTANGLE,
+    IShape moveShape1 = new Rectangle("R", ShapeType.RECTANGLE,
         new ColorType(255, 0, 0),
         new Position2D(250, 250),
         50.0, 100.0, 10, 50);
@@ -153,7 +153,7 @@ public class AnimationTest {
    */
   @Test
   public void runAnimation2() {
-    AbstractShape moveShape1 = new Rectangle("R", ShapeType.RECTANGLE,
+    IShape moveShape1 = new Rectangle("R", ShapeType.RECTANGLE,
         new ColorType(255, 0, 0),
         new Position2D(250.0, 250.0),
         50.0, 100.0, 10, 50);
@@ -165,11 +165,11 @@ public class AnimationTest {
    */
   @Test
   public void runAnimation3() {
-    AbstractShape expectedShape = new Oval("C", ShapeType.OVAL,
+    IShape expectedShape = new Oval("C", ShapeType.OVAL,
         new ColorType(0, 0, 255),
         new Position2D(440, 160),
         120, 60, 20, 50);
-    AbstractShape colorShape1 = C2_Move.runAnimation(35);
+    IShape colorShape1 = C2_Move.runAnimation(35);
     // Run change color animation.
     assertEquals(expectedShape.textRender(),
         C2_Move.runAnimation(35).textRender());
@@ -180,7 +180,7 @@ public class AnimationTest {
    */
   @Test
   public void runAnimation4() {
-    AbstractShape expectedShape = new Oval("C", ShapeType.OVAL,
+    IShape expectedShape = new Oval("C", ShapeType.OVAL,
         new ColorType(0, 212, 42),
         new Position2D(440, 370),
         120, 60, 70, 80);

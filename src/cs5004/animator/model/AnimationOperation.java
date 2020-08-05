@@ -84,7 +84,7 @@ public class AnimationOperation extends AbstractAnimation {
    * @throws IllegalArgumentException if an updated shape cannot be generated
    */
   @Override
-  public AbstractShape runAnimation(int curTime) throws IllegalArgumentException {
+  public IShape runAnimation(int curTime) throws IllegalArgumentException {
     if (curTime < startTime || curTime > endTime) {
       throw new IllegalArgumentException("Invalid time");
     }

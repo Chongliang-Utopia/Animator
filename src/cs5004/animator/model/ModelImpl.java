@@ -25,7 +25,7 @@ public class ModelImpl implements IModel {
   // It stores a list of animation under the specific time since the start time matters.
   private Map<Integer, List<IAnimation>> allAnimations;
   // Store a list of all the shapes.
-  private List<AbstractShape> allShapes;
+  private List<IShape> allShapes;
   private Screen canvas;
 
   /**
@@ -44,7 +44,7 @@ public class ModelImpl implements IModel {
    * @param allAnimations animations to include in the model
    * @throws IllegalArgumentException if the parameter is null
    */
-  public ModelImpl(List<AbstractShape> allShapes,
+  public ModelImpl(List<IShape> allShapes,
                    Map<Integer, List<IAnimation>> allAnimations, Screen canvas) throws
       IllegalArgumentException {
     if (allAnimations == null || allShapes == null) {
@@ -160,7 +160,7 @@ public class ModelImpl implements IModel {
    * @return a copy of the shapes in the model, use shape name as the key for the map.
    */
   @Override
-  public List<AbstractShape> getAllShape() {
+  public List<IShape> getAllShape() {
     return new ArrayList<>(allShapes);
   }
 
@@ -202,7 +202,7 @@ public class ModelImpl implements IModel {
     List<IReadOnlyShapes> ret = new ArrayList<>();
     Map<String, Integer> shapeNameToIndex = new HashMap<>();
     int curIndex = 0;
-    for (AbstractShape sh : allShapes) {
+    for (IShape sh : allShapes) {
       if (sh.getDisappearTime() >= time && sh.getAppearTime() <= time) {
         ret.add(sh);
         shapeNameToIndex.put(sh.getName(), curIndex);
@@ -216,7 +216,7 @@ public class ModelImpl implements IModel {
       }
       for (IAnimation ani : allAnimations.get(key)) {
         if (ani.getEndTime() < time) continue;
-        AbstractShape shape = ani.runAnimation(time);
+        IShape shape = ani.runAnimation(time);
         if (shapeNameToIndex.containsKey(shape.getName())) {
           ret.set(shapeNameToIndex.get(shape.getName()), shape);
         }
@@ -233,7 +233,7 @@ public class ModelImpl implements IModel {
    *                                  identical name with an existing shape in the model
    */
   @Override
-  public void addShape(AbstractShape shape) throws IllegalArgumentException {
+  public void addShape(IShape shape) throws IllegalArgumentException {
     if (findShape(shape.getName()) != null) {
       throw new IllegalArgumentException(
           "Cannot create add a shape with an existing shape name");
@@ -246,8 +246,8 @@ public class ModelImpl implements IModel {
    * @param shapeName name of the shape to add
    * @return the shape with the given name, null if not found
    */
-  private AbstractShape findShape(String shapeName) {
-    for (AbstractShape s : allShapes) {
+  private IShape findShape(String shapeName) {
+    for (IShape s : allShapes) {
       if (s.getName().equals(shapeName)) {
         return s;
       }
@@ -304,7 +304,7 @@ public class ModelImpl implements IModel {
       allAnimations.put(animation.getStartTime(), new ArrayList<>());
     }
     allAnimations.get(animation.getStartTime()).add(animation);
-    AbstractShape shape = findShape(animation.getShapeName());
+    IShape shape = findShape(animation.getShapeName());
     assert shape != null;
     shape.setAppearTime(Math.min(shape.getAppearTime(), animation.getStartTime()));
     shape.setDisappearTime(Math.max(shape.getDisappearTime(), animation.getEndTime()));
@@ -364,7 +364,7 @@ public class ModelImpl implements IModel {
    */
   public String toString() {
     StringBuilder ret = new StringBuilder("Shapes:\n");
-    for (AbstractShape shape : allShapes) {
+    for (IShape shape : allShapes) {
       ret.append(shape.textRender());
       ret.append("\n");
     }

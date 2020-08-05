@@ -28,8 +28,8 @@ import static org.junit.Assert.fail;
 public class ModelImplTest {
   IModel model1;
   IModel model2;
-  List<AbstractShape> allShapes1;
-  List<AbstractShape> allShapes2;
+  List<IShape> allShapes1;
+  List<IShape> allShapes2;
   Map<Integer, List<IAnimation>> allAnimations1;
   AbstractAnimation R1_Stable;
   AbstractAnimation R2_Move;
@@ -43,10 +43,10 @@ public class ModelImplTest {
   AbstractAnimation C4_ChangeColor;
   AbstractAnimation C5_Stable;
 
-  AbstractShape r;
-  AbstractShape c;
-  AbstractShape rr;
-  AbstractShape cc;
+  IShape r;
+  IShape c;
+  IShape rr;
+  IShape cc;
 
   /**
    * Construct shape, model and Animation objects for tests.

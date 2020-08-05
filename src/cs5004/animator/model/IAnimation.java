@@ -59,6 +59,6 @@ public interface IAnimation {
    * @return an updated abstract shape
    * @throws IllegalArgumentException if an updated shape cannot be generated
    */
-  AbstractShape runAnimation(int curTime) throws
+  IShape runAnimation(int curTime) throws
       IllegalArgumentException;
 }

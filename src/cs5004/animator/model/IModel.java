@@ -13,7 +13,7 @@ public interface IModel {
    *
    * @return a copy of the shapes in the model, use shape name as the key for the map.
    */
-  List<AbstractShape> getAllShape();
+  List<IShape> getAllShape();
 
   /**
    * Return a copy of all the animations in the model sorted by time.
@@ -52,7 +52,7 @@ public interface IModel {
    * @throws IllegalArgumentException if the shape cannot be added, such as the shape has an
    *                                  identical name with an existing shape in the model
    */
-  void addShape(AbstractShape shape) throws IllegalArgumentException;
+  void addShape(IShape shape) throws IllegalArgumentException;
 
   /**
    * Delete a shape in the model.

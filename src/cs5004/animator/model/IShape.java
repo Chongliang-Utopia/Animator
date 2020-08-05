@@ -18,4 +18,18 @@ public interface IShape extends IReadOnlyShapes {
    */
   void setDisplay(boolean display);
 
+  /**
+   * Set the shape's appearTime to the given color.
+   *
+   * @param appearTime the appearTime of the shape
+   */
+  void setAppearTime(int appearTime);
+
+  /**
+   * Set the shape's appearTime to the given color.
+   *
+   * @param disappearTime the appearTime of the shape
+   */
+  void setDisappearTime(int disappearTime);
+
 }

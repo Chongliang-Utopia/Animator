@@ -18,6 +18,7 @@ import cs5004.animator.model.AnimationOperation;
 import cs5004.animator.model.ColorType;
 import cs5004.animator.model.IAnimation;
 import cs5004.animator.model.IModel;
+import cs5004.animator.model.IShape;
 import cs5004.animator.model.ModelImpl;
 import cs5004.animator.model.Oval;
 import cs5004.animator.model.Position2D;
@@ -33,20 +34,20 @@ import static org.junit.Assert.assertEquals;
  */
 public class ControllerImplTest {
   IModel model1;
-  List<AbstractShape> allShapes1;
+  List<IShape> allShapes1;
   Map<Integer, List<IAnimation>> allAnimations1;
-  AbstractAnimation R1_Stable;
-  AbstractAnimation R2_Move;
-  AbstractAnimation R3_Stable;
-  AbstractAnimation R4_Scale;
-  AbstractAnimation R5_Move;
-  AbstractAnimation C1_Stable;
-  AbstractAnimation C2_Move;
-  AbstractAnimation C3_Double;
-  AbstractAnimation C4_ChangeColor;
-  AbstractAnimation C5_Stable;
-  AbstractShape rr;
-  AbstractShape cc;
+  IAnimation R1_Stable;
+  IAnimation R2_Move;
+  IAnimation R3_Stable;
+  IAnimation R4_Scale;
+  IAnimation R5_Move;
+  IAnimation C1_Stable;
+  IAnimation C2_Move;
+  IAnimation C3_Double;
+  IAnimation C4_ChangeColor;
+  IAnimation C5_Stable;
+  IShape rr;
+  IShape cc;
   IController controller;
 
 

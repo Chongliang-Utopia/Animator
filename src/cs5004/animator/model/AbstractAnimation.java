@@ -91,7 +91,7 @@ public abstract class AbstractAnimation implements IAnimation{
    * @return an updated abstract shape
    * @throws IllegalArgumentException if an updated shape cannot be generated
    */
-  public abstract AbstractShape runAnimation(int curTime) throws
+  public abstract IShape runAnimation(int curTime) throws
       IllegalArgumentException;
 
   /**
