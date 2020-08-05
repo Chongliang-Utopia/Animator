@@ -308,6 +308,9 @@ public class ModelImpl implements IModel {
     assert shape != null;
     shape.setAppearTime(Math.min(shape.getAppearTime(), animation.getStartTime()));
     shape.setDisappearTime(Math.max(shape.getDisappearTime(), animation.getEndTime()));
+    if (animation.getStartTime() == shape.getAppearTime()) {
+      allShapes.set(allShapes.indexOf(shape), animation.runAnimation(animation.getStartTime()));
+    }
   }
 
   /**
