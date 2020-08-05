@@ -8,6 +8,7 @@ import javax.swing.*;
 
 
 import cs5004.animator.model.AbstractAnimation;
+import cs5004.animator.model.IAnimation;
 import cs5004.animator.model.IReadOnlyShapes;
 import cs5004.animator.model.Screen;
 
@@ -46,7 +47,7 @@ public class ImageView extends AbstractView {
    */
   @Override
   public String renderText(List<IReadOnlyShapes> allShapes,
-                           Map<Integer, List<AbstractAnimation>> allAnimations) {
+                           Map<Integer, List<IAnimation>> allAnimations) {
     return null;
   }
 

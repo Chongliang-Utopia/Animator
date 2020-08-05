@@ -1,7 +1,6 @@
 package cs5004.animator.model;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.Comparator;
 import java.util.HashMap;
 import java.util.List;
@@ -12,20 +11,20 @@ import cs5004.animator.util.AnimationBuilder;
 
 /**
  * A class represent the implementation of the IModel, a concrete class as the model of the
- * animator. Internally, it stores all the shapes in a Map, and uses the name of the shape as the
- * key to enforce fast look up. It has stores all the animations in a Map, using the start time of
+ * animator. Internally, it stores all the shapes in a list. It has stores all the animations
+ * in a Map, using the start time of
  * the animation as the key since the order of the animation matters. Externally, it allows to get a
- * deep copy of all the shapes and a deep copy of the animations sorted by starting time. It also
+ * deep copy of all the shapes and a deep copy of the animations. It also
  * include methods to add a shape, delete a shape and add an animation. Additionally, it offers a
- * method to get a copy of all the invisible shapes at a given time and a method to get a copy of
- * all the animation which start before a given time.
+ * method to get a copy of all the invisible shapes at a given time.
+ *
+ * Changes: add the builder inner class to build the Model.
  */
 public class ModelImpl implements IModel {
-//  // Use shape name as the key for the map for fast lookup.
-//  private Map<String, AbstractShape> allShapes;
   // Use start time of the animation as the key for the map.
   // It stores a list of animation under the specific time since the start time matters.
-  private Map<Integer, List<AbstractAnimation>> allAnimations;
+  private Map<Integer, List<IAnimation>> allAnimations;
+  // Store a list of all the shapes.
   private List<AbstractShape> allShapes;
   private Screen canvas;
 
@@ -46,13 +45,14 @@ public class ModelImpl implements IModel {
    * @throws IllegalArgumentException if the parameter is null
    */
   public ModelImpl(List<AbstractShape> allShapes,
-                   Map<Integer, List<AbstractAnimation>> allAnimations) throws
+                   Map<Integer, List<IAnimation>> allAnimations, Screen canvas) throws
       IllegalArgumentException {
     if (allAnimations == null || allShapes == null) {
       throw new IllegalArgumentException("Invalid parameters");
     }
     this.allShapes = allShapes;
     this.allAnimations = allAnimations;
+    this.canvas = new Screen(0, 0, 1000, 1000);
   }
 
   /**
@@ -172,8 +172,8 @@ public class ModelImpl implements IModel {
    *         animation as the key for the map, it stores a list of animation under the specific time
    */
   @Override
-  public Map<Integer, List<AbstractAnimation>> getAllAnimationSortedByTime() {
-    Map<Integer, List<AbstractAnimation>> sortedAnimations = new TreeMap<>(
+  public Map<Integer, List<IAnimation>> getAllAnimationSortedByTime() {
+    Map<Integer, List<IAnimation>> sortedAnimations = new TreeMap<>(
         Comparator.comparingInt(a -> a));
     for (int key : allAnimations.keySet()) {
       sortedAnimations.put(key, new ArrayList<>(allAnimations.get(key)));
@@ -214,7 +214,7 @@ public class ModelImpl implements IModel {
       if (key > time) {
         break;
       }
-      for (AbstractAnimation ani : allAnimations.get(key)) {
+      for (IAnimation ani : allAnimations.get(key)) {
         if (ani.getEndTime() < time) continue;
         AbstractShape shape = ani.runAnimation(time);
         if (shapeNameToIndex.containsKey(shape.getName())) {
@@ -270,11 +270,11 @@ public class ModelImpl implements IModel {
     // Remove shape.
     allShapes.remove(findShape(shapeName));
     // Remove corresponding animations with this removed shape.
-    Map<Integer, List<AbstractAnimation>> updatedAnimations = new HashMap<>();
-    for (Map.Entry<Integer, List<AbstractAnimation>> entry : allAnimations.entrySet()) {
-      List<AbstractAnimation> curAnimations = entry.getValue();
-      List<AbstractAnimation> updatedAnimationList = new ArrayList<>();
-      for (AbstractAnimation ani : curAnimations) {
+    Map<Integer, List<IAnimation>> updatedAnimations = new HashMap<>();
+    for (Map.Entry<Integer, List<IAnimation>> entry : allAnimations.entrySet()) {
+      List<IAnimation> curAnimations = entry.getValue();
+      List<IAnimation> updatedAnimationList = new ArrayList<>();
+      for (IAnimation ani : curAnimations) {
         if (!ani.getShapeName().equals(shapeName)) {
           updatedAnimationList.add(ani);
         }
@@ -293,7 +293,7 @@ public class ModelImpl implements IModel {
    *                                  an existing animation
    */
   @Override
-  public void addAnimation(AbstractAnimation animation) throws IllegalArgumentException {
+  public void addAnimation(IAnimation animation) throws IllegalArgumentException {
     if (animation == null) {
       throw new IllegalArgumentException("Invalid animation to add");
     }
@@ -337,13 +337,13 @@ public class ModelImpl implements IModel {
    * @param animation animation to add
    * @return whether the animation to add is valid
    */
-  private boolean validAnimation(AbstractAnimation animation) {
+  private boolean validAnimation(IAnimation animation) {
     // This shape has to exist in our allShapes map.
     if (findShape(animation.getShapeName()) == null) {
       return false;
     }
-    for (List<AbstractAnimation> animations : allAnimations.values()) {
-      for (AbstractAnimation existingAnimation : animations) {
+    for (List<IAnimation> animations : allAnimations.values()) {
+      for (IAnimation existingAnimation : animations) {
         // Check for contradiction.
         if (existingAnimation.getShapeName().equals(animation.getShapeName())) {
           boolean notValid = (existingAnimation.getStartTime() < animation.getEndTime())
@@ -368,8 +368,8 @@ public class ModelImpl implements IModel {
       ret.append(shape.textRender());
       ret.append("\n");
     }
-    for (List<AbstractAnimation> aniLst : allAnimations.values()) {
-      for (AbstractAnimation ani : aniLst) {
+    for (List<IAnimation> aniLst : allAnimations.values()) {
+      for (IAnimation ani : aniLst) {
         ret.append(ani.toString());
       }
     }

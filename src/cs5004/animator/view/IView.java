@@ -2,8 +2,7 @@ package cs5004.animator.view;
 
 import java.util.List;
 import java.util.Map;
-
-import cs5004.animator.model.AbstractAnimation;
+import cs5004.animator.model.IAnimation;
 import cs5004.animator.model.IReadOnlyShapes;
 import cs5004.animator.model.Screen;
 
@@ -20,7 +19,7 @@ public interface IView {
    * @return the string output of the text view
    */
   String renderText(List<IReadOnlyShapes> allShapes,
-                    Map<Integer, List<AbstractAnimation>> allAnimations);
+                    Map<Integer, List<IAnimation>> allAnimations);
 
   /**
    * Render the image view output with all needed information for drawing shapes.

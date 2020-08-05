@@ -7,6 +7,7 @@ import java.util.Objects;
 import javax.swing.*;
 
 import cs5004.animator.model.AbstractAnimation;
+import cs5004.animator.model.IAnimation;
 import cs5004.animator.model.IReadOnlyShapes;
 import cs5004.animator.model.Screen;
 
@@ -40,7 +41,7 @@ public abstract class AbstractView extends JFrame implements IView {
    */
   @Override
   public abstract String renderText(List<IReadOnlyShapes> allShapes,
-                                    Map<Integer, List<AbstractAnimation>> allAnimations);
+                                    Map<Integer, List<IAnimation>> allAnimations);
 
   /**
    * Render the image view output with all needed information for drawing shapes.

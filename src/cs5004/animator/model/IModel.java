@@ -22,7 +22,7 @@ public interface IModel {
    *         animation as the key for the map, it stores a list of animation under the
    *         specific time.
    */
-  Map<Integer, List<AbstractAnimation>> getAllAnimationSortedByTime();
+  Map<Integer, List<IAnimation>> getAllAnimationSortedByTime();
 
   /**
    * Return a copy of the ReadOnlyShapes in the model.
@@ -71,7 +71,7 @@ public interface IModel {
    *                                  animation does not exist, or the animation has a conflict with
    *                                  an existing animation
    */
-  void addAnimation(AbstractAnimation animation) throws IllegalArgumentException;
+  void addAnimation(IAnimation animation) throws IllegalArgumentException;
 
   /**
    * Return the canvas.

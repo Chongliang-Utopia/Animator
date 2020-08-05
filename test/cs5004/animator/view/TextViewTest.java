@@ -13,6 +13,7 @@ import java.util.TreeMap;
 import cs5004.animator.model.AbstractAnimation;
 import cs5004.animator.model.AnimationOperation;
 import cs5004.animator.model.ColorType;
+import cs5004.animator.model.IAnimation;
 import cs5004.animator.model.IReadOnlyShapes;
 import cs5004.animator.model.Oval;
 import cs5004.animator.model.Position2D;
@@ -25,26 +26,26 @@ import static org.junit.Assert.assertEquals;
  * A Junit test class for TextView.
  */
 public class TextViewTest {
-  AbstractAnimation R1_Stable;
-  AbstractAnimation R2_Move;
-  AbstractAnimation R3_Stable;
-  AbstractAnimation R4_Scale;
-  AbstractAnimation R5_Move;
-  AbstractAnimation R6_Scale;
+  IAnimation R1_Stable;
+  IAnimation R2_Move;
+  IAnimation R3_Stable;
+  IAnimation R4_Scale;
+  IAnimation R5_Move;
+  IAnimation R6_Scale;
 
-  AbstractAnimation C1_Stable;
-  AbstractAnimation C2_Move;
-  AbstractAnimation C3_Double;
-  AbstractAnimation C4_ChangeColor;
-  AbstractAnimation C5_Stable;
-  AbstractAnimation C6_Scale;
+  IAnimation C1_Stable;
+  IAnimation C2_Move;
+  IAnimation C3_Double;
+  IAnimation C4_ChangeColor;
+  IAnimation C5_Stable;
+  IAnimation C6_Scale;
 
   IReadOnlyShapes rr;
   IReadOnlyShapes cc;
 
   List<IReadOnlyShapes> shapes;
-  Map<Integer, List<AbstractAnimation>> ani;
-  Map<Integer, List<AbstractAnimation>> noAni;
+  Map<Integer, List<IAnimation>> ani;
+  Map<Integer, List<IAnimation>> noAni;
 
   @Before
   public void setUp() {

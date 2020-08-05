@@ -3,6 +3,10 @@ package cs5004.animator.model;
 import org.junit.Before;
 import org.junit.Test;
 
+import java.util.ArrayList;
+import java.util.List;
+
+import static org.junit.Assert.assertArrayEquals;
 import static org.junit.Assert.assertEquals;
 
 /**
@@ -10,17 +14,17 @@ import static org.junit.Assert.assertEquals;
  * ScaleAnimation and MoveAnimation.
  */
 public class AnimationTest {
-  AbstractAnimation R1_Stable;
-  AbstractAnimation R2_Move;
-  AbstractAnimation R3_Stable;
-  AbstractAnimation R4_Scale;
-  AbstractAnimation R5_Move;
+  IAnimation R1_Stable;
+  IAnimation R2_Move;
+  IAnimation R3_Stable;
+  IAnimation R4_Scale;
+  IAnimation R5_Move;
 
-  AbstractAnimation C1_Stable;
-  AbstractAnimation C2_Move;
-  AbstractAnimation C3_Double;
-  AbstractAnimation C4_ChangeColor;
-  AbstractAnimation C5_Stable;
+  IAnimation C1_Stable;
+  IAnimation C2_Move;
+  IAnimation C3_Double;
+  IAnimation C4_ChangeColor;
+  IAnimation C5_Stable;
 
   AbstractShape r;
   AbstractShape c;
@@ -191,7 +195,10 @@ public class AnimationTest {
    */
   @Test
   public void calculateState1() {
-    assertEquals(250, R2_Move.calculateState(
+    AbstractAnimation move = new AnimationOperation("R", ShapeType.RECTANGLE,
+        10, 200, 200, 50, 100, 255, 0,  0,
+        50,  300, 300, 50, 100, 255, 0,  0);
+    assertEquals(250, move.calculateState(
         200, 300, 30), 0.1);
   }
 
@@ -221,4 +228,40 @@ public class AnimationTest {
     assertEquals("Shape R scales from Width: 50 Height: 100 to"
         + " Width: 25 Height: 100 from t=51 to t=70\n", R4_Scale.toString());
   }
+
+  /**
+   * Test getPos.
+   */
+  @Test
+  public void testGetPos1() {
+    List<Position2D> expected = new ArrayList<>();
+    expected.add(new Position2D(200, 200));
+    expected.add(new Position2D(300, 300));
+    assertEquals(expected, R2_Move.getPos());
+  }
+
+  /**
+   * Test getColor.
+   */
+  @Test
+  public void testGetColor1() {
+    List<ColorType> expected = new ArrayList<>();
+    expected.add(new ColorType(0, 170, 85));
+    expected.add(new ColorType(0, 255, 0));
+    assertEquals(expected, C4_ChangeColor.getColor());
+  }
+
+  /**
+   * Test getDimension.
+   */
+  @Test
+  public void testGeDimension() {
+    List<int[]> expected = new ArrayList<>();
+    expected.add(new int[] {50, 100});
+    expected.add(new int[] {25, 100});
+    assertArrayEquals(expected.get(0), R4_Scale.getDimension().get(0));
+    assertArrayEquals(expected.get(1), R4_Scale.getDimension().get(1));
+  }
+
+
 }

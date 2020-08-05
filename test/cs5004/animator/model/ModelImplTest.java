@@ -30,7 +30,7 @@ public class ModelImplTest {
   IModel model2;
   List<AbstractShape> allShapes1;
   List<AbstractShape> allShapes2;
-  Map<Integer, List<AbstractAnimation>> allAnimations1;
+  Map<Integer, List<IAnimation>> allAnimations1;
   AbstractAnimation R1_Stable;
   AbstractAnimation R2_Move;
   AbstractAnimation R3_Stable;
@@ -106,8 +106,11 @@ public class ModelImplTest {
     allAnimations1.put(51, List.of(R4_Scale));
     allAnimations1.put(70, List.of(R5_Move, C4_ChangeColor));
     allAnimations1.put(80, List.of(C5_Stable));
-    model1 = new ModelImpl(allShapes1, allAnimations1);
-    model2 = new ModelImpl(allShapes2, allAnimations1);
+    model1 = new ModelImpl(allShapes1, allAnimations1,
+        new Screen(0, 0, 1000, 1000));
+    model2 = new ModelImpl(allShapes2, allAnimations1,
+        new Screen(0, 0, 1000, 1000)
+    );
   }
 
   /**
@@ -116,7 +119,8 @@ public class ModelImplTest {
   @Test
   public void testConstructor1() {
     try {
-      IModel model = new ModelImpl(allShapes1, allAnimations1);
+      IModel model = new ModelImpl(allShapes1, allAnimations1,
+          new Screen(0, 0, 1000, 1000));
     } catch (IllegalArgumentException e) {
       fail();
     }
@@ -128,7 +132,8 @@ public class ModelImplTest {
    */
   @Test(expected = IllegalArgumentException.class)
   public void testConstructor2() {
-    IModel model = new ModelImpl(null, allAnimations1);
+    IModel model = new ModelImpl(null, allAnimations1,
+        new Screen(0, 0, 1000, 1000));
   }
 
   /**
@@ -136,7 +141,8 @@ public class ModelImplTest {
    */
   @Test(expected = IllegalArgumentException.class)
   public void testConstructor3() {
-    IModel model = new ModelImpl(allShapes1, null);
+    IModel model = new ModelImpl(allShapes1, null,
+        new Screen(0, 0, 1000, 1000));
   }
 
   /**
@@ -304,7 +310,7 @@ public class ModelImplTest {
   }
 
   /**
-   * test getUpdatedShapeAtGivenTime
+   * test getUpdatedShapeAtGivenTime.
    */
   @Test
   public void testGetUpdatedShapeAtGivenTime1() {
@@ -317,7 +323,7 @@ public class ModelImplTest {
   }
 
   /**
-   * test getUpdatedShapeAtGivenTime
+   * test getUpdatedShapeAtGivenTime.
    */
   @Test
   public void testGetUpdatedShapeAtGivenTime2() {
@@ -334,7 +340,7 @@ public class ModelImplTest {
   }
 
   /**
-   * test getUpdatedShapeAtGivenTime
+   * test getUpdatedShapeAtGivenTime.
    */
   @Test
   public void testGetUpdatedShapeAtGivenTime3() {
@@ -349,7 +355,7 @@ public class ModelImplTest {
   }
 
   /**
-   * test getUpdatedShapeAtGivenTime
+   * test getUpdatedShapeAtGivenTime.
    */
   @Test
   public void testGetUpdatedShapeAtGivenTime4() {
@@ -364,7 +370,7 @@ public class ModelImplTest {
   }
 
   /**
-   * Test builder
+   * Test builder.
    */
   @Test
   public void testBuilder1() throws IOException {
@@ -389,6 +395,9 @@ public class ModelImplTest {
         + "Shape R scales from Width: 50 Height: 100 to Width: 25 Height: 100 from t=51 to t=70\n"
         + "Shape R move from (300.0,300.0) to (200.0,200.0) from t=70 to t=100\n"
         + "Shape C changes color from (0,170,85) to (0,255,0) from t=70 to t=80\n";
+    assert model != null;
     assertEquals(expected, model.toString());
   }
+
+
 }

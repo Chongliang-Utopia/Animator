@@ -8,7 +8,7 @@ import java.util.List;
  * It includes common getter of these attributes, as well as a calculateState to calculate the
  * current state according to the current time.
  */
-public abstract class AbstractAnimation {
+public abstract class AbstractAnimation implements IAnimation{
   protected String shapeName;
   protected int startTime;
   protected int endTime;

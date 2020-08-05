@@ -3,7 +3,7 @@ package cs5004.animator.view;
 import java.util.List;
 import java.util.Map;
 
-import cs5004.animator.model.AbstractAnimation;
+import cs5004.animator.model.IAnimation;
 import cs5004.animator.model.IReadOnlyShapes;
 
 /**
@@ -30,7 +30,7 @@ public class TextView extends AbstractView {
    */
   @Override
   public String renderText(List<IReadOnlyShapes> allShapes,
-                           Map<Integer, List<AbstractAnimation>> allAnimations) {
+                           Map<Integer, List<IAnimation>> allAnimations) {
     if (allShapes == null || allShapes.size() == 0 || allAnimations == null
             || allAnimations.size() == 0) {
       return "";
@@ -69,8 +69,8 @@ public class TextView extends AbstractView {
     text.append("\n");
 
     // add shape animation info to the view
-    for (List<AbstractAnimation> aniLst : allAnimations.values()) {
-      for (AbstractAnimation ani : aniLst) {
+    for (List<IAnimation> aniLst : allAnimations.values()) {
+      for (IAnimation ani : aniLst) {
 
         if (!ani.getColor().get(0).equals(ani.getColor().get(1))) {
           text.append(ani.getShapeName());

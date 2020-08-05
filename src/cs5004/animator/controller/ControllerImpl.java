@@ -5,12 +5,15 @@ import java.util.List;
 import java.util.Map;
 
 import javax.swing.Timer;
-
-import cs5004.animator.model.AbstractAnimation;
+import cs5004.animator.model.IAnimation;
 import cs5004.animator.model.IModel;
 import cs5004.animator.model.IReadOnlyShapes;
 import cs5004.animator.view.IView;
 
+/**
+ * A controller class that enables the program to output the description
+ * of the shapes, draws the animation on a canvas.
+ */
 public class ControllerImpl implements IController {
   private final Timer timer;
   private int tick;
@@ -18,6 +21,12 @@ public class ControllerImpl implements IController {
   private final IModel model;
   private final IView view;
 
+  /**
+   * Construct the controller.
+   * @param model model
+   * @param view view
+   * @throws IllegalArgumentException if the given parameter is null
+   */
   public ControllerImpl(IModel model, IView view) throws IllegalArgumentException{
     if (model == null || view == null) {
       throw new IllegalArgumentException("Parameters can not be null");
@@ -33,13 +42,18 @@ public class ControllerImpl implements IController {
     view.setCanvas(model.getCanvas());
   }
 
+  /**
+   * Run the animation
+   * @param ap appendable to append to
+   * @throws IOException if the parameter is null
+   */
   @Override
   public void run(Appendable ap) throws IOException {
     if (ap == null) {
       throw new IllegalStateException("Parameters can not be null");
     }
     List<IReadOnlyShapes> shapes = model.getReadOnlyShapes();
-    Map<Integer, List<AbstractAnimation>> animations = model.getAllAnimationSortedByTime();
+    Map<Integer, List<IAnimation>> animations = model.getAllAnimationSortedByTime();
     String text = view.renderText(shapes, animations);
     try {
       // write to file/stdin
@@ -57,6 +71,7 @@ public class ControllerImpl implements IController {
    */
   @Override
   public void changeSpeed(int value) {
+    this.tempo = value;
     this.timer.setDelay((int) ((1.0 / value * 1000)));
   }
 }
