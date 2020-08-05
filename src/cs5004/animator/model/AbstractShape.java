@@ -5,7 +5,7 @@ package cs5004.animator.model;
  * of all shapes and methods to manipulate shapes. It can provide some useful details of shape
  * for others to retrieve.
  */
-public abstract class AbstractShape implements IReadOnlyShapes {
+public abstract class AbstractShape implements IShape {
   protected String name;
   protected ShapeType type;
   protected ColorType color;
