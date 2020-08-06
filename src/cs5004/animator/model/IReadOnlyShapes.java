@@ -77,10 +77,4 @@ public interface IReadOnlyShapes {
    */
   String textRender();
 
-//  /**
-//   * Return String representation of the shape position and size.
-//   * @return string representation of the shape position and size
-//   */
-//
-//  String stringPosSize();
 }

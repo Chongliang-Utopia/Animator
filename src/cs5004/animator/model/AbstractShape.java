@@ -1,9 +1,9 @@
 package cs5004.animator.model;
 
 /**
- * Represent an abstract class of shapes in the model, which contains all common attributes
- * of all shapes and methods to manipulate shapes. It can provide some useful details of shape
- * for others to retrieve.
+ * Represent an abstract class of shapes in the model, which contains all common attributes of all
+ * shapes and methods to manipulate shapes. It can provide some useful details of shape for others
+ * to retrieve.
  */
 public abstract class AbstractShape implements IShape {
   protected String name;
@@ -45,6 +45,7 @@ public abstract class AbstractShape implements IShape {
 
   /**
    * A default constructor when only the name of the shape is given.
+   *
    * @param name name of the shape
    */
   public AbstractShape(String name) {
@@ -164,6 +165,7 @@ public abstract class AbstractShape implements IShape {
 
   /**
    * Abstract method to get the horizontal length of the shape, such as width or xRadius.
+   *
    * @return the horizontal length of the shape
    */
   @Override
@@ -171,6 +173,7 @@ public abstract class AbstractShape implements IShape {
 
   /**
    * Abstract method to get the vertical length of the shape, such as height or yRadius.
+   *
    * @return the vertical length of the shape
    */
   @Override
@@ -178,6 +181,7 @@ public abstract class AbstractShape implements IShape {
 
   /**
    * Return String representation of the shape details.
+   *
    * @return string representation of the shape details
    */
   @Override

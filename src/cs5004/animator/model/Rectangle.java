@@ -39,6 +39,7 @@ public class Rectangle extends AbstractShape {
 
   /**
    * A default constructor when only the name of the shape is given.
+   *
    * @param name name of the shape
    */
   public Rectangle(String name) {
@@ -100,12 +101,9 @@ public class Rectangle extends AbstractShape {
 
 
   /**
-   * Return String representation of the rectangle details. e.g.
-   * Name: R
-   * Type: rectangle
-   * Min corner: (200.0,200.0), Width: 50.0, Height: 100.0, Color: (1.0,0.0,0.0)
-   * Appears at t=1
-   * Disappears at t=100
+   * Return String representation of the rectangle details. e.g. Name: R Type: rectangle Min corner:
+   * (200.0,200.0), Width: 50.0, Height: 100.0, Color: (1.0,0.0,0.0) Appears at t=1 Disappears at
+   * t=100
    *
    * @return string representation of the rectangle information
    */
@@ -121,18 +119,5 @@ public class Rectangle extends AbstractShape {
     return text;
   }
 
-//  /**
-//   * Return String representation of the oval position and size. e.g.
-//   * center at (500.0,100.0), radius: 60, radius: 30
-//   *
-//   * @return string representation of the oval information
-//   */
-//  @Override
-//  public String stringPosSize() {
-//    String text = "";
-//    text += "corner at " + this.position.toString()
-//            + String.format(", width: %.0f and height %.0f\n", this.width, this.height);
-//    return text;
-//  }
 
 }

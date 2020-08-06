@@ -1,9 +1,8 @@
 package cs5004.animator.model;
 
 /**
- * A class that represents the bounding box of the canvas,
- * namely leftmost x value, the topmost y value, width, and height of the
- * canvas.
+ * A class that represents the bounding box of the canvas, namely leftmost x value, the topmost y
+ * value, width, and height of the canvas.
  */
 public class Screen {
   private final int x;
