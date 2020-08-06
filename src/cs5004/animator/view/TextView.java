@@ -7,7 +7,10 @@ import cs5004.animator.model.IAnimation;
 import cs5004.animator.model.IReadOnlyShapes;
 
 /**
- * A class that renders the text of the motions of all the shapes.
+ * TextView class extends AbstractView. It renders the text of the motions of all the shapes. It has
+ * the implementation of the method renderText, which takes in shapes and animations and creates a
+ * text output with three parts of the information: 1. shape creation information including all
+ * shape's details 2. shape appear and disappear time (in second) 3. animations on the shape
  */
 public class TextView extends AbstractView {
   /**
@@ -23,6 +26,17 @@ public class TextView extends AbstractView {
   /**
    * Render the text view output, including the text information of all shapes and all animations.
    * Return empty string is the given shapes and animations are empty or null.
+   * An example is as follows:
+   * <p>Create rectangle R with color (255,0,0) with corner at (200.0,200.0), width: 50 and height
+   * 100
+   * Create oval C with color (0,0,255) with center at (440.0,70.0), radius: 120 and 60
+   * <p>R appears at time t=0 and disappear at time t=50 C appears at time t=3 and disappear at time
+   * t=50
+   * <p>R moves from (200.0,200.0) to (300.0,300.0) from time t=5 to t=25
+   * C moves from (440.0,70.0) to (440.0,250.0) from time t=10 to t=25
+   * C changes color from (0,0,255) to (0,170,85) from time t=25 to t=35
+   * R changes width from 50 to 25 from time t=25 to t=35
+   * R moves from (300.0,300.0) to (200.0,200.0) from time t=35to t=50
    *
    * @param allShapes     the given shapes in the view
    * @param allAnimations the given animations in the view
@@ -76,29 +90,29 @@ public class TextView extends AbstractView {
           text.append(ani.getShapeName());
           text.append(" changes color from ").append(ani.getColor().get(0).toString())
                   .append(" to ").append(ani.getColor().get(1).toString())
-                  .append(" from time t=").append(ani.getStartTime()/this.tempo)
-                  .append(" to t=").append(ani.getEndTime()/this.tempo).append("\n");
+                  .append(" from time t=").append(ani.getStartTime() / this.tempo)
+                  .append(" to t=").append(ani.getEndTime() / this.tempo).append("\n");
         }
         if (!ani.getPos().get(0).equals(ani.getPos().get(1))) {
           text.append(ani.getShapeName());
           text.append(" moves from ").append(ani.getPos().get(0).toString())
                   .append(" to ").append(ani.getPos().get(1).toString())
-                  .append(" from time t=").append(ani.getStartTime()/this.tempo)
-                  .append(" to t=").append(ani.getEndTime()/this.tempo).append("\n");
+                  .append(" from time t=").append(ani.getStartTime() / this.tempo)
+                  .append(" to t=").append(ani.getEndTime() / this.tempo).append("\n");
         }
-        if ( ani.getDimension().get(0)[0] != ani.getDimension().get(1)[0]) {
+        if (ani.getDimension().get(0)[0] != ani.getDimension().get(1)[0]) {
           text.append(ani.getShapeName());
           text.append(" changes width from ").append(ani.getDimension().get(0)[0])
                   .append(" to ").append(ani.getDimension().get(1)[0])
-                  .append(" from time t=").append(ani.getStartTime()/this.tempo)
-                  .append(" to t=").append(ani.getEndTime()/this.tempo).append("\n");
+                  .append(" from time t=").append(ani.getStartTime() / this.tempo)
+                  .append(" to t=").append(ani.getEndTime() / this.tempo).append("\n");
         }
-        if ( ani.getDimension().get(0)[1] != ani.getDimension().get(1)[1]) {
+        if (ani.getDimension().get(0)[1] != ani.getDimension().get(1)[1]) {
           text.append(ani.getShapeName());
           text.append(" changes height from ").append(ani.getDimension().get(0)[1])
                   .append(" to ").append(ani.getDimension().get(1)[1])
-                  .append(" from time t=").append(ani.getStartTime()/this.tempo)
-                  .append(" to t=").append(ani.getEndTime()/this.tempo).append("\n");
+                  .append(" from time t=").append(ani.getStartTime() / this.tempo)
+                  .append(" to t=").append(ani.getEndTime() / this.tempo).append("\n");
         }
       }
     }

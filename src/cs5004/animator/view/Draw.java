@@ -1,18 +1,18 @@
 package cs5004.animator.view;
-import java.awt.Color;
-import java.awt.Graphics;
-import java.awt.Graphics2D;
+
+import java.awt.*;
 import java.util.List;
 import java.util.Objects;
 
-import javax.swing.JPanel;
+import javax.swing.*;
 
 import cs5004.animator.model.IReadOnlyShapes;
 import cs5004.animator.model.ShapeType;
 
 /**
  * A drawing class that will draw all the shapes correspondingly in their positions, colors, and
- * sizes on a canvas with the given size.
+ * sizes on a canvas with the given size. It extends JPanel and override the paintComponent method,
+ * and it also implements IDraw interface and override the draw method.
  */
 public class Draw extends JPanel implements IDraw {
   private List<IReadOnlyShapes> shapes;
@@ -41,7 +41,7 @@ public class Draw extends JPanel implements IDraw {
 
       for (IReadOnlyShapes shape : this.shapes) {
         g2d.setColor(new Color(shape.getColor().getRed(),
-            shape.getColor().getGreen(), shape.getColor().getBlue()));
+                shape.getColor().getGreen(), shape.getColor().getBlue()));
         if (shape.getType() == ShapeType.OVAL) {
           g2d.fillOval((int) shape.getPosition().getX(), (int) shape.getPosition().getY(),
                   (int) shape.getWidth(), (int) shape.getHeight());

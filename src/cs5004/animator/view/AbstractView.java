@@ -6,14 +6,14 @@ import java.util.Objects;
 
 import javax.swing.*;
 
-import cs5004.animator.model.AbstractAnimation;
 import cs5004.animator.model.IAnimation;
 import cs5004.animator.model.IReadOnlyShapes;
 import cs5004.animator.model.Screen;
 
 /**
- * An Abstract class for various types of views. It includes method renderText for the text view and
- * method renderImage for the image view. It can also get the tempo and set the canvas.
+ * An Abstract class for various types of views, that extends extends JFrame implements IView. It
+ * includes method renderText for the text view and method renderImage for the image view. It can
+ * also get the tempo and set the canvas.
  */
 public abstract class AbstractView extends JFrame implements IView {
   protected int tempo;
