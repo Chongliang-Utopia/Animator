@@ -54,7 +54,7 @@ public final class EasyAnimator {
         controller.run(System.out);
       } else {
         try {
-          FileWriter output = new FileWriter(outputName);
+          FileWriter output = new FileWriter(outputName + ".txt");
           controller.run(output);
           output.flush();
           output.close();

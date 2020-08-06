@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8263ffd2-26d4-46dd-b615-fb575bb216bb" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/Animator_jar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Animator/cs5004/animator/model/ModelImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Animator/cs5004/animator/model/ModelImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cs5004/animator/model/ModelImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs5004/animator/model/ModelImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/text-transcript.txt" beforeDir="false" afterPath="$PROJECT_DIR$/text-transcript.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Animator.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Animator.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cs5004/animator/EasyAnimator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs5004/animator/EasyAnimator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cs5004/animator/model/AnimationOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs5004/animator/model/AnimationOperation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/text-transcript.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +41,9 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
@@ -50,7 +54,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.-in big-bang-big-crunch.txt -speed 50 -view visual">
+  <component name="RunManager" selected="Application.-in toh-3.txt -view text -out text-transcript.txt">
     <configuration name="-in big-bang-big-crunch.txt -speed 50 -view visual" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="cs5004.animator.EasyAnimator" />
       <module name="Animator" />
@@ -78,7 +82,7 @@
     <configuration name="-in toh-3.txt -view text -out text-transcript.txt" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="cs5004.animator.EasyAnimator" />
       <module name="Animator" />
-      <option name="PROGRAM_PARAMETERS" value="-in toh-3.txt -view text -out text-transcript.txt" />
+      <option name="PROGRAM_PARAMETERS" value="-in toh-3.txt -view text -out text-transcript" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -161,15 +165,15 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.-in smalldemo.txt -speed 50 -view visual" />
-      <item itemvalue="Application.-in toh-3.txt -view text -out text-transcript.txt" />
       <item itemvalue="Application.-in big-bang-big-crunch.txt -speed 50 -view visual" />
       <item itemvalue="Application.-in buildings.txt -speed 50 -view visual" />
-      <item itemvalue="JUnit.ControllerImplTest and 5 more" />
-      <item itemvalue="JUnit.ControllerImplTest and 5 more (1)" />
-      <item itemvalue="JUnit.TextViewTest.testRenderText" />
+      <item itemvalue="Application.-in smalldemo.txt -speed 50 -view visual" />
+      <item itemvalue="Application.-in toh-3.txt -view text -out text-transcript.txt" />
       <item itemvalue="JUnit.AnimationTest and 5 more" />
+      <item itemvalue="JUnit.ControllerImplTest and 5 more (1)" />
+      <item itemvalue="JUnit.ControllerImplTest and 5 more" />
       <item itemvalue="JUnit.ModelImplTest.testBuilder1" />
+      <item itemvalue="JUnit.TextViewTest.testRenderText" />
     </list>
     <recent_temporary>
       <list>
@@ -195,10 +199,10 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="618" y="277" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1596670238210">
+    <state x="618" y="277" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1596734768436">
       <screen x="0" y="23" width="1920" height="1006" />
     </state>
-    <state x="618" y="277" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1920.1006@0.23.1920.1006" timestamp="1596670238210" />
+    <state x="618" y="277" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1920.1006@0.23.1920.1006" timestamp="1596734768436" />
     <state x="186" y="229" width="1459" height="806" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1596671639172">
       <screen x="0" y="23" width="1920" height="1006" />
     </state>
@@ -207,10 +211,10 @@
       <screen x="0" y="23" width="1920" height="1006" />
     </state>
     <state x="794" y="261" key="#com.intellij.ide.util.MemberChooser/0.23.1920.1006@0.23.1920.1006" timestamp="1596558884013" />
-    <state x="713" y="317" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1596670234671">
+    <state x="713" y="317" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1596734301535">
       <screen x="0" y="23" width="1920" height="1006" />
     </state>
-    <state x="713" y="317" key="#com.intellij.ide.util.TreeClassChooserDialog/0.23.1920.1006@0.23.1920.1006" timestamp="1596670234671" />
+    <state x="713" y="317" key="#com.intellij.ide.util.TreeClassChooserDialog/0.23.1920.1006@0.23.1920.1006" timestamp="1596734301535" />
     <state x="553" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1596557202944">
       <screen x="0" y="23" width="1920" height="1006" />
     </state>
@@ -219,22 +223,22 @@
       <screen x="0" y="23" width="1920" height="1006" />
     </state>
     <state x="719" y="299" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1920.1006@0.23.1920.1006" timestamp="1596557365094" />
-    <state width="1617" height="355" key="GridCell.Tab.0.bottom" timestamp="1596671679320">
+    <state width="1617" height="355" key="GridCell.Tab.0.bottom" timestamp="1596734770108">
       <screen x="0" y="23" width="1920" height="1006" />
     </state>
-    <state width="1617" height="355" key="GridCell.Tab.0.bottom/0.23.1920.1006@0.23.1920.1006" timestamp="1596671679320" />
-    <state width="1617" height="355" key="GridCell.Tab.0.center" timestamp="1596671679319">
+    <state width="1617" height="355" key="GridCell.Tab.0.bottom/0.23.1920.1006@0.23.1920.1006" timestamp="1596734770108" />
+    <state width="1617" height="355" key="GridCell.Tab.0.center" timestamp="1596734770107">
       <screen x="0" y="23" width="1920" height="1006" />
     </state>
-    <state width="1617" height="355" key="GridCell.Tab.0.center/0.23.1920.1006@0.23.1920.1006" timestamp="1596671679319" />
-    <state width="1617" height="355" key="GridCell.Tab.0.left" timestamp="1596671679319">
+    <state width="1617" height="355" key="GridCell.Tab.0.center/0.23.1920.1006@0.23.1920.1006" timestamp="1596734770107" />
+    <state width="1617" height="355" key="GridCell.Tab.0.left" timestamp="1596734770106">
       <screen x="0" y="23" width="1920" height="1006" />
     </state>
-    <state width="1617" height="355" key="GridCell.Tab.0.left/0.23.1920.1006@0.23.1920.1006" timestamp="1596671679319" />
-    <state width="1617" height="355" key="GridCell.Tab.0.right" timestamp="1596671679319">
+    <state width="1617" height="355" key="GridCell.Tab.0.left/0.23.1920.1006@0.23.1920.1006" timestamp="1596734770106" />
+    <state width="1617" height="355" key="GridCell.Tab.0.right" timestamp="1596734770108">
       <screen x="0" y="23" width="1920" height="1006" />
     </state>
-    <state width="1617" height="355" key="GridCell.Tab.0.right/0.23.1920.1006@0.23.1920.1006" timestamp="1596671679319" />
+    <state width="1617" height="355" key="GridCell.Tab.0.right/0.23.1920.1006@0.23.1920.1006" timestamp="1596734770108" />
     <state width="1617" height="337" key="GridCell.Tab.1.bottom" timestamp="1596669260893">
       <screen x="0" y="23" width="1920" height="1006" />
     </state>
@@ -267,6 +271,10 @@
       <screen x="0" y="23" width="1920" height="1006" />
     </state>
     <state width="1617" height="337" key="GridCell.Tab.2.right/0.23.1920.1006@0.23.1920.1006" timestamp="1596669260894" />
+    <state x="736" y="175" key="SettingsEditor" timestamp="1596734349435">
+      <screen x="0" y="23" width="1920" height="1006" />
+    </state>
+    <state x="736" y="175" key="SettingsEditor/0.23.1920.1006@0.23.1920.1006" timestamp="1596734349435" />
     <state x="702" y="427" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1596500561916">
       <screen x="0" y="23" width="1920" height="1006" />
     </state>

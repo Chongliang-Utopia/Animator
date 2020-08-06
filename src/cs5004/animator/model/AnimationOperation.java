@@ -4,6 +4,10 @@ import java.util.List;
 import java.util.Objects;
 import java.util.Arrays;
 
+/**
+ * This class extends AbstractAnimation, represents a motion for a shape. It stores the initial and
+ * transformed state of the shape.
+ */
 public class AnimationOperation extends AbstractAnimation {
   private final Position2D startPos;
   private final Position2D endPos;
