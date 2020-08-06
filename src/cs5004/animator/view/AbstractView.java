@@ -38,6 +38,8 @@ public abstract class AbstractView extends JFrame implements IView {
    * @param allShapes     the given shapes in the view
    * @param allAnimations the given animations in the view
    * @return the string output of the text view
+   * @throws UnsupportedOperationException if renderText has been called in the view type that does
+   *                                       not support text output
    */
   @Override
   public abstract String renderText(List<IReadOnlyShapes> allShapes,
@@ -47,6 +49,8 @@ public abstract class AbstractView extends JFrame implements IView {
    * Render the image view output with all needed information for drawing shapes.
    *
    * @param allShapes the given shapes in the view
+   * @throws UnsupportedOperationException if renderImage has been called in the view type that does
+   *                                       not support image output
    */
   @Override
   public abstract void renderImage(List<IReadOnlyShapes> allShapes);

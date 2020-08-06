@@ -11,8 +11,8 @@ import cs5004.animator.model.IReadOnlyShapes;
 import cs5004.animator.model.Screen;
 
 /**
- * ImageView class extends AbstractView. It renders the animation of the motions of all the shapes on
- * the canvas according to the given list of shapes.
+ * ImageView class extends AbstractView. It renders the animation of the motions of all the shapes
+ * on the canvas according to the given list of shapes.
  */
 public class ImageView extends AbstractView {
   private final Draw panel;
@@ -43,11 +43,13 @@ public class ImageView extends AbstractView {
    * @param allShapes     the given shapes in the view
    * @param allAnimations the given animations in the view
    * @return the string output of the text view
+   * @throws UnsupportedOperationException if renderText has been called
    */
   @Override
   public String renderText(List<IReadOnlyShapes> allShapes,
-                           Map<Integer, List<IAnimation>> allAnimations) {
-    return null;
+                           Map<Integer, List<IAnimation>> allAnimations)
+          throws UnsupportedOperationException {
+    throw new UnsupportedOperationException("Image view cannot provide text output.");
   }
 
   /**

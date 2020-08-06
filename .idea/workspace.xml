@@ -20,7 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8263ffd2-26d4-46dd-b615-fb575bb216bb" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/cs5004/animator/model/IReadOnlyShapes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs5004/animator/model/IReadOnlyShapes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cs5004/animator/view/ImageView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs5004/animator/view/ImageView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cs5004/animator/view/TextView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs5004/animator/view/TextView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/cs5004/animator/view/TextViewTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/cs5004/animator/view/TextViewTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +72,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TextViewTest.testRenderText">
+  <component name="RunManager" selected="JUnit.TextViewTest.testImageRender">
     <configuration name="-in big-bang-big-crunch.txt -speed 50 -view visual" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="cs5004.animator.EasyAnimator" />
       <module name="Animator" />
@@ -132,21 +135,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ControllerImplTest and 5 more" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Animator" />
-      <option name="TEST_OBJECT" value="pattern" />
-      <patterns>
-        <pattern testClass="cs5004.animator.Controller.ControllerImplTest" />
-        <pattern testClass="cs5004.animator.model.AnimationTest" />
-        <pattern testClass="cs5004.animator.model.ModelImplTest" />
-        <pattern testClass="cs5004.animator.model.ShapeFactoryTest" />
-        <pattern testClass="cs5004.animator.model.ShapeTest" />
-        <pattern testClass="cs5004.animator.view.TextViewTest" />
-      </patterns>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="ModelImplTest.testBuilder1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Animator" />
       <extension name="coverage">
@@ -158,6 +146,22 @@
       <option name="PACKAGE_NAME" value="cs5004.animator.model" />
       <option name="MAIN_CLASS_NAME" value="cs5004.animator.model.ModelImplTest" />
       <option name="METHOD_NAME" value="testBuilder1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TextViewTest.testImageRender" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Animator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cs5004.animator.view.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cs5004.animator.view" />
+      <option name="MAIN_CLASS_NAME" value="cs5004.animator.view.TextViewTest" />
+      <option name="METHOD_NAME" value="testImageRender" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -186,17 +190,17 @@
       <item itemvalue="Application.-in toh-3.txt -view text -out text-transcript.txt" />
       <item itemvalue="JUnit.AnimationTest and 5 more" />
       <item itemvalue="JUnit.ControllerImplTest and 5 more (1)" />
-      <item itemvalue="JUnit.ControllerImplTest and 5 more" />
       <item itemvalue="JUnit.ModelImplTest.testBuilder1" />
       <item itemvalue="JUnit.TextViewTest.testRenderText" />
+      <item itemvalue="JUnit.TextViewTest.testImageRender" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TextViewTest.testImageRender" />
         <item itemvalue="JUnit.TextViewTest.testRenderText" />
         <item itemvalue="JUnit.ControllerImplTest and 5 more (1)" />
         <item itemvalue="JUnit.ModelImplTest.testBuilder1" />
         <item itemvalue="JUnit.AnimationTest and 5 more" />
-        <item itemvalue="JUnit.ControllerImplTest and 5 more" />
       </list>
     </recent_temporary>
   </component>
@@ -251,25 +255,25 @@
       <screen x="0" y="23" width="1920" height="1006" />
     </state>
     <state x="719" y="299" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1920.1006@0.23.1920.1006" timestamp="1596557365094" />
-    <state width="1878" height="305" key="GridCell.Tab.0.bottom" timestamp="1596749991609">
+    <state width="1878" height="305" key="GridCell.Tab.0.bottom" timestamp="1596752624701">
       <screen x="1280" y="-78" width="1920" height="1080" />
     </state>
-    <state width="1878" height="305" key="GridCell.Tab.0.bottom/0.0.1280.800/1280.-78.1920.1080@1280.-78.1920.1080" timestamp="1596749991609" />
+    <state width="1878" height="305" key="GridCell.Tab.0.bottom/0.0.1280.800/1280.-78.1920.1080@1280.-78.1920.1080" timestamp="1596752624701" />
     <state width="1617" height="355" key="GridCell.Tab.0.bottom/0.23.1920.1006@0.23.1920.1006" timestamp="1596734770108" />
-    <state width="1878" height="305" key="GridCell.Tab.0.center" timestamp="1596749991607">
+    <state width="1878" height="305" key="GridCell.Tab.0.center" timestamp="1596752624695">
       <screen x="1280" y="-78" width="1920" height="1080" />
     </state>
-    <state width="1878" height="305" key="GridCell.Tab.0.center/0.0.1280.800/1280.-78.1920.1080@1280.-78.1920.1080" timestamp="1596749991607" />
+    <state width="1878" height="305" key="GridCell.Tab.0.center/0.0.1280.800/1280.-78.1920.1080@1280.-78.1920.1080" timestamp="1596752624695" />
     <state width="1617" height="355" key="GridCell.Tab.0.center/0.23.1920.1006@0.23.1920.1006" timestamp="1596734770107" />
-    <state width="1878" height="305" key="GridCell.Tab.0.left" timestamp="1596749991606">
+    <state width="1878" height="305" key="GridCell.Tab.0.left" timestamp="1596752624692">
       <screen x="1280" y="-78" width="1920" height="1080" />
     </state>
-    <state width="1878" height="305" key="GridCell.Tab.0.left/0.0.1280.800/1280.-78.1920.1080@1280.-78.1920.1080" timestamp="1596749991606" />
+    <state width="1878" height="305" key="GridCell.Tab.0.left/0.0.1280.800/1280.-78.1920.1080@1280.-78.1920.1080" timestamp="1596752624692" />
     <state width="1617" height="355" key="GridCell.Tab.0.left/0.23.1920.1006@0.23.1920.1006" timestamp="1596734770106" />
-    <state width="1878" height="305" key="GridCell.Tab.0.right" timestamp="1596749991608">
+    <state width="1878" height="305" key="GridCell.Tab.0.right" timestamp="1596752624698">
       <screen x="1280" y="-78" width="1920" height="1080" />
     </state>
-    <state width="1878" height="305" key="GridCell.Tab.0.right/0.0.1280.800/1280.-78.1920.1080@1280.-78.1920.1080" timestamp="1596749991608" />
+    <state width="1878" height="305" key="GridCell.Tab.0.right/0.0.1280.800/1280.-78.1920.1080@1280.-78.1920.1080" timestamp="1596752624698" />
     <state width="1617" height="355" key="GridCell.Tab.0.right/0.23.1920.1006@0.23.1920.1006" timestamp="1596734770108" />
     <state width="1617" height="337" key="GridCell.Tab.1.bottom" timestamp="1596669260893">
       <screen x="0" y="23" width="1920" height="1006" />

@@ -112,10 +112,6 @@ public class TextViewTest {
     noAni.put(80, List.of(C5_Stable));
   }
 
-
-  /**
-   * Test constructor.
-   */
   @Test(expected = IllegalArgumentException.class)
   public void testInvalidSpeed() {
     IView textView = new TextView(-1);
@@ -180,5 +176,10 @@ public class TextViewTest {
     textView.setCanvas(null);
   }
 
+  @Test(expected = UnsupportedOperationException.class)
+  public void testImageRender() {
+    IView textView = new TextView(2);
+    textView.renderImage(shapes);
+  }
 
 }
