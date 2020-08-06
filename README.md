@@ -10,42 +10,32 @@ The following concrete classes/abstract classes/interfaces are created for the m
 
 - **Data Managing Part**
 
-    - **IModel**: This interface represents the operations that can be called on the model. It predefines methods to get a 
-    deep copy of all the shapes and a deep copy of the animations in sorted order by starting time or at a given time. 
-    It also defines methods to add a shape, delete a shape and add an animation.
+    - **IModel**: This interface represents the operations that can be called on the model. 
+    It defines methods to add a shape, delete a shape and add an animation. 
+    It also defines methods to get a deep copy of all the updated shapes at a given time. 
     
     - **ModelImpl**: This class implements the IModel interface and represents the concrete model of the animator.
-    *Internally*, it stores all the shapes in a Map, and uses the name of the shape as the key to enforce fast look up. 
-    It has stores all the animations in a Map, using the start time of the animation as the key since the order of the 
+    *Internally*, it stores all the shapes in a list. 
+    It also stores all the animations in a Map, using the start time of the animation as the key since the order of the 
     animation matters.
     *Externally*, it allows to get a deep copy of all the shapes and a deep copy of the animations sorted 
     by starting time. It also include methods to add a shape, delete a shape and add an animation. Additionally,
-    it offers a method to get a copy of all the invisible shapes at a given time and a method to get a copy of all the 
-    animation which start before a given time. It contains a public method to return a string representation of all the
-    shapes and animations.
+    it offers a method to get a copy of all the updated shapes at a given time. 
+    It contains a public method to return a string representation of all the shapes and animations.
     
  
 - **Animations**   
 
-    - **AbstactAnimation**: This abstract class represents an abstract animation in the model. It contains the common attributes of
+    - **IAnimation**: This interface represents a motion to transform the original shape, it declares methods that
+    a motion needs, to run the motion and return a shape with updated states, and return information
+    about the motion.
+        
+    - **AbstactAnimation**: This abstract class represents an abstract animation in the model. It contains the common           attributes of
     common attributes and methods, including the animation type, shape name, start time
     and end time. It includes common getter of these attributes, as well as a calculateState to
     calculate the current state according to the current time.
     
-    - **MoveAnimation**: This class represents an animation to move the shape, it extends the AbstractAnimation
-    class. It stores the start position and end position of the animation.
-    Apart from methods to return a string representation of the animation, equals and hashcode methods, 
-    it also include a method to run the animation and get an updated Abstract shape according to the given time.
-    
-    - **ChangeColorAnimation**: This class represents an animation to change the color, it extends the AbstractAnimation
-    class. It stores the start color and end color of the animation. 
-    Apart from methods to return a string representation of the animation, equals and hashcode methods, 
-    it also include a method to run the animation and get an updated Abstract shape according to the given time.
-    
-    - **ScaleAnimation**: A class represents an animation to scale the shape in width or height, it extends
-    the AbstractAnimation class. It stores the start dimension and end dimension of the animation.
-    Apart from methods to return a string representation of the animation, equals and hashcode methods, 
-    it also include a method to run the animation and get an updated Abstract shape according to the given time.
+    - **AnimationOperation**: This class extends AbstractAnimation, represents a motion for a shape. It stores the initial and transformed state of the shape. It includes a method to run the animation and get an updated shape according to the given time.
     
     - **AnimationType**: An enum to represent an animation type.
     
@@ -64,3 +54,15 @@ The following concrete classes/abstract classes/interfaces are created for the m
     - **ColorType**: This class represents a color using three float values, which are in the order of Red, Green, and Blue.     It contains the methods to get the attributes properly, as well as the overriden toString, equals, and hashCode.
     
     - **Position2D**: This class represents a position, which uses two decimal numbers as x and y of some objects in the         background of animation. It contains the methods to get the attributes properly, as well as the overriden toString,         equals, and hashCode.
+    
+    
+# Controller
+- **Design of Controller**
+
+    - **IController**: A controller interface that enables the program to output the description of the shapes, or draws
+    the animation on a canvas.
+    
+    - **ControllerImpl**: A controller class that enables the program to output the description
+    of the shapes, draws the animation on a canvas.
+
+
