@@ -86,13 +86,13 @@ The following concrete classes/abstract classes/interfaces are created for the m
     
         An example is as follows:
         
-        *Create rectangle R with color (255,0,0) with corner at (200.0,200.0), width: 50 and height 100
-        *Create oval C with color (0,0,255) with center at (440.0,70.0), radius: 120 and 60
+        Create rectangle R with color (255,0,0) with corner at (200.0,200.0), width: 50 and height 100 <br />
+        Create oval C with color (0,0,255) with center at (440.0,70.0), radius: 120 and 60 <br />
   
-        *R appears at time t=0 and disappear at time t=50 
-        *C appears at time t=3 and disappear at time t=50
+        R appears at time t=0 and disappear at time t=50 <br />
+        C appears at time t=3 and disappear at time t=50 <br />
         
-        - R moves from (200.0,200.0) to (300.0,300.0) from time t=5 to t=25
+        R moves from (200.0,200.0) to (300.0,300.0) from time t=5 to t=25
         - C moves from (440.0,70.0) to (440.0,250.0) from time t=10 to t=25
         - C changes color from (0,0,255) to (0,170,85) from time t=25 to t=35
         - R changes width from 50 to 25 from time t=25 to t=35
