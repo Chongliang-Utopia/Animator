@@ -31,7 +31,7 @@ public class Draw extends JPanel implements IDraw {
    * @throws NullPointerException if the given graphics is null
    */
   @Override
-  public void paintComponent(Graphics g) {
+  public void paintComponent(Graphics g) throws NullPointerException {
     Objects.requireNonNull(g);
     super.paintComponent(g);
 
@@ -58,9 +58,10 @@ public class Draw extends JPanel implements IDraw {
    * Draw the shapes on the canvas with the corresponding animations.
    *
    * @param shapes the given shapes with time and list of IReadOnlyShapes
+   * @throws NullPointerException if the given shapes is null
    */
   @Override
-  public void draw(List<IReadOnlyShapes> shapes) {
+  public void draw(List<IReadOnlyShapes> shapes) throws NullPointerException {
     Objects.requireNonNull(shapes);
     this.shapes = shapes;
     repaint();
