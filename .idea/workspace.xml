@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8263ffd2-26d4-46dd-b615-fb575bb216bb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/Animator_jar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Animator.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Animator.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/cs5004/animator/EasyAnimator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs5004/animator/EasyAnimator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cs5004/animator/model/AnimationOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs5004/animator/model/AnimationOperation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/text-transcript.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +50,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.-in toh-3.txt -view text -out text-transcript.txt">
+  <component name="RunManager" selected="Application.-in buildings.txt -speed 50 -view visual">
     <configuration name="-in big-bang-big-crunch.txt -speed 50 -view visual" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="cs5004.animator.EasyAnimator" />
       <module name="Animator" />
@@ -223,22 +219,22 @@
       <screen x="0" y="23" width="1920" height="1006" />
     </state>
     <state x="719" y="299" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1920.1006@0.23.1920.1006" timestamp="1596557365094" />
-    <state width="1617" height="355" key="GridCell.Tab.0.bottom" timestamp="1596734770108">
+    <state width="1617" height="40" key="GridCell.Tab.0.bottom" timestamp="1596739883370">
       <screen x="0" y="23" width="1920" height="1006" />
     </state>
-    <state width="1617" height="355" key="GridCell.Tab.0.bottom/0.23.1920.1006@0.23.1920.1006" timestamp="1596734770108" />
-    <state width="1617" height="355" key="GridCell.Tab.0.center" timestamp="1596734770107">
+    <state width="1617" height="40" key="GridCell.Tab.0.bottom/0.23.1920.1006@0.23.1920.1006" timestamp="1596739883370" />
+    <state width="1617" height="40" key="GridCell.Tab.0.center" timestamp="1596739883370">
       <screen x="0" y="23" width="1920" height="1006" />
     </state>
-    <state width="1617" height="355" key="GridCell.Tab.0.center/0.23.1920.1006@0.23.1920.1006" timestamp="1596734770107" />
-    <state width="1617" height="355" key="GridCell.Tab.0.left" timestamp="1596734770106">
+    <state width="1617" height="40" key="GridCell.Tab.0.center/0.23.1920.1006@0.23.1920.1006" timestamp="1596739883370" />
+    <state width="1617" height="40" key="GridCell.Tab.0.left" timestamp="1596739883370">
       <screen x="0" y="23" width="1920" height="1006" />
     </state>
-    <state width="1617" height="355" key="GridCell.Tab.0.left/0.23.1920.1006@0.23.1920.1006" timestamp="1596734770106" />
-    <state width="1617" height="355" key="GridCell.Tab.0.right" timestamp="1596734770108">
+    <state width="1617" height="40" key="GridCell.Tab.0.left/0.23.1920.1006@0.23.1920.1006" timestamp="1596739883370" />
+    <state width="1617" height="40" key="GridCell.Tab.0.right" timestamp="1596739883370">
       <screen x="0" y="23" width="1920" height="1006" />
     </state>
-    <state width="1617" height="355" key="GridCell.Tab.0.right/0.23.1920.1006@0.23.1920.1006" timestamp="1596734770108" />
+    <state width="1617" height="40" key="GridCell.Tab.0.right/0.23.1920.1006@0.23.1920.1006" timestamp="1596739883370" />
     <state width="1617" height="337" key="GridCell.Tab.1.bottom" timestamp="1596669260893">
       <screen x="0" y="23" width="1920" height="1006" />
     </state>

@@ -42,7 +42,8 @@ public final class EasyAnimator {
       IModel model = null;
       try {
         InputStream inputStream = new FileInputStream(inputFile);
-        model = AnimationReader.parseFile(new InputStreamReader(inputStream), new ModelImpl.Builder());
+        model = AnimationReader.parseFile(new InputStreamReader(inputStream),
+            new ModelImpl.Builder());
       } catch (FileNotFoundException e) {
         JOptionPane.showMessageDialog(frame,
             "FileNotFoundException: Could not find file",
