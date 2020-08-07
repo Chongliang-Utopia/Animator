@@ -17,7 +17,6 @@ import cs5004.animator.util.AnimationBuilder;
  * deep copy of all the shapes and a deep copy of the animations. It also
  * include methods to add a shape, delete a shape and add an animation. Additionally, it offers a
  * method to get a copy of all the invisible shapes at a given time.
- *
  * Changes: add the builder inner class to build the Model.
  */
 public class ModelImpl implements IModel {
@@ -75,14 +74,30 @@ public class ModelImpl implements IModel {
     private IModel model;
     private Map<String, ShapeType> nameToType = new HashMap<>();
 
+    /**
+     * Initiate the builder.
+     */
     public Builder() {
       this.model = new ModelImpl();
     }
+
+    /**
+     * Build the model.
+     * @return IModel built
+     */
     @Override
     public IModel build() {
       return new ModelImpl(this);
     }
 
+    /**
+     * Set bounds for the animation.
+     * @param x The leftmost x value
+     * @param y The topmost y value
+     * @param width The width of the bounding box
+     * @param height The height of the bounding box
+     * @return An AnimationBuilder
+     */
     @Override
     public AnimationBuilder<IModel> setBounds(int x, int y, int width, int height) {
       this.model.setCanvas(new Screen(x, y, width, height));
@@ -147,8 +162,8 @@ public class ModelImpl implements IModel {
         throw new IllegalArgumentException("This shape does not exist");
       }
       this.model.addAnimation(new AnimationOperation(name, nameToType.get(name),
-      t1, x1, y1, w1, h1, r1, g1, b1,
-      t2, x2, y2, w2, h2, r2, g2, b2));
+          t1, x1, y1, w1, h1, r1, g1, b1,
+          t2, x2, y2, w2, h2, r2, g2, b2));
       return this;
     }
   }
@@ -215,7 +230,9 @@ public class ModelImpl implements IModel {
         break;
       }
       for (IAnimation ani : allAnimations.get(key)) {
-        if (ani.getEndTime() < time) continue;
+        if (ani.getEndTime() < time) {
+          continue;
+        }
         IShape shape = ani.runAnimation(time);
         if (shapeNameToIndex.containsKey(shape.getName())) {
           ret.set(shapeNameToIndex.get(shape.getName()), shape);

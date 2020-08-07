@@ -31,17 +31,17 @@ public class ModelImplTest {
   List<IShape> allShapes1;
   List<IShape> allShapes2;
   Map<Integer, List<IAnimation>> allAnimations1;
-  AbstractAnimation R1_Stable;
-  AbstractAnimation R2_Move;
-  AbstractAnimation R3_Stable;
-  AbstractAnimation R4_Scale;
-  AbstractAnimation R5_Move;
+  AbstractAnimation rStable1;
+  AbstractAnimation rMove2;
+  AbstractAnimation rStable3;
+  AbstractAnimation rScale4;
+  AbstractAnimation rMove5;
 
-  AbstractAnimation C1_Stable;
-  AbstractAnimation C2_Move;
-  AbstractAnimation C3_Double;
-  AbstractAnimation C4_ChangeColor;
-  AbstractAnimation C5_Stable;
+  AbstractAnimation cStable1;
+  AbstractAnimation cMove2;
+  AbstractAnimation cDouble3;
+  AbstractAnimation cChangeColor4;
+  AbstractAnimation cStable5;
 
   IShape r;
   IShape c;
@@ -60,34 +60,34 @@ public class ModelImplTest {
     cc = new Oval("C", ShapeType.OVAL, new ColorType(0, 0, 255),
         new Position2D(440, 70), 120, 60, 6, 100);
     // Create Animation.
-    R1_Stable = new AnimationOperation("R", ShapeType.RECTANGLE,
+    rStable1 = new AnimationOperation("R", ShapeType.RECTANGLE,
         1,200,200,50, 100, 255, 0,  0,
         10,  200, 200,50, 100, 255, 0,  0);
-    R2_Move = new AnimationOperation("R", ShapeType.RECTANGLE,
+    rMove2 = new AnimationOperation("R", ShapeType.RECTANGLE,
         10, 200, 200, 50, 100, 255, 0,  0,
         50,  300, 300, 50, 100, 255, 0,  0);
-    R3_Stable = new AnimationOperation("R", ShapeType.RECTANGLE,
+    rStable3 = new AnimationOperation("R", ShapeType.RECTANGLE,
         50,300, 300, 50, 100, 255, 0,  0,
         51,300, 300, 50, 100, 255, 0,  0);
-    R4_Scale = new AnimationOperation("R", ShapeType.RECTANGLE,
+    rScale4 = new AnimationOperation("R", ShapeType.RECTANGLE,
         51, 300, 300, 50, 100, 255, 0,  0,
         70,  300, 300, 25, 100, 255, 0,  0);
-    R5_Move = new AnimationOperation("R", ShapeType.RECTANGLE,
+    rMove5 = new AnimationOperation("R", ShapeType.RECTANGLE,
         70, 300, 300,25, 100, 255, 0,  0,
         100, 200, 200, 25, 100, 255, 0,  0);
-    C1_Stable = new AnimationOperation("C", ShapeType.OVAL,
+    cStable1 = new AnimationOperation("C", ShapeType.OVAL,
         6, 440, 70, 120, 60, 0, 0, 255,
         20, 440, 70, 120, 60, 0, 0, 255);
-    C2_Move = new AnimationOperation("C", ShapeType.OVAL,
+    cMove2 = new AnimationOperation("C", ShapeType.OVAL,
         20,440, 70, 120, 60,0, 0, 255,
         50, 440, 250, 120, 60, 0, 0, 255);
-    C3_Double = new AnimationOperation("C", ShapeType.OVAL,
+    cDouble3 = new AnimationOperation("C", ShapeType.OVAL,
         50, 440, 250, 120, 60,0, 0, 255,
         70, 440, 370, 120, 60, 0, 170, 85);
-    C4_ChangeColor = new AnimationOperation("C", ShapeType.OVAL,
+    cChangeColor4 = new AnimationOperation("C", ShapeType.OVAL,
         70, 440, 370,120, 60, 0, 170, 85,
         80, 440, 370, 120, 60, 0, 255, 0);
-    C5_Stable = new AnimationOperation("C", ShapeType.OVAL,
+    cStable5 = new AnimationOperation("C", ShapeType.OVAL,
         80, 440, 370, 120, 60, 0, 255, 0,
         100, 440, 370, 120, 60, 0, 255, 0);
 
@@ -98,14 +98,14 @@ public class ModelImplTest {
     allShapes2.add(rr);
     allShapes2.add(cc);
     allAnimations1 = new TreeMap<>(Comparator.comparingInt(a -> a));
-    allAnimations1.put(1, List.of(R1_Stable));
-    allAnimations1.put(6, List.of(C1_Stable));
-    allAnimations1.put(10, List.of(R2_Move));
-    allAnimations1.put(20, List.of(C2_Move));
-    allAnimations1.put(50, List.of(R3_Stable, C3_Double));
-    allAnimations1.put(51, List.of(R4_Scale));
-    allAnimations1.put(70, List.of(R5_Move, C4_ChangeColor));
-    allAnimations1.put(80, List.of(C5_Stable));
+    allAnimations1.put(1, List.of(rStable1));
+    allAnimations1.put(6, List.of(cStable1));
+    allAnimations1.put(10, List.of(rMove2));
+    allAnimations1.put(20, List.of(cMove2));
+    allAnimations1.put(50, List.of(rStable3, cDouble3));
+    allAnimations1.put(51, List.of(rScale4));
+    allAnimations1.put(70, List.of(rMove5, cChangeColor4));
+    allAnimations1.put(80, List.of(cStable5));
     model1 = new ModelImpl(allShapes1, allAnimations1,
         new Screen(0, 0, 1000, 1000));
     model2 = new ModelImpl(allShapes2, allAnimations1,

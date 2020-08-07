@@ -7,9 +7,11 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 
-import javax.swing.*;
 
-import cs5004.animator.controller.ControllerImpl;
+import javax.swing.JFrame;
+import javax.swing.JOptionPane;
+
+import cs5004.animator.controller.FactoryController;
 import cs5004.animator.controller.IController;
 import cs5004.animator.model.IModel;
 import cs5004.animator.model.ModelImpl;
@@ -36,7 +38,7 @@ public final class EasyAnimator {
    */
   private static void initiate(JFrame frame, String inputFile,
                                String viewType, String outputName,
-                               int speed) throws IOException{
+                               int speed) throws IOException {
     if (!inputFile.equals("") && !viewType.equals("")) {
       AnimationReader reader = new AnimationReader();
       IModel model = null;
@@ -50,7 +52,7 @@ public final class EasyAnimator {
             "Error", JOptionPane.ERROR_MESSAGE);
       }
       IView view = FactoryView.makeView(viewType, speed);
-      IController controller = new ControllerImpl(model, view);
+      IController controller = FactoryController.makeController(viewType, model, view);
       if (outputName.length() == 0) {
         controller.run(System.out);
       } else {
@@ -77,8 +79,13 @@ public final class EasyAnimator {
    */
   public static void main(String[] args) throws IOException {
     JFrame frame = new JFrame();
-    boolean isFileName = false, isSpeed = false, isViewType = false, isOutputName = false;
-    String inputFile = "", viewType = "", outputName = "";
+    boolean isFileName = false;
+    boolean isSpeed = false;
+    boolean isViewType = false;
+    boolean isOutputName = false;
+    String inputFile = "";
+    String viewType = "";
+    String outputName = "";
     int speed = 1;
     for (String arg : args) {
       if (arg.equals("-in")) {

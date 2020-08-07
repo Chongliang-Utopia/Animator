@@ -1,10 +1,11 @@
 package cs5004.animator.view;
 
-import java.awt.*;
 import java.util.List;
 import java.util.Map;
-
-import javax.swing.*;
+import java.awt.Dimension;
+import java.awt.Color;
+import javax.swing.JScrollPane;
+import javax.swing.JFrame;
 
 import cs5004.animator.model.IAnimation;
 import cs5004.animator.model.IReadOnlyShapes;

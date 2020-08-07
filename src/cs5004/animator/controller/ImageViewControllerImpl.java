@@ -14,7 +14,7 @@ import cs5004.animator.view.IView;
  * A controller class that enables the program to output the description
  * of the shapes, draws the animation on a canvas.
  */
-public class ControllerImpl implements IController {
+public class ImageViewControllerImpl implements IController {
   private final Timer timer;
   private int tick;
   private int tempo;
@@ -27,7 +27,7 @@ public class ControllerImpl implements IController {
    * @param view view
    * @throws IllegalArgumentException if the given parameter is null
    */
-  public ControllerImpl(IModel model, IView view) throws IllegalArgumentException{
+  public ImageViewControllerImpl(IModel model, IView view) throws IllegalArgumentException {
     if (model == null || view == null) {
       throw new IllegalArgumentException("Parameters can not be null");
     }
@@ -36,14 +36,14 @@ public class ControllerImpl implements IController {
     this.tempo = view.getTempo();
     this.timer = new Timer((int) ((1.0 / tempo) * 1000), ((e) -> {
       List<IReadOnlyShapes> shapesToRender = model.getUpdatedShapeAtGivenTime(tick);
-      view.renderImage(shapesToRender);
+      this.view.renderImage(shapesToRender);
       tick += 1;
     }));
     view.setCanvas(model.getCanvas());
   }
 
   /**
-   * Run the animation
+   * Run the animation.
    * @param ap appendable to append to
    * @throws IOException if the parameter is null
    */
@@ -54,13 +54,6 @@ public class ControllerImpl implements IController {
     }
     List<IReadOnlyShapes> shapes = model.getReadOnlyShapes();
     Map<Integer, List<IAnimation>> animations = model.getAllAnimationSortedByTime();
-    String text = view.renderText(shapes, animations);
-    try {
-      // write to file/stdin
-      ap.append(text);
-    } catch (IOException e) {
-      throw new IOException("Cannot append");
-    }
     timer.start();
   }
 

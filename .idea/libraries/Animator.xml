@@ -1,7 +1,7 @@
 <component name="libraryTable">
-  <library name="A9">
+  <library name="Animator">
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/A9.zip!/" />
+      <root url="jar://$PROJECT_DIR$/out/artifacts/Animator_jar/Animator.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

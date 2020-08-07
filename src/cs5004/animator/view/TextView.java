@@ -27,12 +27,12 @@ public class TextView extends AbstractView {
    * Render the text view output, including the text information of all shapes and all animations.
    * Return empty string is the given shapes and animations are empty or null. An example is as
    * follows:
-   * <p>Create rectangle R with color (255,0,0) with corner at (200.0,200.0), width: 50 and height
+   * Create rectangle R with color (255,0,0) with corner at (200.0,200.0), width: 50 and height
    * 100 Create oval C with color (0,0,255) with center at (440.0,70.0), radius: 120 and 60
-   * <p>R appears at time t=0 and disappear at time t=50 C appears at time t=3 and disappear at
+   * R appears at time t=0 and disappear at time t=50 C appears at time t=3 and disappear at
    * time
    * t=50
-   * <p>R moves from (200.0,200.0) to (300.0,300.0) from time t=5 to t=25
+   * R moves from (200.0,200.0) to (300.0,300.0) from time t=5 to t=25
    * C moves from (440.0,70.0) to (440.0,250.0) from time t=10 to t=25 C changes color from
    * (0,0,255) to (0,170,85) from time t=25 to t=35 R changes width from 50 to 25 from time t=25 to
    * t=35 R moves from (300.0,300.0) to (200.0,200.0) from time t=35to t=50

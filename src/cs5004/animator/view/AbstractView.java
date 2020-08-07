@@ -4,7 +4,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Objects;
 
-import javax.swing.*;
+import javax.swing.JFrame;
 
 import cs5004.animator.model.IAnimation;
 import cs5004.animator.model.IReadOnlyShapes;

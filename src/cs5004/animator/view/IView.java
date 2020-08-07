@@ -22,7 +22,8 @@ public interface IView {
    *                                       not support text output
    */
   String renderText(List<IReadOnlyShapes> allShapes,
-                    Map<Integer, List<IAnimation>> allAnimations) throws UnsupportedOperationException;
+                    Map<Integer, List<IAnimation>> allAnimations)
+      throws UnsupportedOperationException;
 
   /**
    * Render the image view output with all needed information for drawing shapes.

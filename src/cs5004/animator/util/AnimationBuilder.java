@@ -1,5 +1,9 @@
 package cs5004.animator.util;
 
+/**
+ * An interface to pass data to the builder to construct the model.
+ * @param <Doc> The generic type of the model
+ */
 public interface AnimationBuilder<Doc> {
   /**
    * Constructs a final document.
