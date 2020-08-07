@@ -2,6 +2,7 @@ package cs5004.animator.view;
 
 import java.util.List;
 import java.util.Map;
+
 import cs5004.animator.model.IAnimation;
 import cs5004.animator.model.IReadOnlyShapes;
 import cs5004.animator.model.Screen;
@@ -17,16 +18,20 @@ public interface IView {
    * @param allShapes     the given shapes in the view
    * @param allAnimations the given animations in the view
    * @return the string output of the text view
+   * @throws UnsupportedOperationException if renderText has been called in the view type that does
+   *                                       not support text output
    */
   String renderText(List<IReadOnlyShapes> allShapes,
-                    Map<Integer, List<IAnimation>> allAnimations);
+                    Map<Integer, List<IAnimation>> allAnimations) throws UnsupportedOperationException;
 
   /**
    * Render the image view output with all needed information for drawing shapes.
    *
    * @param allShapes the given shapes in the view
+   * @throws UnsupportedOperationException if renderImage has been called in the view type that does
+   *                                       not support image output
    */
-  void renderImage(List<IReadOnlyShapes>allShapes);
+  void renderImage(List<IReadOnlyShapes> allShapes) throws UnsupportedOperationException;
 
 
   /**

@@ -3,7 +3,7 @@ package cs5004.animator.model;
 import java.util.Objects;
 
 /**
- * This class represents a color using three float values, which are in the order of Red, Green, and
+ * This class represents a color using three int values, which are in the order of Red, Green, and
  * Blue. It contains the methods to get the attributes properly, as well as the overridden toString,
  * equals, and hashCode.
  */

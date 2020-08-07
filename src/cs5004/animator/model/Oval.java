@@ -39,6 +39,7 @@ public class Oval extends AbstractShape {
 
   /**
    * A default constructor when only the name of the shape is given.
+   *
    * @param name name of the shape
    */
   public Oval(String name) {
@@ -76,7 +77,7 @@ public class Oval extends AbstractShape {
     }
 
     // If o isn't the right class then it can't be equal:
-    if (! (o instanceof AbstractShape)) {
+    if (!(o instanceof AbstractShape)) {
       return false;
     }
 
@@ -105,12 +106,9 @@ public class Oval extends AbstractShape {
 
 
   /**
-   * Return String representation of the oval details. e.g.
-   * Name: C
-   * Type: oval
-   * Center: (500.0,100.0), X radius: 60.0, Y radius: 30.0, Color: (0.0,0.0,1.0)
-   * Appears at t=6
-   * Disappears at t=100
+   * Return String representation of the oval details. e.g. Name: C Type: oval Center:
+   * (500.0,100.0), X radius: 60.0, Y radius: 30.0, Color: (0.0,0.0,1.0) Appears at t=6 Disappears
+   * at t=100
    *
    * @return string representation of the oval information
    */
@@ -126,17 +124,4 @@ public class Oval extends AbstractShape {
     return text;
   }
 
-//  /**
-//   * Return String representation of the oval position and size. e.g.
-//   * center at (500.0,100.0), radius: 60, radius: 30
-//   *
-//   * @return string representation of the oval information
-//   */
-//  @Override
-//  public String stringPosSize() {
-//    String text = "";
-//    text += "center at " + this.position.toString()
-//            + String.format(", radius: %.0f and %.0f\n", this.xRadius, this.yRadius);
-//    return text;
-//  }
 }

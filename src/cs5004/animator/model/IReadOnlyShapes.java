@@ -1,7 +1,9 @@
 package cs5004.animator.model;
 
 /**
- * This interface IReadOnlyShapes is created to prevent mutation of the original shapes.
+ * This interface IReadOnlyShapes is created to prevent mutation of the original shapes. It only
+ * contains getter methods. The shapes received by the view will be all IReadOnlyShapes to prevent
+ * any changes from the view.
  */
 public interface IReadOnlyShapes {
 
@@ -70,14 +72,9 @@ public interface IReadOnlyShapes {
 
   /**
    * Return String representation of the shape details.
+   *
    * @return string representation of the shape details
    */
   String textRender();
 
-//  /**
-//   * Return String representation of the shape position and size.
-//   * @return string representation of the shape position and size
-//   */
-//
-//  String stringPosSize();
 }
