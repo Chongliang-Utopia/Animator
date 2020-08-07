@@ -70,8 +70,12 @@ The following concrete classes/abstract classes/interfaces are created for the m
     - **IController**: A controller interface that enables the program to output the description of the shapes, or draws
     the animation on a canvas.
     
-    - **ControllerImpl**: A controller class that enables the program to output the description
-    of the shapes, draws the animation on a canvas.
+    - **ImageViewControllerImpl**: A controller class that enables the program to draw the animation on a canvas.
+    
+    - **TextViewControllerImpl**: A controller class that enables the program to output the description
+    of the shapes.
+    
+    - **FactoryController**: A factory class that enables to pick controller according to the view type.
 
 # View
 - **Design of View**
