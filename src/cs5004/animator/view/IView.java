@@ -50,4 +50,19 @@ public interface IView {
    */
   int getTempo();
 
+  /**
+   * Adds all the IViewFeatures to the listeners to execute.
+   *
+   * @param vf given IViewFeatures
+   * @throws UnsupportedOperationException if the given view doesn't support the listeners
+   */
+  void addListener(IViewFeatures vf) throws UnsupportedOperationException;
+
+  /**
+   * Checks if the given view has a listener field.
+   *
+   * @return true if it has a listener field
+   */
+  boolean hasListener();
+
 }

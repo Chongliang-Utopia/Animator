@@ -5,6 +5,7 @@ import java.util.Comparator;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Objects;
 import java.util.TreeMap;
 
 import cs5004.animator.util.AnimationBuilder;
@@ -396,5 +397,77 @@ public class ModelImpl implements IModel {
     return ret.toString();
   }
 
+//
+//  /**
+//   * adds a keyframe to the given shape.
+//   *
+//   * @param name  the name of the shape
+//   * @param stuff the information of the keyframe
+//   * @throws IllegalArgumentException if no shape is found
+//   */
+//  @Override
+//  public void addKeyFrameToShape(String name, int[] stuff) throws IllegalArgumentException {
+//    Objects.requireNonNull(name);
+//    try {
+//      new Size(stuff[3], stuff[4]);
+//      new RGB(stuff[5], stuff[6], stuff[7]);
+//    } catch (IllegalArgumentException e) {
+//      throw new IllegalArgumentException(e);
+//    }
+//    double[] start = new double[]{stuff[0], stuff[1],
+//        stuff[2], stuff[3], stuff[4], stuff[5], stuff[6], stuff[7]};
+//    for (Shapes sh : shapes) {
+//      if (sh.getName().equals(name)) {
+//        if (!sh.getFrames().containsKey(stuff[0])) {
+//          sh.getFrames().put(stuff[0], start);
+//        } else {
+//          throw new IllegalArgumentException("the key frame can't be added.");
+//        }
+//      }
+//    }
+//  }
+//
+//  /**
+//   * Removes a keyframe from the given shape.
+//   *
+//   * @param name  the given shape's name
+//   * @param key the keyframe that should be removed
+//   * @throws IllegalArgumentException if no shape or keyframe is found
+//   */
+//  @Override
+//  public void removeKeyFrameFromShape(String name, int key) throws IllegalArgumentException {
+//    Objects.requireNonNull(name);
+//    for (IShape sh : shapes) {
+//      if (sh.getName().equals(name)) {
+//        sh.getFrames().remove(key);
+//      }
+//    }
+//  }
+//
+//  /**
+//   * Edits the given keyframe.
+//   *
+//   * @param id    the name of the shape
+//   * @param key   the given keyframe
+//   * @param stuff the information of the keyframe
+//   * @throws IllegalArgumentException if the shape of keyframe is found
+//   */
+//  @Override
+//  public void editKeyFrame(String id, int key, int[] stuff) throws IllegalArgumentException {
+//    Objects.requireNonNull(id);
+//    try {
+//      new Size(stuff[3], stuff[4]);
+//      new ColorType(stuff[5], stuff[6], stuff[7]);
+//    } catch (IllegalArgumentException e) {
+//      throw new IllegalArgumentException(e);
+//    }
+//    for (IShape sh : allShapes) {
+//      if (sh.getName().equals(id)) {
+//        sh.getFrames().remove(key);
+//        sh.getFrames().put(stuff[0], new double[]{stuff[0], stuff[1],
+//            stuff[2], stuff[3], stuff[4], stuff[5], stuff[6], stuff[7]});
+//      }
+//    }
+//  }
 
 }

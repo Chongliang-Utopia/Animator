@@ -24,6 +24,7 @@ public class FactoryController {
       case "text":
         return new TextViewControllerImpl(model, view);
       case "visual":
+      case "edit":
         return new ImageViewControllerImpl(model, view);
       default:
         throw new IllegalArgumentException("Not a valid controller");

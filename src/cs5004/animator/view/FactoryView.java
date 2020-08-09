@@ -20,6 +20,8 @@ public class FactoryView {
         return new TextView(tempo);
       case "visual":
         return new ImageView(tempo);
+      case "edit":
+        return new EditorView(new ImageView(tempo));
       default:
         throw new IllegalArgumentException("Not a valid view");
     }

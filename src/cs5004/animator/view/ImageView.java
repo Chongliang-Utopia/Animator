@@ -75,4 +75,25 @@ public class ImageView extends AbstractView {
     setSize(1000, 800);
     panel.setPreferredSize(new Dimension(canvas.getCanvasW(), canvas.getCanvasH()));
   }
+
+
+  /**
+   * Checks if the given view has a listener field.
+   *
+   * @return true if it has a listener field
+   */
+  public boolean hasListener() {
+    return false;
+  }
+
+  /**
+   * Adds all the IViewFeatures to the listeners to execute.
+   *
+   * @param vf given IViewFeatures
+   * @throws UnsupportedOperationException if the given view doesn't support the listeners
+   */
+  @Override
+  public void addListener(IViewFeatures vf) throws UnsupportedOperationException {
+    throw new UnsupportedOperationException("yeehaw");
+  }
 }

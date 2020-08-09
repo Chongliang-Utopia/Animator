@@ -2,58 +2,33 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="020c9900-a360-42df-a0df-9dd4e948e756" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Animator.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Animator1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cs5004/animator/controller/FactoryController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cs5004/animator/controller/TextViewControllerImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/Animator_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/A9.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cs5004/animator/model/Size.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cs5004/animator/view/EditorView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cs5004/animator/view/IViewFeatures.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/A9.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A9.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Animator.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Animator.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClassDiagram.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/ClassDiagram.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClassDiagram.png（副本）" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Archive.zip" beforeDir="false" afterPath="$PROJECT_DIR$/Archive.zip" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Animator/cs5004/animator/EasyAnimator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Animator/cs5004/animator/EasyAnimator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Animator/cs5004/animator/controller/ControllerImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Animator/cs5004/animator/controller/FactoryController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Animator/cs5004/animator/controller/FactoryController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Animator/cs5004/animator/controller/ImageViewControllerImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Animator/cs5004/animator/controller/ImageViewControllerImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Animator/cs5004/animator/model/ModelImpl$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Animator/cs5004/animator/model/ModelImpl$Builder.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Animator/cs5004/animator/model/ModelImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Animator/cs5004/animator/model/ModelImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Animator/cs5004/animator/view/AbstractView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Animator/cs5004/animator/view/AbstractView.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Animator/cs5004/animator/view/Draw.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Animator/cs5004/animator/view/Draw.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Animator/cs5004/animator/view/FactoryView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Animator/cs5004/animator/view/FactoryView.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Animator/cs5004/animator/view/IView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Animator/cs5004/animator/view/IView.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Animator/cs5004/animator/view/ImageView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Animator/cs5004/animator/view/ImageView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Animator/cs5004/animator/view/TextView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Animator/cs5004/animator/view/TextView.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/test/Animator/cs5004/animator/Controller/ControllerImplTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/Animator/cs5004/animator/Controller/ControllerImplTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/test/Animator/cs5004/animator/model/AnimationTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/Animator/cs5004/animator/model/AnimationTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/test/Animator/cs5004/animator/model/ModelImplTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/Animator/cs5004/animator/model/ModelImplTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/test/Animator/cs5004/animator/view/TextViewTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/Animator/cs5004/animator/view/TextViewTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/Animator.jar" beforeDir="false" afterPath="$PROJECT_DIR$/resources/Animator.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/out.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/out.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/update/Animator.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/update/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/update/big-bang-big-crunch.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/update/buildings.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/update/hanoi.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/update/out.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/update/smalldemo.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/update/text-transcript.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/update/toh-12.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/update/toh-3.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/update/toh-5.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/update/toh-8.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cs5004/animator/EasyAnimator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs5004/animator/EasyAnimator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cs5004/animator/controller/ControllerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs5004/animator/controller/ImageViewControllerImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cs5004/animator/model/AbstractAnimation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs5004/animator/model/AbstractAnimation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cs5004/animator/controller/FactoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs5004/animator/controller/FactoryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cs5004/animator/controller/ImageViewControllerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs5004/animator/controller/ImageViewControllerImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cs5004/animator/model/IModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs5004/animator/model/IModel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/cs5004/animator/model/ModelImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs5004/animator/model/ModelImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cs5004/animator/util/AnimationBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs5004/animator/util/AnimationBuilder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cs5004/animator/view/AbstractView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs5004/animator/view/AbstractView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cs5004/animator/view/Draw.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs5004/animator/view/Draw.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cs5004/animator/view/FactoryView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs5004/animator/view/FactoryView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/cs5004/animator/view/IView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs5004/animator/view/IView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/cs5004/animator/view/ImageView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs5004/animator/view/ImageView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/cs5004/animator/view/TextView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs5004/animator/view/TextView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/cs5004/animator/Controller/ControllerImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/cs5004/animator/controller/ControllerImplTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/cs5004/animator/model/AnimationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/cs5004/animator/model/AnimationTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/cs5004/animator/model/ModelImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/cs5004/animator/model/ModelImplTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/cs5004/animator/view/TextViewTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/cs5004/animator/view/TextViewTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,11 +60,19 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
-  <component name="RunManager" selected="JUnit.ControllerImplTest and 5 more">
+  <component name="RunManager" selected="Application.-in smalldemo.txt -speed 50 -view edit: ">
     <configuration name="-in buildings.txt -speed 50 -view visual" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="cs5004.animator.EasyAnimator" />
       <module name="Animator" />
       <option name="PROGRAM_PARAMETERS" value="-in buildings.txt -speed 50 -view visual" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="-in smalldemo.txt -speed 50 -view edit: " type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="cs5004.animator.EasyAnimator" />
+      <module name="Animator" />
+      <option name="PROGRAM_PARAMETERS" value="-in buildings.txt -speed 10 -view edit" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -141,6 +124,7 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.-in smalldemo.txt -speed 50 -view edit: " />
       <item itemvalue="Application.-in smalldemo.txt -view text -speed 2" />
       <item itemvalue="Application.-in smalldemo.txt -speed 50 -view visual" />
       <item itemvalue="Application.-in buildings.txt -speed 50 -view visual" />
@@ -168,34 +152,70 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="402" y="188" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1596829006697">
+    <state x="402" y="188" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1597014179362">
       <screen x="0" y="23" width="1920" height="1006" />
     </state>
-    <state x="402" y="188" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1920.1006@0.23.1920.1006" timestamp="1596829006697" />
+    <state x="402" y="188" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1920.1006@0.23.1920.1006" timestamp="1597014179362" />
     <state x="208" y="123" width="1459" height="806" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1596829061676">
       <screen x="0" y="23" width="1920" height="1006" />
     </state>
     <state x="208" y="123" width="1459" height="806" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.23.1920.1006@0.23.1920.1006" timestamp="1596829061676" />
-    <state x="675" y="317" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1596829005755">
+    <state x="1086" y="295" key="#com.intellij.ide.util.MemberChooser" timestamp="1597015181633">
       <screen x="0" y="23" width="1920" height="1006" />
     </state>
-    <state x="675" y="317" key="#com.intellij.ide.util.TreeClassChooserDialog/0.23.1920.1006@0.23.1920.1006" timestamp="1596829005755" />
-    <state width="1617" height="71" key="GridCell.Tab.0.bottom" timestamp="1596831775728">
+    <state x="1086" y="295" key="#com.intellij.ide.util.MemberChooser/0.23.1920.1006@0.23.1920.1006" timestamp="1597015181633" />
+    <state x="675" y="317" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1597012307178">
       <screen x="0" y="23" width="1920" height="1006" />
     </state>
-    <state width="1617" height="71" key="GridCell.Tab.0.bottom/0.23.1920.1006@0.23.1920.1006" timestamp="1596831775728" />
-    <state width="1617" height="71" key="GridCell.Tab.0.center" timestamp="1596831775728">
+    <state x="675" y="317" key="#com.intellij.ide.util.TreeClassChooserDialog/0.23.1920.1006@0.23.1920.1006" timestamp="1597012307178" />
+    <state width="1617" height="337" key="GridCell.Tab.0.bottom" timestamp="1597015192907">
       <screen x="0" y="23" width="1920" height="1006" />
     </state>
-    <state width="1617" height="71" key="GridCell.Tab.0.center/0.23.1920.1006@0.23.1920.1006" timestamp="1596831775728" />
-    <state width="1617" height="71" key="GridCell.Tab.0.left" timestamp="1596831775727">
+    <state width="1617" height="337" key="GridCell.Tab.0.bottom/0.23.1920.1006@0.23.1920.1006" timestamp="1597015192907" />
+    <state width="1617" height="337" key="GridCell.Tab.0.center" timestamp="1597015192907">
       <screen x="0" y="23" width="1920" height="1006" />
     </state>
-    <state width="1617" height="71" key="GridCell.Tab.0.left/0.23.1920.1006@0.23.1920.1006" timestamp="1596831775727" />
-    <state width="1617" height="71" key="GridCell.Tab.0.right" timestamp="1596831775728">
+    <state width="1617" height="337" key="GridCell.Tab.0.center/0.23.1920.1006@0.23.1920.1006" timestamp="1597015192907" />
+    <state width="1617" height="337" key="GridCell.Tab.0.left" timestamp="1597015192906">
       <screen x="0" y="23" width="1920" height="1006" />
     </state>
-    <state width="1617" height="71" key="GridCell.Tab.0.right/0.23.1920.1006@0.23.1920.1006" timestamp="1596831775728" />
+    <state width="1617" height="337" key="GridCell.Tab.0.left/0.23.1920.1006@0.23.1920.1006" timestamp="1597015192906" />
+    <state width="1617" height="337" key="GridCell.Tab.0.right" timestamp="1597015192907">
+      <screen x="0" y="23" width="1920" height="1006" />
+    </state>
+    <state width="1617" height="337" key="GridCell.Tab.0.right/0.23.1920.1006@0.23.1920.1006" timestamp="1597015192907" />
+    <state width="1617" height="337" key="GridCell.Tab.1.bottom" timestamp="1597015192909">
+      <screen x="0" y="23" width="1920" height="1006" />
+    </state>
+    <state width="1617" height="337" key="GridCell.Tab.1.bottom/0.23.1920.1006@0.23.1920.1006" timestamp="1597015192909" />
+    <state width="1617" height="337" key="GridCell.Tab.1.center" timestamp="1597015192908">
+      <screen x="0" y="23" width="1920" height="1006" />
+    </state>
+    <state width="1617" height="337" key="GridCell.Tab.1.center/0.23.1920.1006@0.23.1920.1006" timestamp="1597015192908" />
+    <state width="1617" height="337" key="GridCell.Tab.1.left" timestamp="1597015192908">
+      <screen x="0" y="23" width="1920" height="1006" />
+    </state>
+    <state width="1617" height="337" key="GridCell.Tab.1.left/0.23.1920.1006@0.23.1920.1006" timestamp="1597015192908" />
+    <state width="1617" height="337" key="GridCell.Tab.1.right" timestamp="1597015192909">
+      <screen x="0" y="23" width="1920" height="1006" />
+    </state>
+    <state width="1617" height="337" key="GridCell.Tab.1.right/0.23.1920.1006@0.23.1920.1006" timestamp="1597015192909" />
+    <state width="1617" height="337" key="GridCell.Tab.2.bottom" timestamp="1597015192911">
+      <screen x="0" y="23" width="1920" height="1006" />
+    </state>
+    <state width="1617" height="337" key="GridCell.Tab.2.bottom/0.23.1920.1006@0.23.1920.1006" timestamp="1597015192911" />
+    <state width="1617" height="337" key="GridCell.Tab.2.center" timestamp="1597015192910">
+      <screen x="0" y="23" width="1920" height="1006" />
+    </state>
+    <state width="1617" height="337" key="GridCell.Tab.2.center/0.23.1920.1006@0.23.1920.1006" timestamp="1597015192910" />
+    <state width="1617" height="337" key="GridCell.Tab.2.left" timestamp="1597015192910">
+      <screen x="0" y="23" width="1920" height="1006" />
+    </state>
+    <state width="1617" height="337" key="GridCell.Tab.2.left/0.23.1920.1006@0.23.1920.1006" timestamp="1597015192910" />
+    <state width="1617" height="337" key="GridCell.Tab.2.right" timestamp="1597015192911">
+      <screen x="0" y="23" width="1920" height="1006" />
+    </state>
+    <state width="1617" height="337" key="GridCell.Tab.2.right/0.23.1920.1006@0.23.1920.1006" timestamp="1597015192911" />
     <state x="664" y="427" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1596828902438">
       <screen x="0" y="23" width="1920" height="1006" />
     </state>

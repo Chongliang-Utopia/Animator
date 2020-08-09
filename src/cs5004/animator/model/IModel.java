@@ -84,4 +84,34 @@ public interface IModel {
    * @param canvas canvas to set
    */
   void setCanvas(Screen canvas);
+
+
+//
+//  /**
+//   * adds a keyframe to the given shape.
+//   *
+//   * @param name  the name of the shape
+//   * @param stuff the information of the keyframe
+//   * @throws IllegalArgumentException if no shape is found
+//   */
+//  void addKeyFrameToShape(String name, int[] stuff) throws IllegalArgumentException;
+//
+//  /**
+//   * Removes a keyframe from the given shape.
+//   *
+//   * @param id  the given shape's name
+//   * @param key the keyframe that should be removed
+//   * @throws IllegalArgumentException if no shape or keyframe is found
+//   */
+//  void removeKeyFrameFromShape(String id, int key) throws IllegalArgumentException;
+//
+//  /**
+//   * Edits the given keyframe.
+//   *
+//   * @param id    the name of the shape
+//   * @param key   the given keyframe
+//   * @param stuff the information of the keyframe
+//   * @throws IllegalArgumentException if the shape of keyframe is found
+//   */
+//  void editKeyFrame(String id, int key, int[] stuff) throws IllegalArgumentException;
 }

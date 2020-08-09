@@ -129,4 +129,14 @@ public class TextView extends AbstractView {
   public void renderImage(List<IReadOnlyShapes> allShapes) throws UnsupportedOperationException {
     throw new UnsupportedOperationException("Text view cannot provide image output.");
   }
+
+  @Override
+  public void addListener(IViewFeatures vf) throws UnsupportedOperationException {
+    return;
+  }
+
+  @Override
+  public boolean hasListener() {
+    return false;
+  }
 }
