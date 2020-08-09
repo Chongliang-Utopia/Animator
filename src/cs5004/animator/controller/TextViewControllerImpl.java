@@ -54,14 +54,4 @@ public class TextViewControllerImpl implements IController {
       throw new IOException("Cannot append");
     }
   }
-
-  /**
-   * Changes the speed of the animations to the given speed.
-   *
-   * @param value the given speed
-   */
-  @Override
-  public void changeSpeed(int value) {
-    this.tempo = value;
-  }
 }
